@@ -1,1 +1,1 @@
-# IOS-Masterpass-SDK
+# IOS-e-Commerce-SDK
