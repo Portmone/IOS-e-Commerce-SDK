@@ -2,18 +2,8 @@
 //  StyleViewController.swift
 //  PortmoneSDKEcom-Example
 //
-//  Created on 4/10/19.
 //  Copyright © 2019 Portmone. All rights reserved.
 //
-//  This program is free software: you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation, either version 3 of the License, or
-//  (at your option) any later version.
-
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
 
 import UIKit
 
@@ -43,7 +33,8 @@ final class StyleViewController: BaseViewController {
     @IBOutlet private weak var infoTextColor: UITextField!
     @IBOutlet private weak var buttonTitleFontName: UITextField!
     @IBOutlet private weak var buttonColor: UITextField!
-    
+    @IBOutlet private weak var biometricButtonColor: UITextField!
+
     override var scrollView: UIScrollView? {
         return styleScrollView
     }
@@ -73,6 +64,7 @@ final class StyleViewController: BaseViewController {
         infoTextColor.text = styleModel?.infoTextsColor
         buttonTitleFontName.text = styleModel?.buttonTitleFontName
         buttonColor.text = styleModel?.buttonColor
+        biometricButtonColor.text = styleModel?.biometricButtonColor
     }
 
     @IBAction private func textFieldChangeValue(_ sender: UITextField) {
@@ -129,6 +121,9 @@ final class StyleViewController: BaseViewController {
         }
         if sender == buttonColor {
             styleModel.buttonColor = buttonColor.text
+        }
+        if sender == biometricButtonColor {
+            styleModel.biometricButtonColor = biometricButtonColor.text
         }
     }
     

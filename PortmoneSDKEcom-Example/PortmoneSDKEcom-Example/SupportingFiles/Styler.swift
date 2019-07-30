@@ -2,18 +2,8 @@
 //  Styler.swift
 //  PortmoneSDKEcom-Example
 //
-//  Created on 4/15/19.
 //  Copyright © 2019 Portmone. All rights reserved.
 //
-//  This program is free software: you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation, either version 3 of the License, or
-//  (at your option) any later version.
-
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
 
 import UIKit
 
@@ -49,4 +39,5 @@ final class Styler {
     // FooterView
     let cButtonTitleFont = UIFont.robotoMedium(with: 18)
     let cButtonColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+    let cBiometricButtonColor = #colorLiteral(red: 0.5529411765, green: 0.5529411765, blue: 0.5529411765, alpha: 1)
 }

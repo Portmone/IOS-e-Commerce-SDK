@@ -2,18 +2,8 @@
 //  PayByTokenViewController.swift
 //  PortmoneSDKEcom-Example
 //
-//  Created on 4/17/19.
 //  Copyright © 2019 Portmone. All rights reserved.
 //
-//  This program is free software: you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation, either version 3 of the License, or
-//  (at your option) any later version.
-
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
 
 import Foundation
 import PortmoneSDKEcom
@@ -36,6 +26,7 @@ final class PayByTokenViewController: BaseViewController {
     @IBOutlet private weak var payeeId: UITextField!
     @IBOutlet private weak var language: UITextField!
     @IBOutlet private weak var preauthFlag: UISwitch!
+    @IBOutlet private weak var biometricFlag: UISwitch!
     @IBOutlet private weak var cardMaskLabel: UILabel!
     @IBOutlet private weak var payButton: UIButton!
     
@@ -87,7 +78,8 @@ final class PayByTokenViewController: BaseViewController {
                                           payeeId: payeeId.text ?? "")
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
-                                     language: PaymentPresenter.Language(rawValue: language.text ?? "") ?? .ukrainian)
+                                     language: PaymentPresenter.Language(rawValue: language.text ?? "") ?? .ukrainian,
+                                     biometricAuth: biometricFlag.isOn)
         let mask = UserDefaults.standard.string(forKey: cardMask)
         let token = UserDefaults.standard.string(forKey: cardToken)
         let tokenParams = TokenPaymentParams(cardNumberMasked: mask ?? "",
