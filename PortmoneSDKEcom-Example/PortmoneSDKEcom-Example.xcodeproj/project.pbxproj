@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9860B04D227E1B69005B804B /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9860B04C227E1B69005B804B /* AlertPresentable.swift */; };
-		98756BFE22F0E35100F7AF49 /* PortmoneSDKEcom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98756BFD22F0E35100F7AF49 /* PortmoneSDKEcom.framework */; };
-		98756BFF22F0E36500F7AF49 /* PortmoneSDKEcom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98756BFD22F0E35100F7AF49 /* PortmoneSDKEcom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9899C91F221B014B0019DEF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9899C91E221B014B0019DEF7 /* AppDelegate.swift */; };
 		9899C924221B014B0019DEF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9899C922221B014B0019DEF7 /* Main.storyboard */; };
 		9899C926221B014D0019DEF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9899C925221B014D0019DEF7 /* Assets.xcassets */; };
 		9899C929221B014D0019DEF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9899C927221B014D0019DEF7 /* LaunchScreen.storyboard */; };
 		98AA8EC2225F3F0C00036572 /* StyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AA8EC1225F3F0C00036572 /* StyleModel.swift */; };
+		98D970C122F72A380022C689 /* PortmoneSDKEcom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D970C022F72A370022C689 /* PortmoneSDKEcom.framework */; };
+		98D970C222F72A490022C689 /* PortmoneSDKEcom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98D970C022F72A370022C689 /* PortmoneSDKEcom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		98EC67D0227E1F3000BB7D42 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EC67CE227E1F3000BB7D42 /* Extensions.swift */; };
 		98EC67D1227E1F3000BB7D42 /* Styler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EC67CF227E1F3000BB7D42 /* Styler.swift */; };
 		98EC67EA227E21FC00BB7D42 /* PayByCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EC67E3227E21FC00BB7D42 /* PayByCardViewController.swift */; };
@@ -35,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				98756BFF22F0E36500F7AF49 /* PortmoneSDKEcom.framework in Embed Frameworks */,
+				98D970C222F72A490022C689 /* PortmoneSDKEcom.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +44,6 @@
 
 /* Begin PBXFileReference section */
 		9860B04C227E1B69005B804B /* AlertPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertPresentable.swift; path = "../../../PortmoneSDKEcom-Example/PortmoneSDKEcom-Example/Protocols/AlertPresentable.swift"; sourceTree = "<group>"; };
-		98756BFD22F0E35100F7AF49 /* PortmoneSDKEcom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PortmoneSDKEcom.framework; sourceTree = "<group>"; };
 		9899C91B221B014B0019DEF7 /* PortmoneSDKEcom-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PortmoneSDKEcom-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9899C91E221B014B0019DEF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9899C923221B014B0019DEF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		9899C928221B014D0019DEF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9899C92A221B014D0019DEF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98AA8EC1225F3F0C00036572 /* StyleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleModel.swift; path = "PortmoneSDKEcom-Example/SupportingFiles/StyleModel.swift"; sourceTree = SOURCE_ROOT; };
+		98D970C022F72A370022C689 /* PortmoneSDKEcom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PortmoneSDKEcom.framework; sourceTree = "<group>"; };
 		98EC67CE227E1F3000BB7D42 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		98EC67CF227E1F3000BB7D42 /* Styler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styler.swift; sourceTree = "<group>"; };
 		98EC67E3227E21FC00BB7D42 /* PayByCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayByCardViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98756BFE22F0E35100F7AF49 /* PortmoneSDKEcom.framework in Frameworks */,
+				98D970C122F72A380022C689 /* PortmoneSDKEcom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +125,7 @@
 		9899C912221B014B0019DEF7 = {
 			isa = PBXGroup;
 			children = (
-				98756BFD22F0E35100F7AF49 /* PortmoneSDKEcom.framework */,
+				98D970C022F72A370022C689 /* PortmoneSDKEcom.framework */,
 				9899C91D221B014B0019DEF7 /* PortmoneSDKEcom-Example */,
 				9899C91C221B014B0019DEF7 /* Products */,
 			);

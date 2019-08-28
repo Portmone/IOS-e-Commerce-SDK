@@ -354,7 +354,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJO-aR-AYi">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1004"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1052"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Headers font name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12e-3z-azT">
                                                 <rect key="frame" x="50" y="120" width="275" height="40"/>
@@ -461,8 +461,8 @@
                                                     <action selector="textFieldChangeValue:" destination="mr0-LO-ehY" eventType="editingChanged" id="DdB-N1-okS"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Background color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EKv-Zp-7fu">
-                                                <rect key="frame" x="50" y="570" width="275" height="40"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Background color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EKv-Zp-7fu">
+                                                <rect key="frame" x="50" y="572" width="275" height="40"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -498,7 +498,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Button color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ce-Yo-W1R">
-                                                <rect key="frame" x="50" y="866" width="275" height="40"/>
+                                                <rect key="frame" x="50" y="914" width="275" height="40"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -534,12 +534,21 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Biometric button color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTb-hQ-nmb">
-                                                <rect key="frame" x="50" y="914" width="275" height="40"/>
+                                                <rect key="frame" x="50" y="962" width="275" height="40"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
                                                     <action selector="textFieldChangeValue:" destination="mr0-LO-ehY" eventType="editingChanged" id="r2C-Ld-oAm"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Button title color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bup-T6-N2S">
+                                                <rect key="frame" x="50" y="866" width="275" height="40"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textFieldChangeValue:" destination="mr0-LO-ehY" eventType="editingChanged" id="Qix-mF-bpG"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
@@ -558,6 +567,7 @@
                                             <constraint firstItem="1gx-hM-7fx" firstAttribute="top" secondItem="4Qa-zH-bsT" secondAttribute="bottom" constant="10" id="AdQ-lW-Tdd"/>
                                             <constraint firstItem="uql-NS-5ya" firstAttribute="leading" secondItem="jJO-aR-AYi" secondAttribute="leading" constant="50" id="B6P-xC-lDG"/>
                                             <constraint firstItem="1gx-hM-7fx" firstAttribute="width" secondItem="4Qa-zH-bsT" secondAttribute="width" id="BDd-vs-T1Y"/>
+                                            <constraint firstItem="bup-T6-N2S" firstAttribute="centerX" secondItem="dGQ-a6-Coc" secondAttribute="centerX" id="BeK-7j-ghv"/>
                                             <constraint firstItem="kTb-hQ-nmb" firstAttribute="centerX" secondItem="7ce-Yo-W1R" secondAttribute="centerX" id="D6K-Xs-61T"/>
                                             <constraint firstItem="12e-3z-azT" firstAttribute="centerX" secondItem="jJO-aR-AYi" secondAttribute="centerX" id="DkO-6j-O14"/>
                                             <constraint firstItem="12e-3z-azT" firstAttribute="top" secondItem="uwh-mr-xMG" secondAttribute="bottom" constant="10" id="FFo-wz-axU"/>
@@ -571,13 +581,14 @@
                                             <constraint firstItem="J9a-rL-kjz" firstAttribute="width" secondItem="LCm-To-bDc" secondAttribute="width" id="Koa-xg-M2l"/>
                                             <constraint firstItem="J9a-rL-kjz" firstAttribute="top" secondItem="LCm-To-bDc" secondAttribute="bottom" constant="10" id="LwW-3r-WxQ"/>
                                             <constraint firstItem="LCm-To-bDc" firstAttribute="height" secondItem="12e-3z-azT" secondAttribute="height" id="NQi-uv-Lkj"/>
+                                            <constraint firstItem="bup-T6-N2S" firstAttribute="height" secondItem="dGQ-a6-Coc" secondAttribute="height" id="Ng6-QU-9M1"/>
                                             <constraint firstItem="LCm-To-bDc" firstAttribute="centerX" secondItem="12e-3z-azT" secondAttribute="centerX" id="PML-Hx-kUJ"/>
+                                            <constraint firstItem="bup-T6-N2S" firstAttribute="top" secondItem="dGQ-a6-Coc" secondAttribute="bottom" constant="8" id="RAc-on-bnF"/>
                                             <constraint firstItem="96h-OC-mOy" firstAttribute="centerX" secondItem="1gx-hM-7fx" secondAttribute="centerX" id="RWV-Y1-eAs"/>
                                             <constraint firstItem="uql-NS-5ya" firstAttribute="centerX" secondItem="jJO-aR-AYi" secondAttribute="centerX" id="SRH-Pc-rjG"/>
                                             <constraint firstItem="VuH-jo-sdr" firstAttribute="centerX" secondItem="PE0-tt-sud" secondAttribute="centerX" id="U7Q-IY-yEx"/>
                                             <constraint firstItem="PE0-tt-sud" firstAttribute="centerX" secondItem="gXf-kS-6GO" secondAttribute="centerX" id="UZN-is-byZ"/>
                                             <constraint firstItem="dGQ-a6-Coc" firstAttribute="width" secondItem="PE0-tt-sud" secondAttribute="width" id="UhX-7q-Lpf"/>
-                                            <constraint firstItem="7ce-Yo-W1R" firstAttribute="top" secondItem="dGQ-a6-Coc" secondAttribute="bottom" constant="8" id="Upi-Wj-KIz"/>
                                             <constraint firstItem="VuH-jo-sdr" firstAttribute="top" secondItem="PE0-tt-sud" secondAttribute="bottom" constant="10" id="V6s-E7-pFb"/>
                                             <constraint firstItem="1gx-hM-7fx" firstAttribute="centerX" secondItem="4Qa-zH-bsT" secondAttribute="centerX" id="VdJ-hL-oI7"/>
                                             <constraint firstItem="7ce-Yo-W1R" firstAttribute="width" secondItem="dGQ-a6-Coc" secondAttribute="width" id="WEk-NF-d5X"/>
@@ -600,6 +611,7 @@
                                             <constraint firstAttribute="bottom" secondItem="kTb-hQ-nmb" secondAttribute="bottom" constant="50" id="gJy-AU-w0f"/>
                                             <constraint firstItem="uwh-mr-xMG" firstAttribute="width" secondItem="uql-NS-5ya" secondAttribute="width" id="gUr-uZ-qZA"/>
                                             <constraint firstItem="96h-OC-mOy" firstAttribute="top" secondItem="1gx-hM-7fx" secondAttribute="bottom" constant="10" id="grE-Dg-7H0"/>
+                                            <constraint firstItem="7ce-Yo-W1R" firstAttribute="top" secondItem="bup-T6-N2S" secondAttribute="bottom" constant="8" id="i5G-4K-SGf"/>
                                             <constraint firstItem="7ce-Yo-W1R" firstAttribute="height" secondItem="dGQ-a6-Coc" secondAttribute="height" id="jaE-mc-7Rp"/>
                                             <constraint firstItem="UrW-zO-GrU" firstAttribute="top" secondItem="Wox-6s-YaT" secondAttribute="bottom" constant="10" id="kXR-cC-kNT"/>
                                             <constraint firstItem="pcM-h3-1He" firstAttribute="centerX" secondItem="UrW-zO-GrU" secondAttribute="centerX" id="kYh-t3-tl4"/>
@@ -610,6 +622,7 @@
                                             <constraint firstItem="4Qa-zH-bsT" firstAttribute="height" secondItem="pcM-h3-1He" secondAttribute="height" id="mn2-jP-xDx"/>
                                             <constraint firstItem="Wox-6s-YaT" firstAttribute="height" secondItem="J9a-rL-kjz" secondAttribute="height" id="n0Z-EE-FnX"/>
                                             <constraint firstItem="Wox-6s-YaT" firstAttribute="centerX" secondItem="J9a-rL-kjz" secondAttribute="centerX" id="nQR-Nd-Ic5"/>
+                                            <constraint firstItem="bup-T6-N2S" firstAttribute="width" secondItem="dGQ-a6-Coc" secondAttribute="width" id="nSZ-Cg-OSf"/>
                                             <constraint firstItem="gXf-kS-6GO" firstAttribute="centerX" secondItem="EKv-Zp-7fu" secondAttribute="centerX" id="np5-EY-HE9"/>
                                             <constraint firstItem="4Qa-zH-bsT" firstAttribute="width" secondItem="pcM-h3-1He" secondAttribute="width" id="ntJ-bK-oO2"/>
                                             <constraint firstItem="kTb-hQ-nmb" firstAttribute="height" secondItem="7ce-Yo-W1R" secondAttribute="height" id="oMJ-zs-pEg"/>
@@ -660,6 +673,7 @@
                         <outlet property="backgroundColor" destination="EKv-Zp-7fu" id="IcM-Oq-xD9"/>
                         <outlet property="biometricButtonColor" destination="kTb-hQ-nmb" id="SyF-ud-FgN"/>
                         <outlet property="buttonColor" destination="7ce-Yo-W1R" id="uwo-sm-g2Q"/>
+                        <outlet property="buttonTitleColor" destination="bup-T6-N2S" id="Se7-cZ-mwW"/>
                         <outlet property="buttonTitleFontName" destination="dGQ-a6-Coc" id="n04-nV-nQl"/>
                         <outlet property="errorsColor" destination="96h-OC-mOy" id="Msg-Xl-0w1"/>
                         <outlet property="errorsFontName" destination="1gx-hM-7fx" id="kPn-Vx-iUw"/>

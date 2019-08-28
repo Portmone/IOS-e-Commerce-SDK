@@ -2,7 +2,8 @@
 //  StyleSourceObject.swift
 //  PortmoneSDKEcom-Example
 //
-//  Copyright © 2019 Portmone. All rights reserved.
+//  Created by Oleg Pankiv on 5/2/19.
+//  Copyright © 2019 Devlight. All rights reserved.
 //
 
 import UIKit
@@ -79,6 +80,10 @@ class StyleSourceObject: StyleSource {
     
     func buttonTitleFont() -> UIFont {
         return model.buttonTitleFontName?.font() ?? style.cButtonTitleFont
+    }
+    
+    func buttonTitleColor() -> UIColor {
+        return model.buttonTitleColor?.hexColorValue ?? style.cButtonTitleColor
     }
     
     func buttonColor() -> UIColor {

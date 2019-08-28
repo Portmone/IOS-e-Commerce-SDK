@@ -6,8 +6,6 @@
 //  Copyright © 2019 Devlight. All rights reserved.
 //
 
-// swiftlint:disable identifier_name
-
 import Foundation
 import PortmoneSDKEcom
 
@@ -133,7 +131,7 @@ final class StartViewController: BaseViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "style" {
+        if (segue.identifier == "style") {
             let navController = segue.destination as? UINavigationController
             let controller = navController?.viewControllers.first as? StyleViewController
             controller?.delegate = self

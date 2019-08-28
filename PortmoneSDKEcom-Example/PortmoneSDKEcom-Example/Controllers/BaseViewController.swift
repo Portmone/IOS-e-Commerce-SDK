@@ -2,7 +2,8 @@
 //  BaseViewController.swift
 //  PortmoneSDKEcom-Example
 //
-//  Copyright © 2019 Portmone. All rights reserved.
+//  Created by Oleg Pankiv on 4/4/19.
+//  Copyright © 2019 Devlight. All rights reserved.
 //
 
 import UIKit

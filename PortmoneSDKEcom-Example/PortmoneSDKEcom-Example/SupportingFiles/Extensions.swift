@@ -2,7 +2,8 @@
 //  Extensions.swift
 //  PortmoneSDKEcom-Example
 //
-//  Copyright © 2019 Portmone. All rights reserved.
+//  Created by Oleg Pankiv on 4/15/19.
+//  Copyright © 2019 Devlight. All rights reserved.
 //
 
 import UIKit
@@ -13,9 +14,7 @@ extension String {
         let r, g, b, a: CGFloat
         
         if self.hasPrefix("#") {
-            let start = self.index(self.startIndex, offsetBy: 1)
-            let hexColor = String(self[start...])
-            
+            let hexColor = self.formattedHexColor
             if hexColor.count == 8 {
                 let scanner = Scanner(string: hexColor)
                 var hexNumber: UInt64 = 0
@@ -37,6 +36,15 @@ extension String {
     func font(_ size: CGFloat = 10.0) -> UIFont? {
         // Size not necessary because it will be changed after.
         return UIFont(name: self, size: size)
+    }
+    
+    private var formattedHexColor: String {
+        let start = self.index(self.startIndex, offsetBy: 1)
+        let hexColor = String(self[start...])
+        
+        /// Represents alpha value.
+        /// Value: "ff" - 1.0
+        return hexColor.count == 6 ? hexColor + "ff" : hexColor
     }
 }
 

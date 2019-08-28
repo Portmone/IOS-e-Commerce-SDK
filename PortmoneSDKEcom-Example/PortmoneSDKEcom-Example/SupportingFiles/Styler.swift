@@ -2,7 +2,8 @@
 //  Styler.swift
 //  PortmoneSDKEcom-Example
 //
-//  Copyright © 2019 Portmone. All rights reserved.
+//  Created by Oleg Pankiv on 4/15/19.
+//  Copyright © 2019 Devlight. All rights reserved.
 //
 
 import UIKit
@@ -38,6 +39,7 @@ final class Styler {
 
     // FooterView
     let cButtonTitleFont = UIFont.robotoMedium(with: 18)
+    let cButtonTitleColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     let cButtonColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     let cBiometricButtonColor = #colorLiteral(red: 0.5529411765, green: 0.5529411765, blue: 0.5529411765, alpha: 1)
 }

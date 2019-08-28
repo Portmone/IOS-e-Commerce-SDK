@@ -2,7 +2,8 @@
 //  StyleViewController.swift
 //  PortmoneSDKEcom-Example
 //
-//  Copyright © 2019 Portmone. All rights reserved.
+//  Created by Oleg Pankiv on 4/10/19.
+//  Copyright © 2019 Devlight. All rights reserved.
 //
 
 import UIKit
@@ -32,6 +33,7 @@ final class StyleViewController: BaseViewController {
     @IBOutlet private weak var infoTextFontName: UITextField!
     @IBOutlet private weak var infoTextColor: UITextField!
     @IBOutlet private weak var buttonTitleFontName: UITextField!
+    @IBOutlet private weak var buttonTitleColor: UITextField!
     @IBOutlet private weak var buttonColor: UITextField!
     @IBOutlet private weak var biometricButtonColor: UITextField!
 
@@ -63,6 +65,7 @@ final class StyleViewController: BaseViewController {
         infoTextFontName.text = styleModel?.infoTextsFont
         infoTextColor.text = styleModel?.infoTextsColor
         buttonTitleFontName.text = styleModel?.buttonTitleFontName
+        buttonTitleColor.text = styleModel?.buttonTitleColor
         buttonColor.text = styleModel?.buttonColor
         biometricButtonColor.text = styleModel?.biometricButtonColor
     }
@@ -118,6 +121,9 @@ final class StyleViewController: BaseViewController {
         }
         if sender == buttonTitleFontName {
             styleModel.buttonTitleFontName = buttonTitleFontName.text
+        }
+        if sender == buttonTitleColor {
+            styleModel.buttonTitleColor = buttonTitleColor.text
         }
         if sender == buttonColor {
             styleModel.buttonColor = buttonColor.text

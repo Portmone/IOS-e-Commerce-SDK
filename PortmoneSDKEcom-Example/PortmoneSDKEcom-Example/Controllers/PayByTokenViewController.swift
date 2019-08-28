@@ -2,7 +2,8 @@
 //  PayByTokenViewController.swift
 //  PortmoneSDKEcom-Example
 //
-//  Copyright © 2019 Portmone. All rights reserved.
+//  Created by Oleg Pankiv on 4/17/19.
+//  Copyright © 2019 Devlight. All rights reserved.
 //
 
 import Foundation
@@ -91,7 +92,7 @@ final class PayByTokenViewController: BaseViewController {
 }
 
 // self <-- PaymentPresenter
-extension PayByTokenViewController: PaymentPresenterDelegate {
+extension PayByTokenViewController: PaymentPresenterDelegate {    
     func didFinishPayment(bill: Bill?, error: Error?) {
         if error != nil {
             presentAlert(title: "Error", message: error?.localizedDescription)

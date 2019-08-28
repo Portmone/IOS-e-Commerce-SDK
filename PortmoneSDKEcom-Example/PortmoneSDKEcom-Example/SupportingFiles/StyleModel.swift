@@ -2,7 +2,8 @@
 //  StyleModel.swift
 //  PortmoneSDKEcom-Example
 //
-//  Copyright © 2019 Portmone. All rights reserved.
+//  Created by Oleg Pankiv on 4/10/19.
+//  Copyright © 2019 Devlight. All rights reserved.
 //
 
 final class StyleModel {
@@ -29,6 +30,7 @@ final class StyleModel {
     var infoTextsColor: String?
 
     var buttonTitleFontName: String?
+    var buttonTitleColor: String?
     var buttonColor: String?
     var biometricButtonColor: String?
 }

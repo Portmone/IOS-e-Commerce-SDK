@@ -2,7 +2,8 @@
 //  AlertPresentable.swift
 //  PortmoneSDK-Example
 //
-//  Copyright © 2018 Portmone. All rights reserved.
+//  Created by Oleg Pankiv on 12/27/18.
+//  Copyright © 2018 Devlight. All rights reserved.
 //
 
 import UIKit
