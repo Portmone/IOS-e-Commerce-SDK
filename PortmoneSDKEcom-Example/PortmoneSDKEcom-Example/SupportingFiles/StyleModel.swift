@@ -9,6 +9,7 @@
 final class StyleModel {
     var titleFontName: String?
     var titleColor: String?
+    var titleBackgroundColor: String?
     
     var headersFontName: String?
     var headersColor: String?

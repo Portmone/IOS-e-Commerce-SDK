@@ -12,16 +12,17 @@ final class Styler {
     // Navigation title
     let cTitleFont = UIFont.robotoMedium(with: 16)
     let cTitleColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+    let cTitleBackgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     
     // HeaderView title
-    let cHeadersFont = UIFont.robotoMedium(with: 14)
+    let cHeadersFont = UIFont.robotoMedium(with: 12)
     let cHeadersColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     let cHeadersBackgroundColor = #colorLiteral(red: 0.9647058824, green: 0.9647058824, blue: 0.9647058824, alpha: 1)
     
     // Custom Textfields
-    let cPlaceholdersFont = UIFont.robotoRegular(with: 17)
+    let cPlaceholdersFont = UIFont.robotoRegular(with: 16)
     let cPlaceholdersColor = #colorLiteral(red: 0.5529411765, green: 0.5529411765, blue: 0.5529411765, alpha: 1)
-    let cTextsFont = UIFont.robotoRegular(with: 18)
+    let cTextsFont = UIFont.robotoRegular(with: 16)
     let cTextsColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     let cErrorsFont = UIFont.robotoRegular(with: 12)
     let cErrorsColor = UIColor(red: 255, green: 0, blue: 0, alpha: 1.0)

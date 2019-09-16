@@ -22,6 +22,10 @@ class StyleSourceObject: StyleSource {
         return model.titleColor?.hexColorValue ?? style.cTitleColor
     }
     
+    func titleBackgroundColor() -> UIColor {
+        return model.titleBackgroundColor?.hexColorValue ?? style.cTitleBackgroundColor
+    }
+    
     func headersFont() -> UIFont {
         return model.headersFontName?.font() ?? style.cHeadersFont
     }

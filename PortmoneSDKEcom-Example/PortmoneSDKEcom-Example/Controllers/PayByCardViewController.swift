@@ -10,9 +10,6 @@ import Foundation
 import PortmoneSDKEcom
 
 final class PayByCardViewController: BaseViewController {
-
-    private let cardMask = "kCardMask"
-    private let cardToken = "kCardToken"
     
     @IBOutlet private weak var paymentScrollView: UIScrollView!
     
@@ -42,7 +39,7 @@ final class PayByCardViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        billAmount.keyboardType = .numberPad
+        billAmount.keyboardType = .decimalPad
         payeeId.keyboardType = .numberPad
     }
     
@@ -84,8 +81,8 @@ final class PayByCardViewController: BaseViewController {
 extension PayByCardViewController: PaymentPresenterDelegate {
     func didFinishPayment(bill: Bill?, error: Error?) {
         // Save preauth card
-        UserDefaults.standard.set(bill?.cardMask, forKey: cardMask)
-        UserDefaults.standard.set(bill?.token, forKey: cardToken)
+        UserDefaults.standard.set(bill?.cardMask, forKey: Constants.cardMask)
+        UserDefaults.standard.set(bill?.token, forKey: Constants.cardToken)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             if error != nil {

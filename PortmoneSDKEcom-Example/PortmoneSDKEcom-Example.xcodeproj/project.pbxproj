@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E6B5E96232BA2D2007C5040 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6B5E95232BA2D2007C5040 /* Constants.swift */; };
+		7E6B5E98232BA2DE007C5040 /* TransferByTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6B5E97232BA2DE007C5040 /* TransferByTokenViewController.swift */; };
 		9860B04D227E1B69005B804B /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9860B04C227E1B69005B804B /* AlertPresentable.swift */; };
 		9899C91F221B014B0019DEF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9899C91E221B014B0019DEF7 /* AppDelegate.swift */; };
 		9899C924221B014B0019DEF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9899C922221B014B0019DEF7 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E6B5E95232BA2D2007C5040 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7E6B5E97232BA2DE007C5040 /* TransferByTokenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferByTokenViewController.swift; sourceTree = "<group>"; };
 		9860B04C227E1B69005B804B /* AlertPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertPresentable.swift; path = "../../../PortmoneSDKEcom-Example/PortmoneSDKEcom-Example/Protocols/AlertPresentable.swift"; sourceTree = "<group>"; };
 		9899C91B221B014B0019DEF7 /* PortmoneSDKEcom-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PortmoneSDKEcom-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9899C91E221B014B0019DEF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 				98AA8EC1225F3F0C00036572 /* StyleModel.swift */,
 				9899C92A221B014D0019DEF7 /* Info.plist */,
 				9899C91E221B014B0019DEF7 /* AppDelegate.swift */,
+				7E6B5E95232BA2D2007C5040 /* Constants.swift */,
 				9899C925221B014D0019DEF7 /* Assets.xcassets */,
 			);
 			path = SupportingFiles;
@@ -110,6 +115,7 @@
 				98EC67E9227E21FC00BB7D42 /* SaveCardViewController.swift */,
 				98EC67E8227E21FC00BB7D42 /* StyleSourceObject.swift */,
 				98EC67E5227E21FC00BB7D42 /* StyleViewController.swift */,
+				7E6B5E97232BA2DE007C5040 /* TransferByTokenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6B5E98232BA2DE007C5040 /* TransferByTokenViewController.swift in Sources */,
 				98EC67EA227E21FC00BB7D42 /* PayByCardViewController.swift in Sources */,
 				9899C91F221B014B0019DEF7 /* AppDelegate.swift in Sources */,
 				98EC67EB227E21FC00BB7D42 /* PayByTokenViewController.swift in Sources */,
@@ -241,6 +248,7 @@
 				98EC67D1227E1F3000BB7D42 /* Styler.swift in Sources */,
 				98EC67EE227E21FC00BB7D42 /* BaseViewController.swift in Sources */,
 				98EC67EC227E21FC00BB7D42 /* StyleViewController.swift in Sources */,
+				7E6B5E96232BA2D2007C5040 /* Constants.swift in Sources */,
 				98EC67F0227E21FC00BB7D42 /* SaveCardViewController.swift in Sources */,
 				9860B04D227E1B69005B804B /* AlertPresentable.swift in Sources */,
 				98EC67D0227E1F3000BB7D42 /* Extensions.swift in Sources */,

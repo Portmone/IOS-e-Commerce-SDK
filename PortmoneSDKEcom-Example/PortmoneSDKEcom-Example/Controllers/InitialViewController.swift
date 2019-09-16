@@ -10,8 +10,7 @@ import UIKit
 
 final class InitialViewController: UIViewController, AlertPresentable {
     
-    private let cardMask = "kCardMask"
-    private let cardToken = "kCardToken"
+    @IBOutlet private weak var payByTokenButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,11 +18,12 @@ final class InitialViewController: UIViewController, AlertPresentable {
     }
     
     @IBAction private func payByTokenButtonClicked(_ sender: UIButton) {
-        let mask = UserDefaults.standard.string(forKey: cardMask)
-        let token = UserDefaults.standard.string(forKey: cardToken)
+        let mask = UserDefaults.standard.string(forKey: Constants.cardMask)
+        let token = UserDefaults.standard.string(forKey: Constants.cardToken)
         
         if mask != nil && token != nil {
-            performSegue(withIdentifier: "token", sender: nil)
+            let segueIdentifier = sender == payByTokenButton ? "token" : "transferByToken"
+            performSegue(withIdentifier: segueIdentifier, sender: nil)
         } else {
             presentAlert(title: "Error", message: "There is no card saved.")
         }
@@ -34,8 +34,8 @@ final class InitialViewController: UIViewController, AlertPresentable {
     }
     
     @IBAction private func removeSavedCardButtonClicked(_ sender: UIButton) {
-        UserDefaults.standard.removeObject(forKey: cardMask)
-        UserDefaults.standard.removeObject(forKey: cardToken)
+        UserDefaults.standard.removeObject(forKey: Constants.cardMask)
+        UserDefaults.standard.removeObject(forKey: Constants.cardToken)
         
         presentAlert(title: "Success", message: "Card removed.")
     }

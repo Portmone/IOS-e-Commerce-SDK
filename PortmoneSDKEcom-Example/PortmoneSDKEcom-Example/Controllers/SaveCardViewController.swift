@@ -11,9 +11,6 @@ import PortmoneSDKEcom
 
 final class SaveCardViewController: BaseViewController {
     
-    private let cardMask = "kCardMask"
-    private let cardToken = "kCardToken"
-
     @IBOutlet private weak var saveScrollView: UIScrollView!
     
     @IBOutlet private weak var contractNumber: UITextField!
@@ -71,8 +68,8 @@ final class SaveCardViewController: BaseViewController {
 extension SaveCardViewController: PaymentPresenterDelegate {
     func didFinishPayment(bill: Bill?, error: Error?) {
         // Save preauth card
-        UserDefaults.standard.set(bill?.cardMask, forKey: cardMask)
-        UserDefaults.standard.set(bill?.token, forKey: cardToken)
+        UserDefaults.standard.set(bill?.cardMask, forKey: Constants.cardMask)
+        UserDefaults.standard.set(bill?.token, forKey: Constants.cardToken)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             if error != nil {

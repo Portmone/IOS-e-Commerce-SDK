@@ -18,6 +18,7 @@ final class StyleViewController: BaseViewController {
     @IBOutlet private weak var styleScrollView: UIScrollView!
     @IBOutlet private weak var titlesFontName: UITextField!
     @IBOutlet private weak var titlesColor: UITextField!
+    @IBOutlet private weak var titlesBackgroundColor: UITextField!
     @IBOutlet private weak var headersFontName: UITextField!
     @IBOutlet private weak var headersColor: UITextField!
     @IBOutlet private weak var headersBackgroundColor: UITextField!
@@ -50,6 +51,7 @@ final class StyleViewController: BaseViewController {
         
         titlesFontName.text = styleModel?.titleFontName
         titlesColor.text = styleModel?.titleColor
+        titlesBackgroundColor.text = styleModel.titleBackgroundColor
         headersFontName.text = styleModel?.headersFontName
         headersColor.text = styleModel?.headersColor
         headersBackgroundColor.text = styleModel?.headersBackgroundColor
@@ -76,6 +78,9 @@ final class StyleViewController: BaseViewController {
         }
         if sender == titlesColor {
             styleModel.titleColor = titlesColor.text
+        }
+        if sender == titlesBackgroundColor {
+            styleModel.titleBackgroundColor = titlesBackgroundColor.text
         }
         if sender == headersFontName {
             styleModel.headersFontName = headersFontName.text

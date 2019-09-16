@@ -11,9 +11,6 @@ import PortmoneSDKEcom
 
 final class PayByTokenViewController: BaseViewController {
     
-    private let cardMask = "kCardMask"
-    private let cardToken = "kCardToken"
-    
     @IBOutlet private weak var paymentScrollView: UIScrollView!
     
     @IBOutlet private weak var contractNumber: UITextField!
@@ -44,10 +41,10 @@ final class PayByTokenViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        billAmount.keyboardType = .numberPad
+        billAmount.keyboardType = .decimalPad
         payeeId.keyboardType = .numberPad
         
-        cardMaskLabel.text = UserDefaults.standard.string(forKey: cardMask) ?? "Card mask: "
+        cardMaskLabel.text = UserDefaults.standard.string(forKey: Constants.cardMask) ?? "Card mask: "
     }
     
     override func viewWillLayoutSubviews() {
@@ -81,8 +78,10 @@ final class PayByTokenViewController: BaseViewController {
                                      styleSource: style,
                                      language: PaymentPresenter.Language(rawValue: language.text ?? "") ?? .ukrainian,
                                      biometricAuth: biometricFlag.isOn)
-        let mask = UserDefaults.standard.string(forKey: cardMask)
-        let token = UserDefaults.standard.string(forKey: cardToken)
+        
+        let mask = UserDefaults.standard.string(forKey: Constants.cardMask)
+        let token = UserDefaults.standard.string(forKey: Constants.cardToken)
+        
         let tokenParams = TokenPaymentParams(cardNumberMasked: mask ?? "",
                                              tokenData: token ?? "")
         presenter?.presentPaymentByToken(on: self,
