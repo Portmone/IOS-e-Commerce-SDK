@@ -9,8 +9,8 @@ s.version = '1.0.6'
 s.license = { :type => 'GPL 3.0', :file => 'LICENSE.md' }
 s.author = { 'Portmone' => 'support@portmone.com' }
 s.homepage = 'https://github.com/Portmone/IOS-e-Commerce-SDK'
-s.source = { :git => 'https://github.com/Portmone/IOS-e-Commerce-SDK.git', :tag => s.version }
+s.source = { :git => 'https://github.com/Portmone/IOS-e-Commerce-SDK.git', :tag => "v#{s.version}" }
 s.vendored_frameworks = 'PortmoneSDKEcom.framework'
-s.swift_version = ['5.0', '5.1']
+s.swift_version = '5.0'
 
 end
