@@ -53,16 +53,12 @@ final class TransferByTokenViewController: BaseViewController {
             billNumb = billNumber.text ?? ""
         }
         
-        let paymentParams = PaymentParams(description: "",
-                                          attribute1: "",
-                                          attribute2: attribute2.text ?? "",
-                                          attribute3: attribute3.text ?? "",
-                                          attribute4: attribute4.text ?? "",
-                                          billNumber: billNumb,
-                                          preauthFlag: false,
-                                          billCurrency: .uah,
-                                          billAmount: Double(billAmount.text ?? "") ?? 0,
-                                          payeeId: payeeId.text ?? "")
+        let transferParams = TransferParams(attribute2: attribute2.text ?? "",
+                                            attribute3: attribute3.text ?? "",
+                                            attribute4: attribute4.text ?? "",
+                                            billNumber: billNumb,
+                                            billAmount: Double(billAmount.text ?? "") ?? 0,
+                                            payeeId: payeeId.text ?? "")
         
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
@@ -76,7 +72,7 @@ final class TransferByTokenViewController: BaseViewController {
                                              tokenData: token ?? "")
         
         presenter?.presentTransferByToken(on: self,
-                                          transferParams: paymentParams,
+                                          transferParams: transferParams,
                                           tokenParams: tokenParams)
     }
 }
