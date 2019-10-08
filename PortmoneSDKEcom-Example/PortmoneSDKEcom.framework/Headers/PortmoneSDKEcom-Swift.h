@@ -169,6 +169,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -188,6 +189,163 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+/// Bill model
+SWIFT_CLASS("_TtC15PortmoneSDKEcom4Bill")
+@interface Bill : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Supported currencies
+typedef SWIFT_ENUM(NSInteger, Currency, closed) {
+  CurrencyUah = 0,
+  CurrencyUsd = 1,
+  CurrencyEur = 2,
+  CurrencyGbr = 3,
+  CurrencyByn = 4,
+  CurrencyKzt = 5,
+  CurrencyRub = 6,
+};
+
+
+
+/// Supported languages
+typedef SWIFT_ENUM(NSInteger, Language, closed) {
+  LanguageUkrainian = 0,
+  LanguageRussian = 1,
+  LanguageEnglish = 2,
+};
+
+@class TransferParams;
+
+/// Payment by card parameters model
+SWIFT_CLASS("_TtC15PortmoneSDKEcom13PaymentParams")
+@interface PaymentParams : NSObject
+/// Init
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description attribute1:(NSString * _Nonnull)attribute1 attribute2:(NSString * _Nonnull)attribute2 attribute3:(NSString * _Nonnull)attribute3 attribute4:(NSString * _Nonnull)attribute4 billNumber:(NSString * _Nonnull)billNumber contractNumber:(NSString * _Nonnull)contractNumber preauthFlag:(BOOL)preauthFlag billCurrency:(enum Currency)billCurrency billAmount:(double)billAmount payeeId:(NSString * _Nonnull)payeeId OBJC_DESIGNATED_INITIALIZER;
+/// Init from Transfer parms
+- (nonnull instancetype)init:(TransferParams * _Nonnull)transferParams OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@protocol PaymentPresenterDelegate;
+@protocol StyleSource;
+@class UIViewController;
+@class PreauthParams;
+@class TokenPaymentParams;
+
+/// Object for interaction with PortmoneSDKEcom
+SWIFT_CLASS("_TtC15PortmoneSDKEcom16PaymentPresenter")
+@interface PaymentPresenter : NSObject
+/// Initializer
+- (nonnull instancetype)initWithDelegate:(id <PaymentPresenterDelegate> _Nonnull)delegate styleSource:(id <StyleSource> _Nullable)styleSource language:(enum Language)language biometricAuth:(BOOL)biometricAuth OBJC_DESIGNATED_INITIALIZER;
+/// Method to present payment by card screen
+- (void)presentPaymentByCardOn:(UIViewController * _Nonnull)controller params:(PaymentParams * _Nonnull)params;
+/// Method to present preauth card screen
+- (void)presentPreauthCardOn:(UIViewController * _Nonnull)controller params:(PreauthParams * _Nonnull)params;
+/// Method to present payment by token screen
+- (void)presentPaymentByTokenOn:(UIViewController * _Nonnull)controller payParams:(PaymentParams * _Nonnull)payParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams;
+/// Method to present transfer by token screen
+- (void)presentTransferByTokenOn:(UIViewController * _Nonnull)controller transferParams:(TransferParams * _Nonnull)transferParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Protocol for return payment result
+SWIFT_PROTOCOL("_TtP15PortmoneSDKEcom24PaymentPresenterDelegate_")
+@protocol PaymentPresenterDelegate
+/// Method triggered as result of payment process.
+/// \param bill Bill
+///
+/// \param error Error
+///
+- (void)didFinishPaymentWithBill:(Bill * _Nullable)bill error:(NSError * _Nullable)error;
+@optional
+/// Optional method.
+/// Method triggered when payment is canceled.
+- (void)didCancelPayment;
+@end
+
+
+/// Preauth card parameters model
+SWIFT_CLASS("_TtC15PortmoneSDKEcom13PreauthParams")
+@interface PreauthParams : NSObject
+/// Init
+- (nonnull instancetype)initWithPayeeId:(NSString * _Nonnull)payeeId accountId:(NSString * _Nonnull)accountId description:(NSString * _Nonnull)description billNumber:(NSString * _Nonnull)billNumber OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIFont;
+@class UIColor;
+
+/// Protocol for changing style of elements on screens
+SWIFT_PROTOCOL("_TtP15PortmoneSDKEcom11StyleSource_")
+@protocol StyleSource
+/// Title label font (All screens)
+- (UIFont * _Nonnull)titleFont SWIFT_WARN_UNUSED_RESULT;
+/// Title label color (All screens)
+- (UIColor * _Nonnull)titleColor SWIFT_WARN_UNUSED_RESULT;
+/// Title background color (All screens)
+- (UIColor * _Nonnull)titleBackgroundColor SWIFT_WARN_UNUSED_RESULT;
+/// Section header label font (Payment, commission screens)
+- (UIFont * _Nonnull)headersFont SWIFT_WARN_UNUSED_RESULT;
+/// Section header label color (Payment, commission screens)
+- (UIColor * _Nonnull)headersColor SWIFT_WARN_UNUSED_RESULT;
+/// Section header view background color (Payment, commission screens)
+- (UIColor * _Nonnull)headersBackgroundColor SWIFT_WARN_UNUSED_RESULT;
+/// All textFields placeholder font
+- (UIFont * _Nonnull)placeholdersFont SWIFT_WARN_UNUSED_RESULT;
+/// All textFields placeholder color
+- (UIColor * _Nonnull)placeholdersColor SWIFT_WARN_UNUSED_RESULT;
+/// All textFields text font
+- (UIFont * _Nonnull)textsFont SWIFT_WARN_UNUSED_RESULT;
+/// All textFields text color
+- (UIColor * _Nonnull)textsColor SWIFT_WARN_UNUSED_RESULT;
+/// All error strings text font
+- (UIFont * _Nonnull)errorsFont SWIFT_WARN_UNUSED_RESULT;
+/// All error strings text color
+- (UIColor * _Nonnull)errorsColor SWIFT_WARN_UNUSED_RESULT;
+/// All background color (Table, cells, navigation bar)
+- (UIColor * _Nonnull)backgroundColor SWIFT_WARN_UNUSED_RESULT;
+/// Message label font (Result screens)
+- (UIFont * _Nonnull)resultMessageFont SWIFT_WARN_UNUSED_RESULT;
+/// Message label color (Result screens)
+- (UIColor * _Nonnull)resultMessageColor SWIFT_WARN_UNUSED_RESULT;
+/// Informative label on button (Save card screen)
+- (UIFont * _Nonnull)infoTextsFont SWIFT_WARN_UNUSED_RESULT;
+- (UIColor * _Nonnull)infoTextsColor SWIFT_WARN_UNUSED_RESULT;
+/// Buttons back and next title font
+- (UIFont * _Nonnull)buttonTitleFont SWIFT_WARN_UNUSED_RESULT;
+/// Bottom button text color
+- (UIColor * _Nonnull)buttonTitleColor SWIFT_WARN_UNUSED_RESULT;
+/// Bottom button background and top button text color if 2 buttons present
+- (UIColor * _Nonnull)buttonColor SWIFT_WARN_UNUSED_RESULT;
+/// Biometric button title color
+- (UIColor * _Nonnull)biometricButtonColor SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// Payment by token parameters additional model
+SWIFT_CLASS("_TtC15PortmoneSDKEcom18TokenPaymentParams")
+@interface TokenPaymentParams : NSObject
+/// Init
+- (nonnull instancetype)initWithCardNumberMasked:(NSString * _Nonnull)cardNumberMasked tokenData:(NSString * _Nonnull)tokenData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Transfer by token parameters additional model
+SWIFT_CLASS("_TtC15PortmoneSDKEcom14TransferParams")
+@interface TransferParams : NSObject
+/// Init
+- (nonnull instancetype)initWithAttribute2:(NSString * _Nonnull)attribute2 attribute3:(NSString * _Nonnull)attribute3 attribute4:(NSString * _Nonnull)attribute4 billNumber:(NSString * _Nonnull)billNumber billAmount:(double)billAmount payeeId:(NSString * _Nonnull)payeeId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 
@@ -374,6 +532,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -393,6 +552,163 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+/// Bill model
+SWIFT_CLASS("_TtC15PortmoneSDKEcom4Bill")
+@interface Bill : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Supported currencies
+typedef SWIFT_ENUM(NSInteger, Currency, closed) {
+  CurrencyUah = 0,
+  CurrencyUsd = 1,
+  CurrencyEur = 2,
+  CurrencyGbr = 3,
+  CurrencyByn = 4,
+  CurrencyKzt = 5,
+  CurrencyRub = 6,
+};
+
+
+
+/// Supported languages
+typedef SWIFT_ENUM(NSInteger, Language, closed) {
+  LanguageUkrainian = 0,
+  LanguageRussian = 1,
+  LanguageEnglish = 2,
+};
+
+@class TransferParams;
+
+/// Payment by card parameters model
+SWIFT_CLASS("_TtC15PortmoneSDKEcom13PaymentParams")
+@interface PaymentParams : NSObject
+/// Init
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description attribute1:(NSString * _Nonnull)attribute1 attribute2:(NSString * _Nonnull)attribute2 attribute3:(NSString * _Nonnull)attribute3 attribute4:(NSString * _Nonnull)attribute4 billNumber:(NSString * _Nonnull)billNumber contractNumber:(NSString * _Nonnull)contractNumber preauthFlag:(BOOL)preauthFlag billCurrency:(enum Currency)billCurrency billAmount:(double)billAmount payeeId:(NSString * _Nonnull)payeeId OBJC_DESIGNATED_INITIALIZER;
+/// Init from Transfer parms
+- (nonnull instancetype)init:(TransferParams * _Nonnull)transferParams OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@protocol PaymentPresenterDelegate;
+@protocol StyleSource;
+@class UIViewController;
+@class PreauthParams;
+@class TokenPaymentParams;
+
+/// Object for interaction with PortmoneSDKEcom
+SWIFT_CLASS("_TtC15PortmoneSDKEcom16PaymentPresenter")
+@interface PaymentPresenter : NSObject
+/// Initializer
+- (nonnull instancetype)initWithDelegate:(id <PaymentPresenterDelegate> _Nonnull)delegate styleSource:(id <StyleSource> _Nullable)styleSource language:(enum Language)language biometricAuth:(BOOL)biometricAuth OBJC_DESIGNATED_INITIALIZER;
+/// Method to present payment by card screen
+- (void)presentPaymentByCardOn:(UIViewController * _Nonnull)controller params:(PaymentParams * _Nonnull)params;
+/// Method to present preauth card screen
+- (void)presentPreauthCardOn:(UIViewController * _Nonnull)controller params:(PreauthParams * _Nonnull)params;
+/// Method to present payment by token screen
+- (void)presentPaymentByTokenOn:(UIViewController * _Nonnull)controller payParams:(PaymentParams * _Nonnull)payParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams;
+/// Method to present transfer by token screen
+- (void)presentTransferByTokenOn:(UIViewController * _Nonnull)controller transferParams:(TransferParams * _Nonnull)transferParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Protocol for return payment result
+SWIFT_PROTOCOL("_TtP15PortmoneSDKEcom24PaymentPresenterDelegate_")
+@protocol PaymentPresenterDelegate
+/// Method triggered as result of payment process.
+/// \param bill Bill
+///
+/// \param error Error
+///
+- (void)didFinishPaymentWithBill:(Bill * _Nullable)bill error:(NSError * _Nullable)error;
+@optional
+/// Optional method.
+/// Method triggered when payment is canceled.
+- (void)didCancelPayment;
+@end
+
+
+/// Preauth card parameters model
+SWIFT_CLASS("_TtC15PortmoneSDKEcom13PreauthParams")
+@interface PreauthParams : NSObject
+/// Init
+- (nonnull instancetype)initWithPayeeId:(NSString * _Nonnull)payeeId accountId:(NSString * _Nonnull)accountId description:(NSString * _Nonnull)description billNumber:(NSString * _Nonnull)billNumber OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIFont;
+@class UIColor;
+
+/// Protocol for changing style of elements on screens
+SWIFT_PROTOCOL("_TtP15PortmoneSDKEcom11StyleSource_")
+@protocol StyleSource
+/// Title label font (All screens)
+- (UIFont * _Nonnull)titleFont SWIFT_WARN_UNUSED_RESULT;
+/// Title label color (All screens)
+- (UIColor * _Nonnull)titleColor SWIFT_WARN_UNUSED_RESULT;
+/// Title background color (All screens)
+- (UIColor * _Nonnull)titleBackgroundColor SWIFT_WARN_UNUSED_RESULT;
+/// Section header label font (Payment, commission screens)
+- (UIFont * _Nonnull)headersFont SWIFT_WARN_UNUSED_RESULT;
+/// Section header label color (Payment, commission screens)
+- (UIColor * _Nonnull)headersColor SWIFT_WARN_UNUSED_RESULT;
+/// Section header view background color (Payment, commission screens)
+- (UIColor * _Nonnull)headersBackgroundColor SWIFT_WARN_UNUSED_RESULT;
+/// All textFields placeholder font
+- (UIFont * _Nonnull)placeholdersFont SWIFT_WARN_UNUSED_RESULT;
+/// All textFields placeholder color
+- (UIColor * _Nonnull)placeholdersColor SWIFT_WARN_UNUSED_RESULT;
+/// All textFields text font
+- (UIFont * _Nonnull)textsFont SWIFT_WARN_UNUSED_RESULT;
+/// All textFields text color
+- (UIColor * _Nonnull)textsColor SWIFT_WARN_UNUSED_RESULT;
+/// All error strings text font
+- (UIFont * _Nonnull)errorsFont SWIFT_WARN_UNUSED_RESULT;
+/// All error strings text color
+- (UIColor * _Nonnull)errorsColor SWIFT_WARN_UNUSED_RESULT;
+/// All background color (Table, cells, navigation bar)
+- (UIColor * _Nonnull)backgroundColor SWIFT_WARN_UNUSED_RESULT;
+/// Message label font (Result screens)
+- (UIFont * _Nonnull)resultMessageFont SWIFT_WARN_UNUSED_RESULT;
+/// Message label color (Result screens)
+- (UIColor * _Nonnull)resultMessageColor SWIFT_WARN_UNUSED_RESULT;
+/// Informative label on button (Save card screen)
+- (UIFont * _Nonnull)infoTextsFont SWIFT_WARN_UNUSED_RESULT;
+- (UIColor * _Nonnull)infoTextsColor SWIFT_WARN_UNUSED_RESULT;
+/// Buttons back and next title font
+- (UIFont * _Nonnull)buttonTitleFont SWIFT_WARN_UNUSED_RESULT;
+/// Bottom button text color
+- (UIColor * _Nonnull)buttonTitleColor SWIFT_WARN_UNUSED_RESULT;
+/// Bottom button background and top button text color if 2 buttons present
+- (UIColor * _Nonnull)buttonColor SWIFT_WARN_UNUSED_RESULT;
+/// Biometric button title color
+- (UIColor * _Nonnull)biometricButtonColor SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// Payment by token parameters additional model
+SWIFT_CLASS("_TtC15PortmoneSDKEcom18TokenPaymentParams")
+@interface TokenPaymentParams : NSObject
+/// Init
+- (nonnull instancetype)initWithCardNumberMasked:(NSString * _Nonnull)cardNumberMasked tokenData:(NSString * _Nonnull)tokenData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Transfer by token parameters additional model
+SWIFT_CLASS("_TtC15PortmoneSDKEcom14TransferParams")
+@interface TransferParams : NSObject
+/// Init
+- (nonnull instancetype)initWithAttribute2:(NSString * _Nonnull)attribute2 attribute3:(NSString * _Nonnull)attribute3 attribute4:(NSString * _Nonnull)attribute4 billNumber:(NSString * _Nonnull)billNumber billAmount:(double)billAmount payeeId:(NSString * _Nonnull)payeeId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 

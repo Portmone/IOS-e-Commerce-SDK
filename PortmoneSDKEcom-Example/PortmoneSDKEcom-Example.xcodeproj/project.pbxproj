@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E6B5E96232BA2D2007C5040 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6B5E95232BA2D2007C5040 /* Constants.swift */; };
-		7E6B5E98232BA2DE007C5040 /* TransferByTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6B5E97232BA2DE007C5040 /* TransferByTokenViewController.swift */; };
+		7E6A6D17234CBF05000C84CE /* TransferByTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A6D16234CBF05000C84CE /* TransferByTokenViewController.swift */; };
+		7E6A6D19234CBF11000C84CE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A6D18234CBF11000C84CE /* Constants.swift */; };
 		9860B04D227E1B69005B804B /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9860B04C227E1B69005B804B /* AlertPresentable.swift */; };
 		9899C91F221B014B0019DEF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9899C91E221B014B0019DEF7 /* AppDelegate.swift */; };
 		9899C924221B014B0019DEF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9899C922221B014B0019DEF7 /* Main.storyboard */; };
@@ -30,6 +30,16 @@
 		98EC67F6227E231900BB7D42 /* roboto-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98EC67F4227E231900BB7D42 /* roboto-regular.ttf */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9899C930221B014D0019DEF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9899C913221B014B0019DEF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9899C91A221B014B0019DEF7;
+			remoteInfo = "PortmoneSDKEcom-Example";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		981FA108221D9BF900251FB8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -45,8 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7E6B5E95232BA2D2007C5040 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		7E6B5E97232BA2DE007C5040 /* TransferByTokenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferByTokenViewController.swift; sourceTree = "<group>"; };
+		7E6A6D16234CBF05000C84CE /* TransferByTokenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferByTokenViewController.swift; sourceTree = "<group>"; };
+		7E6A6D18234CBF11000C84CE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9860B04C227E1B69005B804B /* AlertPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertPresentable.swift; path = "../../../PortmoneSDKEcom-Example/PortmoneSDKEcom-Example/Protocols/AlertPresentable.swift"; sourceTree = "<group>"; };
 		9899C91B221B014B0019DEF7 /* PortmoneSDKEcom-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PortmoneSDKEcom-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9899C91E221B014B0019DEF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +64,7 @@
 		9899C925221B014D0019DEF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9899C928221B014D0019DEF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9899C92A221B014D0019DEF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9899C92F221B014D0019DEF7 /* PortmoneSDKEcom-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PortmoneSDKEcom-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98AA8EC1225F3F0C00036572 /* StyleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleModel.swift; path = "PortmoneSDKEcom-Example/SupportingFiles/StyleModel.swift"; sourceTree = SOURCE_ROOT; };
 		98D970C022F72A370022C689 /* PortmoneSDKEcom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PortmoneSDKEcom.framework; sourceTree = "<group>"; };
 		98EC67CE227E1F3000BB7D42 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -78,6 +89,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9899C92C221B014D0019DEF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,7 +108,7 @@
 				98AA8EC1225F3F0C00036572 /* StyleModel.swift */,
 				9899C92A221B014D0019DEF7 /* Info.plist */,
 				9899C91E221B014B0019DEF7 /* AppDelegate.swift */,
-				7E6B5E95232BA2D2007C5040 /* Constants.swift */,
+				7E6A6D18234CBF11000C84CE /* Constants.swift */,
 				9899C925221B014D0019DEF7 /* Assets.xcassets */,
 			);
 			path = SupportingFiles;
@@ -108,6 +126,7 @@
 		981FA0F2221D57A000251FB8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7E6A6D16234CBF05000C84CE /* TransferByTokenViewController.swift */,
 				98EC67E7227E21FC00BB7D42 /* BaseViewController.swift */,
 				98EC67E6227E21FC00BB7D42 /* InitialViewController.swift */,
 				98EC67E3227E21FC00BB7D42 /* PayByCardViewController.swift */,
@@ -115,7 +134,6 @@
 				98EC67E9227E21FC00BB7D42 /* SaveCardViewController.swift */,
 				98EC67E8227E21FC00BB7D42 /* StyleSourceObject.swift */,
 				98EC67E5227E21FC00BB7D42 /* StyleViewController.swift */,
-				7E6B5E97232BA2DE007C5040 /* TransferByTokenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -141,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				9899C91B221B014B0019DEF7 /* PortmoneSDKEcom-Example.app */,
+				9899C92F221B014D0019DEF7 /* PortmoneSDKEcom-ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +205,24 @@
 			productReference = 9899C91B221B014B0019DEF7 /* PortmoneSDKEcom-Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9899C92E221B014D0019DEF7 /* PortmoneSDKEcom-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9899C93B221B014D0019DEF7 /* Build configuration list for PBXNativeTarget "PortmoneSDKEcom-ExampleTests" */;
+			buildPhases = (
+				9899C92B221B014D0019DEF7 /* Sources */,
+				9899C92C221B014D0019DEF7 /* Frameworks */,
+				9899C92D221B014D0019DEF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9899C931221B014D0019DEF7 /* PBXTargetDependency */,
+			);
+			name = "PortmoneSDKEcom-ExampleTests";
+			productName = "PortmoneSDKEcom-ExampleTests";
+			productReference = 9899C92F221B014D0019DEF7 /* PortmoneSDKEcom-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,6 +236,11 @@
 					9899C91A221B014B0019DEF7 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
+					};
+					9899C92E221B014D0019DEF7 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 9899C91A221B014B0019DEF7;
 					};
 				};
 			};
@@ -216,6 +258,7 @@
 			projectRoot = "";
 			targets = (
 				9899C91A221B014B0019DEF7 /* PortmoneSDKEcom-Example */,
+				9899C92E221B014D0019DEF7 /* PortmoneSDKEcom-ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +276,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9899C92D221B014D0019DEF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -240,24 +290,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E6B5E98232BA2DE007C5040 /* TransferByTokenViewController.swift in Sources */,
 				98EC67EA227E21FC00BB7D42 /* PayByCardViewController.swift in Sources */,
 				9899C91F221B014B0019DEF7 /* AppDelegate.swift in Sources */,
 				98EC67EB227E21FC00BB7D42 /* PayByTokenViewController.swift in Sources */,
 				98EC67ED227E21FC00BB7D42 /* InitialViewController.swift in Sources */,
 				98EC67D1227E1F3000BB7D42 /* Styler.swift in Sources */,
 				98EC67EE227E21FC00BB7D42 /* BaseViewController.swift in Sources */,
+				7E6A6D17234CBF05000C84CE /* TransferByTokenViewController.swift in Sources */,
 				98EC67EC227E21FC00BB7D42 /* StyleViewController.swift in Sources */,
-				7E6B5E96232BA2D2007C5040 /* Constants.swift in Sources */,
 				98EC67F0227E21FC00BB7D42 /* SaveCardViewController.swift in Sources */,
 				9860B04D227E1B69005B804B /* AlertPresentable.swift in Sources */,
 				98EC67D0227E1F3000BB7D42 /* Extensions.swift in Sources */,
+				7E6A6D19234CBF11000C84CE /* Constants.swift in Sources */,
 				98EC67EF227E21FC00BB7D42 /* StyleSourceObject.swift in Sources */,
 				98AA8EC2225F3F0C00036572 /* StyleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9899C92B221B014D0019DEF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9899C931221B014D0019DEF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9899C91A221B014B0019DEF7 /* PortmoneSDKEcom-Example */;
+			targetProxy = 9899C930221B014D0019DEF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9899C922221B014B0019DEF7 /* Main.storyboard */ = {
@@ -401,6 +466,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_TEAM = 3SFTY6KV28;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -425,6 +491,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_TEAM = 3SFTY6KV28;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +507,48 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9899C93C221B014D0019DEF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D24MZT59R;
+				INFOPLIST_FILE = "PortmoneSDKEcom-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devlight.portmone-sdk-ecom-example.PortmoneSDKEcom-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortmoneSDKEcom-Example.app/PortmoneSDKEcom-Example";
+			};
+			name = Debug;
+		};
+		9899C93D221B014D0019DEF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D24MZT59R;
+				INFOPLIST_FILE = "PortmoneSDKEcom-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devlight.portmone-sdk-ecom-example.PortmoneSDKEcom-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortmoneSDKEcom-Example.app/PortmoneSDKEcom-Example";
 			};
 			name = Release;
 		};
@@ -460,6 +569,15 @@
 			buildConfigurations = (
 				9899C939221B014D0019DEF7 /* Debug */,
 				9899C93A221B014D0019DEF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9899C93B221B014D0019DEF7 /* Build configuration list for PBXNativeTarget "PortmoneSDKEcom-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9899C93C221B014D0019DEF7 /* Debug */,
+				9899C93D221B014D0019DEF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

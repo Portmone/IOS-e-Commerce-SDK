@@ -59,7 +59,8 @@ final class SaveCardViewController: BaseViewController {
                                        billNumber: billNumb)
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
-                                     language: PaymentPresenter.Language(rawValue: language.text ?? "") ?? .ukrainian)
+                                     language: Language(rawValue: language.text ?? "") ?? .ukrainian)
+        
         presenter?.presentPreauthCard(on: self, params: initParams)
     }
 }
@@ -83,5 +84,9 @@ extension SaveCardViewController: PaymentPresenterDelegate {
                                   message: "Card mask: \n\(mask), \nToken: \n\(token)")
             }
         }
+    }
+    
+    func didCancelPayment() {
+        
     }
 }

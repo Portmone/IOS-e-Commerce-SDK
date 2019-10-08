@@ -62,8 +62,7 @@ final class TransferByTokenViewController: BaseViewController {
         
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
-                                     language: PaymentPresenter.Language(rawValue: language.text ?? "") ?? .ukrainian,
-                                     biometricAuth: false)
+                                     language: Language(rawValue: language.text ?? "") ?? .ukrainian)
         
         let mask = UserDefaults.standard.string(forKey: Constants.cardMask)
         let token = UserDefaults.standard.string(forKey: Constants.cardToken)
@@ -91,5 +90,9 @@ extension TransferByTokenViewController: PaymentPresenterDelegate {
                               message: "Card mask: \n\(mask), \nToken: \n\(token)")
             // Save bill token and card mask for token payment
         }
+    }
+    
+    func didCancelPayment() {
+        
     }
 }

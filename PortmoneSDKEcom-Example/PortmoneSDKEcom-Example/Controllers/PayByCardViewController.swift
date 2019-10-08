@@ -67,12 +67,14 @@ final class PayByCardViewController: BaseViewController {
                                        attribute4: attribute4.text ?? "",
                                        billNumber: billNumb,
                                        preauthFlag: preauthFlag.isOn,
-                                       billCurrency: PaymentParams.Currency(rawValue: billCurrency.text ?? "") ?? .uah,
+                                       billCurrency: Currency(rawValue: billCurrency.text ?? "") ?? .uah,
                                        billAmount: Double(billAmount.text ?? "") ?? 0,
                                        payeeId: payeeId.text ?? "")
+        
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
-                                     language: PaymentPresenter.Language(rawValue: language.text ?? "") ?? .ukrainian)
+                                     language: Language(rawValue: language.text ?? "") ?? .ukrainian)
+        
         presenter?.presentPaymentByCard(on: self, params: initParams)
     }
 }
