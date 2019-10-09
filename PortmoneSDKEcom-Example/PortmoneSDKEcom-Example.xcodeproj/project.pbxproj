@@ -30,16 +30,6 @@
 		98EC67F6227E231900BB7D42 /* roboto-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98EC67F4227E231900BB7D42 /* roboto-regular.ttf */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9899C930221B014D0019DEF7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9899C913221B014B0019DEF7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9899C91A221B014B0019DEF7;
-			remoteInfo = "PortmoneSDKEcom-Example";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		981FA108221D9BF900251FB8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -64,7 +54,6 @@
 		9899C925221B014D0019DEF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9899C928221B014D0019DEF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9899C92A221B014D0019DEF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9899C92F221B014D0019DEF7 /* PortmoneSDKEcom-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PortmoneSDKEcom-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98AA8EC1225F3F0C00036572 /* StyleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleModel.swift; path = "PortmoneSDKEcom-Example/SupportingFiles/StyleModel.swift"; sourceTree = SOURCE_ROOT; };
 		98D970C022F72A370022C689 /* PortmoneSDKEcom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PortmoneSDKEcom.framework; sourceTree = "<group>"; };
 		98EC67CE227E1F3000BB7D42 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -86,13 +75,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				98D970C122F72A380022C689 /* PortmoneSDKEcom.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9899C92C221B014D0019DEF7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				9899C91B221B014B0019DEF7 /* PortmoneSDKEcom-Example.app */,
-				9899C92F221B014D0019DEF7 /* PortmoneSDKEcom-ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,24 +186,6 @@
 			productReference = 9899C91B221B014B0019DEF7 /* PortmoneSDKEcom-Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9899C92E221B014D0019DEF7 /* PortmoneSDKEcom-ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9899C93B221B014D0019DEF7 /* Build configuration list for PBXNativeTarget "PortmoneSDKEcom-ExampleTests" */;
-			buildPhases = (
-				9899C92B221B014D0019DEF7 /* Sources */,
-				9899C92C221B014D0019DEF7 /* Frameworks */,
-				9899C92D221B014D0019DEF7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9899C931221B014D0019DEF7 /* PBXTargetDependency */,
-			);
-			name = "PortmoneSDKEcom-ExampleTests";
-			productName = "PortmoneSDKEcom-ExampleTests";
-			productReference = 9899C92F221B014D0019DEF7 /* PortmoneSDKEcom-ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -236,11 +199,6 @@
 					9899C91A221B014B0019DEF7 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
-					};
-					9899C92E221B014D0019DEF7 = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1020;
-						TestTargetID = 9899C91A221B014B0019DEF7;
 					};
 				};
 			};
@@ -258,7 +216,6 @@
 			projectRoot = "";
 			targets = (
 				9899C91A221B014B0019DEF7 /* PortmoneSDKEcom-Example */,
-				9899C92E221B014D0019DEF7 /* PortmoneSDKEcom-ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,13 +230,6 @@
 				98EC67F6227E231900BB7D42 /* roboto-regular.ttf in Resources */,
 				9899C926221B014D0019DEF7 /* Assets.xcassets in Resources */,
 				9899C924221B014B0019DEF7 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9899C92D221B014D0019DEF7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,22 +257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9899C92B221B014D0019DEF7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9899C931221B014D0019DEF7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9899C91A221B014B0019DEF7 /* PortmoneSDKEcom-Example */;
-			targetProxy = 9899C930221B014D0019DEF7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9899C922221B014B0019DEF7 /* Main.storyboard */ = {
@@ -512,48 +447,6 @@
 			};
 			name = Release;
 		};
-		9899C93C221B014D0019DEF7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2D24MZT59R;
-				INFOPLIST_FILE = "PortmoneSDKEcom-ExampleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.devlight.portmone-sdk-ecom-example.PortmoneSDKEcom-ExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortmoneSDKEcom-Example.app/PortmoneSDKEcom-Example";
-			};
-			name = Debug;
-		};
-		9899C93D221B014D0019DEF7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2D24MZT59R;
-				INFOPLIST_FILE = "PortmoneSDKEcom-ExampleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.devlight.portmone-sdk-ecom-example.PortmoneSDKEcom-ExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortmoneSDKEcom-Example.app/PortmoneSDKEcom-Example";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,15 +464,6 @@
 			buildConfigurations = (
 				9899C939221B014D0019DEF7 /* Debug */,
 				9899C93A221B014D0019DEF7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9899C93B221B014D0019DEF7 /* Build configuration list for PBXNativeTarget "PortmoneSDKEcom-ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9899C93C221B014D0019DEF7 /* Debug */,
-				9899C93D221B014D0019DEF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
