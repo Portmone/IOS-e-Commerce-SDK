@@ -25,9 +25,12 @@ final class PayByCardViewController: BaseViewController {
     @IBOutlet private weak var language: UITextField!
     @IBOutlet private weak var preauthFlag: UISwitch!
     @IBOutlet private weak var payButton: UIButton!
+    @IBOutlet private weak var paymentType: UITextField!
     
     private var presenter: PaymentPresenter?
-
+    private let pickerView = UIPickerView()
+    private let pickerSource = ["Default", "Mobile"]
+    
     override var scrollView: UIScrollView? {
         return paymentScrollView
     }
@@ -41,6 +44,11 @@ final class PayByCardViewController: BaseViewController {
         
         billAmount.keyboardType = .decimalPad
         payeeId.keyboardType = .numberPad
+        
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        paymentType.inputView = pickerView
+        paymentScrollView.keyboardDismissMode = .interactive
     }
     
     override func viewWillLayoutSubviews() {
@@ -60,6 +68,9 @@ final class PayByCardViewController: BaseViewController {
             billNumb = billNumber.text ?? ""
         }
         
+        /// Only for testing purposes
+        let type: PaymentType = paymentType.text == pickerSource.first ? .payment : .mobilePayment
+        
         let initParams = PaymentParams(description: contractNumber.text ?? "",
                                        attribute1: attribute1.text ?? "",
                                        attribute2: attribute2.text ?? "",
@@ -69,7 +80,8 @@ final class PayByCardViewController: BaseViewController {
                                        preauthFlag: preauthFlag.isOn,
                                        billCurrency: Currency(rawValue: billCurrency.text ?? "") ?? .uah,
                                        billAmount: Double(billAmount.text ?? "") ?? 0,
-                                       payeeId: payeeId.text ?? "")
+                                       payeeId: payeeId.text ?? "",
+                                       type: type)
         
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
@@ -98,5 +110,25 @@ extension PayByCardViewController: PaymentPresenterDelegate {
                                   message: "Card mask: \n\(mask), \nToken: \n\(token)")
             }
         }
+    }
+}
+
+// MARK: - UIPickerViewDataSource, UIPickerViewDelegate
+extension PayByCardViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerSource.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerSource[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let selectedType = pickerSource[row]
+        paymentType.text = selectedType
     }
 }

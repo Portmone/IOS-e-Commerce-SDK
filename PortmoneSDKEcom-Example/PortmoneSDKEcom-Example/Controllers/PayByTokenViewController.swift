@@ -27,8 +27,11 @@ final class PayByTokenViewController: BaseViewController {
     @IBOutlet private weak var biometricFlag: UISwitch!
     @IBOutlet private weak var cardMaskLabel: UILabel!
     @IBOutlet private weak var payButton: UIButton!
+    @IBOutlet private weak var paymentType: UITextField!
     
     private var presenter: PaymentPresenter?
+    private let pickerView = UIPickerView()
+    private let pickerSource = ["Default", "Mobile"]
     
     override var scrollView: UIScrollView? {
         return paymentScrollView
@@ -45,6 +48,11 @@ final class PayByTokenViewController: BaseViewController {
         payeeId.keyboardType = .numberPad
         
         cardMaskLabel.text = UserDefaults.standard.string(forKey: Constants.cardMask) ?? "Card mask: "
+        
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        paymentType.inputView = pickerView
+        paymentScrollView.keyboardDismissMode = .interactive
     }
     
     override func viewWillLayoutSubviews() {
@@ -64,6 +72,9 @@ final class PayByTokenViewController: BaseViewController {
             billNumb = billNumber.text ?? ""
         }
         
+        /// Only for testing purposes
+        let type: PaymentType = paymentType.text == pickerSource.first ? .payment : .mobilePayment
+        
         let paymentParams = PaymentParams(description: contractNumber.text ?? "",
                                           attribute1: attribute1.text ?? "",
                                           attribute2: attribute2.text ?? "",
@@ -73,7 +84,8 @@ final class PayByTokenViewController: BaseViewController {
                                           preauthFlag: preauthFlag.isOn,
                                           billCurrency: Currency(rawValue: billCurrency.text ?? "") ?? .uah,
                                           billAmount: Double(billAmount.text ?? "") ?? 0,
-                                          payeeId: payeeId.text ?? "")
+                                          payeeId: payeeId.text ?? "",
+                                          type: type)
         
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
@@ -106,8 +118,24 @@ extension PayByTokenViewController: PaymentPresenterDelegate {
             // Save bill token and card mask for token payment
         }
     }
+}
+
+// MARK: - UIPickerViewDataSource, UIPickerViewDelegate
+extension PayByTokenViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
     
-    func didCancelPayment() {
-        
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerSource.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerSource[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let selectedType = pickerSource[row]
+        paymentType.text = selectedType
     }
 }

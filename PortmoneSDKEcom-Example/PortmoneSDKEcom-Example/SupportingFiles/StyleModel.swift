@@ -6,6 +6,8 @@
 //  Copyright © 2019 Devlight. All rights reserved.
 //
 
+import UIKit
+
 final class StyleModel {
     var titleFontName: String?
     var titleColor: String?
@@ -26,12 +28,17 @@ final class StyleModel {
 
     var resultMessageFontName: String?
     var resultMessageColor: String?
-  
+    var resultSaveReceiptColor: String?
+    
     var infoTextsFont: String?
     var infoTextsColor: String?
 
     var buttonTitleFontName: String?
     var buttonTitleColor: String?
     var buttonColor: String?
+    var buttonCornerRadius: CGFloat?
     var biometricButtonColor: String?
+    
+    var successResultImage: UIImage?
+    var failureResultImage: UIImage?
 }

@@ -33,6 +33,7 @@ final class Styler {
     // Result screen label
     let cResultMessageFont = UIFont.robotoRegular(with: 18)
     let cResultMessageColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+    let cResultSaveReceiptColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     
     // Save card info label on button
     let cInfoTextsFont = UIFont.robotoRegular(with: 14)
@@ -42,5 +43,6 @@ final class Styler {
     let cButtonTitleFont = UIFont.robotoMedium(with: 18)
     let cButtonTitleColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     let cButtonColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+    let cButtonCornerRadius = CGFloat(2)
     let cBiometricButtonColor = #colorLiteral(red: 0.5529411765, green: 0.5529411765, blue: 0.5529411765, alpha: 1)
 }

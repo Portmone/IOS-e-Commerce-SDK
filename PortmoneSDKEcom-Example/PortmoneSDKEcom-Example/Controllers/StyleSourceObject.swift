@@ -74,6 +74,10 @@ class StyleSourceObject: StyleSource {
         return model.resultMessageColor?.hexColorValue ?? style.cResultMessageColor
     }
     
+    func resultSaveReceiptColor() -> UIColor {
+        return model.resultSaveReceiptColor?.hexColorValue ?? style.cResultSaveReceiptColor
+    }
+    
     func infoTextsFont() -> UIFont {
         return model.infoTextsFont?.font() ?? style.cInfoTextsFont
     }
@@ -94,7 +98,19 @@ class StyleSourceObject: StyleSource {
         return model.buttonColor?.hexColorValue ?? style.cButtonColor
     }
     
+    func buttonCornerRadius() -> CGFloat {
+        return model.buttonCornerRadius ?? style.cButtonCornerRadius
+    }
+    
     func biometricButtonColor() -> UIColor {
         return model.biometricButtonColor?.hexColorValue ?? style.cBiometricButtonColor
+    }
+    
+    func successImage() -> UIImage? {
+        return model.successResultImage
+    }
+    
+    func failureImage() -> UIImage? {
+        return model.failureResultImage
     }
 }

@@ -85,8 +85,4 @@ extension SaveCardViewController: PaymentPresenterDelegate {
             }
         }
     }
-    
-    func didCancelPayment() {
-        
-    }
 }

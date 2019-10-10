@@ -92,7 +92,7 @@ extension TransferByTokenViewController: PaymentPresenterDelegate {
         }
     }
     
-    func didCancelPayment() {
+    func dismissedSDK() {
         
     }
 }

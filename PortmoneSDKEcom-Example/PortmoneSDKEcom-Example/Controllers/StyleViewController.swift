@@ -31,11 +31,13 @@ final class StyleViewController: BaseViewController {
     @IBOutlet private weak var backgroundColor: UITextField!
     @IBOutlet private weak var resultMessageFontName: UITextField!
     @IBOutlet private weak var resultMessageColor: UITextField!
+    @IBOutlet private weak var resultSaveReceiptColor: UITextField!
     @IBOutlet private weak var infoTextFontName: UITextField!
     @IBOutlet private weak var infoTextColor: UITextField!
     @IBOutlet private weak var buttonTitleFontName: UITextField!
     @IBOutlet private weak var buttonTitleColor: UITextField!
     @IBOutlet private weak var buttonColor: UITextField!
+    @IBOutlet private weak var buttonCornerRadius: UITextField!
     @IBOutlet private weak var biometricButtonColor: UITextField!
 
     override var scrollView: UIScrollView? {
@@ -70,6 +72,9 @@ final class StyleViewController: BaseViewController {
         buttonTitleColor.text = styleModel?.buttonTitleColor
         buttonColor.text = styleModel?.buttonColor
         biometricButtonColor.text = styleModel?.biometricButtonColor
+        if let radius = styleModel.buttonCornerRadius {
+             buttonCornerRadius.text = String(format: "%.0f", radius)
+        }
     }
 
     @IBAction private func textFieldChangeValue(_ sender: UITextField) {
@@ -118,6 +123,9 @@ final class StyleViewController: BaseViewController {
         if sender == resultMessageColor {
             styleModel.resultMessageColor = resultMessageColor.text
         }
+        if sender == resultSaveReceiptColor {
+            styleModel.resultSaveReceiptColor = resultSaveReceiptColor.text
+        }
         if sender == infoTextFontName {
             styleModel.infoTextsFont = infoTextFontName.text
         }
@@ -132,6 +140,9 @@ final class StyleViewController: BaseViewController {
         }
         if sender == buttonColor {
             styleModel.buttonColor = buttonColor.text
+        }
+        if sender == buttonCornerRadius {
+            styleModel.buttonCornerRadius = CGFloat(Double(buttonCornerRadius.text ?? "") ?? 0)
         }
         if sender == biometricButtonColor {
             styleModel.biometricButtonColor = biometricButtonColor.text
