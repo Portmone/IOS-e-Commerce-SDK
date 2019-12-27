@@ -9,108 +9,122 @@
 import UIKit
 import PortmoneSDKEcom
 
-class StyleSourceObject: StyleSource {
+class StyleSourceObject: StyleSourceModel {
     
-    var model = StyleModel()
+    var model: StyleModel {
+        get {
+            guard let data = UserDefaults.standard.value(forKey: "UDStyleModelKey") as? Data,
+                let model = try? JSONDecoder().decode(StyleModel.self, from: data) else {
+                    return StyleModel()
+            }
+            
+            return model
+        }
+        set {
+            let data = try? JSONEncoder().encode(newValue)
+            UserDefaults.standard.set(data, forKey: "UDStyleModelKey")
+        }
+    }
+    
     var style = Styler()
     
-    func titleFont() -> UIFont {
+    override func titleFont() -> UIFont {
         return model.titleFontName?.font() ?? style.cTitleFont
     }
     
-    func titleColor() -> UIColor {
+    override func titleColor() -> UIColor {
         return model.titleColor?.hexColorValue ?? style.cTitleColor
     }
     
-    func titleBackgroundColor() -> UIColor {
+    override func titleBackgroundColor() -> UIColor {
         return model.titleBackgroundColor?.hexColorValue ?? style.cTitleBackgroundColor
     }
     
-    func headersFont() -> UIFont {
+    override func headersFont() -> UIFont {
         return model.headersFontName?.font() ?? style.cHeadersFont
     }
     
-    func headersColor() -> UIColor {
+    override func headersColor() -> UIColor {
         return model.headersColor?.hexColorValue ?? style.cHeadersColor
     }
     
-    func headersBackgroundColor() -> UIColor {
+    override func headersBackgroundColor() -> UIColor {
         return model.headersBackgroundColor?.hexColorValue ?? style.cHeadersBackgroundColor
     }
     
-    func placeholdersFont() -> UIFont {
+    override func placeholdersFont() -> UIFont {
         return model.placeholdersFontName?.font() ?? style.cPlaceholdersFont
     }
     
-    func placeholdersColor() -> UIColor {
+    override func placeholdersColor() -> UIColor {
         return model.placeholdersColor?.hexColorValue ?? style.cPlaceholdersColor
     }
     
-    func textsFont() -> UIFont {
+    override func textsFont() -> UIFont {
         return model.textsFontName?.font() ?? style.cTextsFont
     }
     
-    func textsColor() -> UIColor {
+    override func textsColor() -> UIColor {
         return model.textsColor?.hexColorValue ?? style.cTextsColor
     }
     
-    func errorsFont() -> UIFont {
+    override func errorsFont() -> UIFont {
         return model.errorsFontName?.font() ?? style.cErrorsFont
     }
     
-    func errorsColor() -> UIColor {
+    override func errorsColor() -> UIColor {
         return model.errorsColor?.hexColorValue ?? style.cErrorsColor
     }
     
-    func backgroundColor() -> UIColor {
+    override func backgroundColor() -> UIColor {
         return model.backgroundColor?.hexColorValue ?? style.cBackgroundColor
     }
     
-    func resultMessageFont() -> UIFont {
+    override func resultMessageFont() -> UIFont {
         return model.resultMessageFontName?.font() ?? style.cResultMessageFont
     }
     
-    func resultMessageColor() -> UIColor {
+    override func resultMessageColor() -> UIColor {
         return model.resultMessageColor?.hexColorValue ?? style.cResultMessageColor
     }
     
-    func resultSaveReceiptColor() -> UIColor {
+    override func resultSaveReceiptColor() -> UIColor {
         return model.resultSaveReceiptColor?.hexColorValue ?? style.cResultSaveReceiptColor
     }
     
-    func infoTextsFont() -> UIFont {
+    override func infoTextsFont() -> UIFont {
         return model.infoTextsFont?.font() ?? style.cInfoTextsFont
     }
     
-    func infoTextsColor() -> UIColor {
+    override func infoTextsColor() -> UIColor {
         return model.infoTextsColor?.hexColorValue ?? style.cInfoTextsColor
     }
     
-    func buttonTitleFont() -> UIFont {
+    override func buttonTitleFont() -> UIFont {
         return model.buttonTitleFontName?.font() ?? style.cButtonTitleFont
     }
     
-    func buttonTitleColor() -> UIColor {
+    override func buttonTitleColor() -> UIColor {
         return model.buttonTitleColor?.hexColorValue ?? style.cButtonTitleColor
     }
     
-    func buttonColor() -> UIColor {
+    override func buttonColor() -> UIColor {
         return model.buttonColor?.hexColorValue ?? style.cButtonColor
     }
     
-    func buttonCornerRadius() -> CGFloat {
+    override func buttonCornerRadius() -> CGFloat {
         return model.buttonCornerRadius ?? style.cButtonCornerRadius
     }
     
-    func biometricButtonColor() -> UIColor {
+    override func biometricButtonColor() -> UIColor {
         return model.biometricButtonColor?.hexColorValue ?? style.cBiometricButtonColor
     }
     
-    func successImage() -> UIImage? {
-        return model.successResultImage
+    override func successImage() -> UIImage? {
+        return UIImage(data: model.successResultImage ?? Data())
     }
     
-    func failureImage() -> UIImage? {
-        return model.failureResultImage
+    override func failureImage() -> UIImage? {
+        return UIImage(data: model.failureResultImage ?? Data())
     }
 }

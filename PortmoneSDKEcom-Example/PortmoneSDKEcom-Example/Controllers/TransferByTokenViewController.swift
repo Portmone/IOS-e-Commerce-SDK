@@ -23,6 +23,7 @@ final class TransferByTokenViewController: BaseViewController {
     @IBOutlet private weak var language: UITextField!
     @IBOutlet private weak var cardMaskLabel: UILabel!
     @IBOutlet private weak var transferButton: UIButton!
+    @IBOutlet private weak var uidTextField: UITextField!
     
     override var scrollView: UIScrollView? {
         return transferScrollView
@@ -62,7 +63,8 @@ final class TransferByTokenViewController: BaseViewController {
         
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
-                                     language: Language(rawValue: language.text ?? "") ?? .ukrainian)
+                                     language: Language(rawValue: language.text ?? "") ?? .ukrainian,
+                                     customUid: uidTextField.text)
         
         let mask = UserDefaults.standard.string(forKey: Constants.cardMask)
         let token = UserDefaults.standard.string(forKey: Constants.cardToken)

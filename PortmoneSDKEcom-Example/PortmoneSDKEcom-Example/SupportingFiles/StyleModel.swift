@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class StyleModel {
+final class StyleModel: Codable {
     var titleFontName: String?
     var titleColor: String?
     var titleBackgroundColor: String?
@@ -39,6 +39,6 @@ final class StyleModel {
     var buttonCornerRadius: CGFloat?
     var biometricButtonColor: String?
     
-    var successResultImage: UIImage?
-    var failureResultImage: UIImage?
+    var successResultImage: Data?
+    var failureResultImage: Data?
 }

@@ -28,6 +28,9 @@ final class PayByTokenViewController: BaseViewController {
     @IBOutlet private weak var cardMaskLabel: UILabel!
     @IBOutlet private weak var payButton: UIButton!
     @IBOutlet private weak var paymentType: UITextField!
+    @IBOutlet private weak var merchantIdentifier: UITextField!
+    @IBOutlet private weak var applePayOnlySwitch: UISwitch!
+    @IBOutlet private weak var uidTextField: UITextField!
     
     private var presenter: PaymentPresenter?
     private let pickerView = UIPickerView()
@@ -53,6 +56,9 @@ final class PayByTokenViewController: BaseViewController {
         pickerView.dataSource = self
         paymentType.inputView = pickerView
         paymentScrollView.keyboardDismissMode = .interactive
+        
+        biometricFlag.addTarget(self, action: #selector(switchValueChanged(_:)), for: .valueChanged)
+        applePayOnlySwitch.addTarget(self, action: #selector(switchValueChanged(_:)), for: .valueChanged)
     }
     
     override func viewWillLayoutSubviews() {
@@ -85,12 +91,15 @@ final class PayByTokenViewController: BaseViewController {
                                           billCurrency: Currency(rawValue: billCurrency.text ?? "") ?? .uah,
                                           billAmount: Double(billAmount.text ?? "") ?? 0,
                                           payeeId: payeeId.text ?? "",
-                                          type: type)
+                                          type: type,
+                                          merchantIdentifier: merchantIdentifier.text ?? "",
+                                          paymentFlowType: applePayOnlySwitch.isOn ? .byApplePay : .byCard)
         
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
                                      language: Language(rawValue: language.text ?? "") ?? .ukrainian,
-                                     biometricAuth: biometricFlag.isOn)
+                                     biometricAuth: biometricFlag.isOn,
+                                     customUid: uidTextField.text)
         
         let mask = UserDefaults.standard.string(forKey: Constants.cardMask)
         let token = UserDefaults.standard.string(forKey: Constants.cardToken)
@@ -100,6 +109,12 @@ final class PayByTokenViewController: BaseViewController {
         presenter?.presentPaymentByToken(on: self,
                                          payParams: paymentParams,
                                          tokenParams: tokenParams)
+    }
+    
+    @objc private func switchValueChanged(_ sender: UISwitch) {
+        guard sender.isOn else { return }
+        let anotherSwitch = (sender === applePayOnlySwitch) ? biometricFlag : applePayOnlySwitch
+        anotherSwitch?.setOn(false, animated: true)
     }
 }
 

@@ -45,6 +45,7 @@ final class StyleViewController: BaseViewController {
     }
     
     weak var delegate: StyleViewControllerDelegate?
+    weak var activeTextfield: UITextField?
     
     var styleModel: StyleModel!
     
@@ -64,6 +65,7 @@ final class StyleViewController: BaseViewController {
         errorsFontName.text = styleModel?.errorsFontName
         errorsColor.text = styleModel?.errorsColor
         backgroundColor.text = styleModel?.backgroundColor
+        resultSaveReceiptColor.text = styleModel?.resultSaveReceiptColor
         resultMessageFontName.text = styleModel?.resultMessageFontName
         resultMessageColor.text = styleModel?.resultMessageColor
         infoTextFontName.text = styleModel?.infoTextsFont
@@ -78,6 +80,8 @@ final class StyleViewController: BaseViewController {
     }
 
     @IBAction private func textFieldChangeValue(_ sender: UITextField) {
+        activeTextfield = sender
+        
         if sender == titlesFontName {
             styleModel.titleFontName = titlesFontName.text
         }
@@ -150,6 +154,10 @@ final class StyleViewController: BaseViewController {
     }
     
     @IBAction private func dismissButtonClicked(_ sender: UIBarButtonItem) {
+        if let textField = activeTextfield {
+            textFieldChangeValue(textField)
+        }
+        
         delegate?.finishEdit(model: styleModel)
         view.endEditing(true)
         navigationController?.dismiss(animated: true, completion: nil)

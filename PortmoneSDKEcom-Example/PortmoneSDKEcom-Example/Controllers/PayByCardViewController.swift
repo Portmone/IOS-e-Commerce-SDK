@@ -26,6 +26,10 @@ final class PayByCardViewController: BaseViewController {
     @IBOutlet private weak var preauthFlag: UISwitch!
     @IBOutlet private weak var payButton: UIButton!
     @IBOutlet private weak var paymentType: UITextField!
+    @IBOutlet private weak var merchantIdTextField: UITextField!
+    @IBOutlet private weak var payWithAPaySwitch: UISwitch!
+    @IBOutlet private weak var payWithCardSwitch: UISwitch!
+    @IBOutlet private weak var uidTextField: UITextField!
     
     private var presenter: PaymentPresenter?
     private let pickerView = UIPickerView()
@@ -70,6 +74,7 @@ final class PayByCardViewController: BaseViewController {
         
         /// Only for testing purposes
         let type: PaymentType = paymentType.text == pickerSource.first ? .payment : .mobilePayment
+        let flowType = PaymentFlowType(payWithCard: payWithCardSwitch.isOn, payWithApplePay: payWithAPaySwitch.isOn)
         
         let initParams = PaymentParams(description: contractNumber.text ?? "",
                                        attribute1: attribute1.text ?? "",
@@ -81,11 +86,14 @@ final class PayByCardViewController: BaseViewController {
                                        billCurrency: Currency(rawValue: billCurrency.text ?? "") ?? .uah,
                                        billAmount: Double(billAmount.text ?? "") ?? 0,
                                        payeeId: payeeId.text ?? "",
-                                       type: type)
+                                       type: type,
+                                       merchantIdentifier: merchantIdTextField.text ?? "",
+                                       paymentFlowType: flowType )
         
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
-                                     language: Language(rawValue: language.text ?? "") ?? .ukrainian)
+                                     language: Language(rawValue: language.text ?? "") ?? .ukrainian,
+                                     customUid: uidTextField.text)
         
         presenter?.presentPaymentByCard(on: self, params: initParams)
     }
@@ -95,8 +103,14 @@ final class PayByCardViewController: BaseViewController {
 extension PayByCardViewController: PaymentPresenterDelegate {
     func didFinishPayment(bill: Bill?, error: Error?) {
         // Save preauth card
-        UserDefaults.standard.set(bill?.cardMask, forKey: Constants.cardMask)
-        UserDefaults.standard.set(bill?.token, forKey: Constants.cardToken)
+
+        if let cardMask = bill?.cardMask {
+            UserDefaults.standard.set(cardMask, forKey: Constants.cardMask)
+        }
+        
+        if let token = bill?.token {
+            UserDefaults.standard.set(token, forKey: Constants.cardToken)
+        }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             if error != nil {

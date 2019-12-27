@@ -19,6 +19,7 @@ final class SaveCardViewController: BaseViewController {
     @IBOutlet private weak var payeeId: UITextField!
     @IBOutlet private weak var language: UITextField!
     @IBOutlet private weak var saveButton: UIButton!
+    @IBOutlet private weak var uidTextField: UITextField!
     
     private var presenter: PaymentPresenter?
     
@@ -59,7 +60,8 @@ final class SaveCardViewController: BaseViewController {
                                        billNumber: billNumb)
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
-                                     language: Language(rawValue: language.text ?? "") ?? .ukrainian)
+                                     language: Language(rawValue: language.text ?? "") ?? .ukrainian,
+                                     customUid: uidTextField.text)
         
         presenter?.presentPreauthCard(on: self, params: initParams)
     }
