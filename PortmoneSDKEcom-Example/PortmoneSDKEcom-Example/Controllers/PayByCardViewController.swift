@@ -29,6 +29,7 @@ final class PayByCardViewController: BaseViewController {
     @IBOutlet private weak var merchantIdTextField: UITextField!
     @IBOutlet private weak var payWithAPaySwitch: UISwitch!
     @IBOutlet private weak var payWithCardSwitch: UISwitch!
+    @IBOutlet private weak var notShowReceiptSwitch: UISwitch!
     @IBOutlet private weak var uidTextField: UITextField!
     
     private var presenter: PaymentPresenter?
@@ -95,7 +96,9 @@ final class PayByCardViewController: BaseViewController {
                                      language: Language(rawValue: language.text ?? "") ?? .ukrainian,
                                      customUid: uidTextField.text)
         
-        presenter?.presentPaymentByCard(on: self, params: initParams)
+        presenter?.presentPaymentByCard(on: self,
+                                        params: initParams,
+                                        showReceiptScreen: !notShowReceiptSwitch.isOn)
     }
 }
 
@@ -103,7 +106,7 @@ final class PayByCardViewController: BaseViewController {
 extension PayByCardViewController: PaymentPresenterDelegate {
     func didFinishPayment(bill: Bill?, error: Error?) {
         // Save preauth card
-
+        
         if let cardMask = bill?.cardMask {
             UserDefaults.standard.set(cardMask, forKey: Constants.cardMask)
         }

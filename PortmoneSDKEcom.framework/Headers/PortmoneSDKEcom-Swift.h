@@ -265,13 +265,13 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom16PaymentPresenter")
 /// Initializer
 - (nonnull instancetype)initWithDelegate:(id <PaymentPresenterDelegate> _Nonnull)delegate styleSource:(id <StyleSource> _Nullable)styleSource language:(enum Language)language biometricAuth:(BOOL)biometricAuth customUid:(NSString * _Nullable)customUid OBJC_DESIGNATED_INITIALIZER;
 /// Method to present payment by card screen
-- (void)presentPaymentByCardOn:(UIViewController * _Nonnull)controller params:(PaymentParams * _Nonnull)params;
+- (void)presentPaymentByCardOn:(UIViewController * _Nonnull)controller params:(PaymentParams * _Nonnull)params showReceiptScreen:(BOOL)showReceiptScreen;
 /// Method to present preauth card screen
 - (void)presentPreauthCardOn:(UIViewController * _Nonnull)controller params:(PreauthParams * _Nonnull)params;
 /// Method to present payment by token screen
-- (void)presentPaymentByTokenOn:(UIViewController * _Nonnull)controller payParams:(PaymentParams * _Nonnull)payParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams;
+- (void)presentPaymentByTokenOn:(UIViewController * _Nonnull)controller payParams:(PaymentParams * _Nonnull)payParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams showReceiptScreen:(BOOL)showReceiptScreen;
 /// Method to present transfer by token screen
-- (void)presentTransferByTokenOn:(UIViewController * _Nonnull)controller transferParams:(TransferParams * _Nonnull)transferParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams;
+- (void)presentTransferByTokenOn:(UIViewController * _Nonnull)controller transferParams:(TransferParams * _Nonnull)transferParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams showReceiptScreen:(BOOL)showReceiptScreen;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -446,6 +446,8 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom14TransferParams")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 
@@ -728,13 +730,13 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom16PaymentPresenter")
 /// Initializer
 - (nonnull instancetype)initWithDelegate:(id <PaymentPresenterDelegate> _Nonnull)delegate styleSource:(id <StyleSource> _Nullable)styleSource language:(enum Language)language biometricAuth:(BOOL)biometricAuth customUid:(NSString * _Nullable)customUid OBJC_DESIGNATED_INITIALIZER;
 /// Method to present payment by card screen
-- (void)presentPaymentByCardOn:(UIViewController * _Nonnull)controller params:(PaymentParams * _Nonnull)params;
+- (void)presentPaymentByCardOn:(UIViewController * _Nonnull)controller params:(PaymentParams * _Nonnull)params showReceiptScreen:(BOOL)showReceiptScreen;
 /// Method to present preauth card screen
 - (void)presentPreauthCardOn:(UIViewController * _Nonnull)controller params:(PreauthParams * _Nonnull)params;
 /// Method to present payment by token screen
-- (void)presentPaymentByTokenOn:(UIViewController * _Nonnull)controller payParams:(PaymentParams * _Nonnull)payParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams;
+- (void)presentPaymentByTokenOn:(UIViewController * _Nonnull)controller payParams:(PaymentParams * _Nonnull)payParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams showReceiptScreen:(BOOL)showReceiptScreen;
 /// Method to present transfer by token screen
-- (void)presentTransferByTokenOn:(UIViewController * _Nonnull)controller transferParams:(TransferParams * _Nonnull)transferParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams;
+- (void)presentTransferByTokenOn:(UIViewController * _Nonnull)controller transferParams:(TransferParams * _Nonnull)transferParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams showReceiptScreen:(BOOL)showReceiptScreen;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -909,6 +911,8 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom14TransferParams")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 

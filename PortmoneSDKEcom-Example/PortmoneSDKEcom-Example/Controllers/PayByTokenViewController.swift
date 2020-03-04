@@ -30,6 +30,7 @@ final class PayByTokenViewController: BaseViewController {
     @IBOutlet private weak var paymentType: UITextField!
     @IBOutlet private weak var merchantIdentifier: UITextField!
     @IBOutlet private weak var applePayOnlySwitch: UISwitch!
+    @IBOutlet private weak var notShowReceiptSwitch: UISwitch!
     @IBOutlet private weak var uidTextField: UITextField!
     
     private var presenter: PaymentPresenter?
@@ -108,7 +109,8 @@ final class PayByTokenViewController: BaseViewController {
                                              tokenData: token ?? "")
         presenter?.presentPaymentByToken(on: self,
                                          payParams: paymentParams,
-                                         tokenParams: tokenParams)
+                                         tokenParams: tokenParams,
+                                         showReceiptScreen: !notShowReceiptSwitch.isOn)
     }
     
     @objc private func switchValueChanged(_ sender: UISwitch) {

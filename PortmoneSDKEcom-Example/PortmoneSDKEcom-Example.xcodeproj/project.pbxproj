@@ -54,8 +54,6 @@
 		9899C925221B014D0019DEF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9899C928221B014D0019DEF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9899C92A221B014D0019DEF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9899C933221B014D0019DEF7 /* PortmoneSDKEcom_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortmoneSDKEcom_ExampleTests.swift; sourceTree = "<group>"; };
-		9899C935221B014D0019DEF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98AA8EC1225F3F0C00036572 /* StyleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleModel.swift; path = "PortmoneSDKEcom-Example/SupportingFiles/StyleModel.swift"; sourceTree = SOURCE_ROOT; };
 		98D970C022F72A370022C689 /* PortmoneSDKEcom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PortmoneSDKEcom.framework; sourceTree = "<group>"; };
 		98EC67CE227E1F3000BB7D42 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 			children = (
 				98D970C022F72A370022C689 /* PortmoneSDKEcom.framework */,
 				9899C91D221B014B0019DEF7 /* PortmoneSDKEcom-Example */,
-				9899C932221B014D0019DEF7 /* PortmoneSDKEcom-ExampleTests */,
 				9899C91C221B014B0019DEF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,15 +154,6 @@
 				981FA0F1221D578E00251FB8 /* Storyboards */,
 			);
 			path = "PortmoneSDKEcom-Example";
-			sourceTree = "<group>";
-		};
-		9899C932221B014D0019DEF7 /* PortmoneSDKEcom-ExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				9899C933221B014D0019DEF7 /* PortmoneSDKEcom_ExampleTests.swift */,
-				9899C935221B014D0019DEF7 /* Info.plist */,
-			);
-			path = "PortmoneSDKEcom-ExampleTests";
 			sourceTree = "<group>";
 		};
 		98EC67F2227E231900BB7D42 /* Fonts */ = {
