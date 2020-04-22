@@ -21,6 +21,7 @@ final class PayByTokenViewController: BaseViewController {
     @IBOutlet private weak var billNumber: UITextField!
     @IBOutlet private weak var billCurrency: UITextField!
     @IBOutlet private weak var billAmount: UITextField!
+    @IBOutlet private weak var billAmountWcvv: UITextField!
     @IBOutlet private weak var payeeId: UITextField!
     @IBOutlet private weak var language: UITextField!
     @IBOutlet private weak var preauthFlag: UISwitch!
@@ -31,11 +32,12 @@ final class PayByTokenViewController: BaseViewController {
     @IBOutlet private weak var merchantIdentifier: UITextField!
     @IBOutlet private weak var applePayOnlySwitch: UISwitch!
     @IBOutlet private weak var notShowReceiptSwitch: UISwitch!
+    @IBOutlet private weak var withoutCvv: UISwitch!
     @IBOutlet private weak var uidTextField: UITextField!
     
     private var presenter: PaymentPresenter?
     private let pickerView = UIPickerView()
-    private let pickerSource = ["Default", "Mobile"]
+    private let pickerSource = ["Default", "Mobile", "Account"]
     
     override var scrollView: UIScrollView? {
         return paymentScrollView
@@ -58,8 +60,10 @@ final class PayByTokenViewController: BaseViewController {
         paymentType.inputView = pickerView
         paymentScrollView.keyboardDismissMode = .interactive
         
+        preauthFlag.addTarget(self, action: #selector(switchValueChanged(_:)), for: .valueChanged)
         biometricFlag.addTarget(self, action: #selector(switchValueChanged(_:)), for: .valueChanged)
         applePayOnlySwitch.addTarget(self, action: #selector(switchValueChanged(_:)), for: .valueChanged)
+        withoutCvv.addTarget(self, action: #selector(switchValueChanged(_:)), for: .valueChanged)
     }
     
     override func viewWillLayoutSubviews() {
@@ -80,7 +84,22 @@ final class PayByTokenViewController: BaseViewController {
         }
         
         /// Only for testing purposes
-        let type: PaymentType = paymentType.text == pickerSource.first ? .payment : .mobilePayment
+        var type: PaymentType = .payment // = paymentType.text == pickerSource.first ? .payment : .mobilePayment
+        
+        switch paymentType.text {
+        case "Default":
+            type = .payment
+        case "Mobile":
+            type = .mobilePayment
+        case "Account":
+            type = .account
+        default:
+            break
+        }
+        
+        let paymentFlowType = PaymentFlowType(payWithCard: !applePayOnlySwitch.isOn,
+                                              payWithApplePay: applePayOnlySwitch.isOn,
+                                              withoutCVV: withoutCvv.isOn)
         
         let paymentParams = PaymentParams(description: contractNumber.text ?? "",
                                           attribute1: attribute1.text ?? "",
@@ -91,10 +110,11 @@ final class PayByTokenViewController: BaseViewController {
                                           preauthFlag: preauthFlag.isOn,
                                           billCurrency: Currency(rawValue: billCurrency.text ?? "") ?? .uah,
                                           billAmount: Double(billAmount.text ?? "") ?? 0,
+                                          billAmountWcvv: Double(billAmountWcvv.text ?? "") ?? 0,
                                           payeeId: payeeId.text ?? "",
                                           type: type,
                                           merchantIdentifier: merchantIdentifier.text ?? "",
-                                          paymentFlowType: applePayOnlySwitch.isOn ? .byApplePay : .byCard)
+                                          paymentFlowType: paymentFlowType)
         
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
@@ -115,8 +135,22 @@ final class PayByTokenViewController: BaseViewController {
     
     @objc private func switchValueChanged(_ sender: UISwitch) {
         guard sender.isOn else { return }
-        let anotherSwitch = (sender === applePayOnlySwitch) ? biometricFlag : applePayOnlySwitch
-        anotherSwitch?.setOn(false, animated: true)
+
+        var switchers: [UISwitch] = []
+        switch sender {
+        case applePayOnlySwitch:
+            switchers = [biometricFlag, withoutCvv]
+        case biometricFlag:
+            switchers = [applePayOnlySwitch, withoutCvv]
+        case preauthFlag:
+            switchers = [withoutCvv]
+        case withoutCvv:
+            switchers = [applePayOnlySwitch, biometricFlag, preauthFlag]
+        default:
+            break
+        }
+        
+        switchers.forEach({$0.setOn(false, animated: true)})
     }
 }
 

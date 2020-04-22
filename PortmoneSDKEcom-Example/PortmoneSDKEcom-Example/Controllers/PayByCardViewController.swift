@@ -34,7 +34,7 @@ final class PayByCardViewController: BaseViewController {
     
     private var presenter: PaymentPresenter?
     private let pickerView = UIPickerView()
-    private let pickerSource = ["Default", "Mobile"]
+    private let pickerSource = ["Default", "Mobile", "Account"]
     
     override var scrollView: UIScrollView? {
         return paymentScrollView
@@ -74,8 +74,22 @@ final class PayByCardViewController: BaseViewController {
         }
         
         /// Only for testing purposes
-        let type: PaymentType = paymentType.text == pickerSource.first ? .payment : .mobilePayment
-        let flowType = PaymentFlowType(payWithCard: payWithCardSwitch.isOn, payWithApplePay: payWithAPaySwitch.isOn)
+        var type: PaymentType = .payment // = paymentType.text == pickerSource.first ? .payment : .mobilePayment
+        
+        switch paymentType.text {
+        case "Default":
+            type = .payment
+        case "Mobile":
+            type = .mobilePayment
+        case "Account":
+            type = .account
+        default:
+            break
+        }
+        
+        let flowType = PaymentFlowType(payWithCard: payWithCardSwitch.isOn,
+                                       payWithApplePay: payWithAPaySwitch.isOn,
+                                       withoutCVV: false)
         
         let initParams = PaymentParams(description: contractNumber.text ?? "",
                                        attribute1: attribute1.text ?? "",
@@ -86,6 +100,7 @@ final class PayByCardViewController: BaseViewController {
                                        preauthFlag: preauthFlag.isOn,
                                        billCurrency: Currency(rawValue: billCurrency.text ?? "") ?? .uah,
                                        billAmount: Double(billAmount.text ?? "") ?? 0,
+                                       billAmountWcvv: 0,
                                        payeeId: payeeId.text ?? "",
                                        type: type,
                                        merchantIdentifier: merchantIdTextField.text ?? "",
