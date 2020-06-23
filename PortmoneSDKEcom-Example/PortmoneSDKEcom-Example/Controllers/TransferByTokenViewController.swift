@@ -25,6 +25,7 @@ final class TransferByTokenViewController: BaseViewController {
     @IBOutlet private weak var transferButton: UIButton!
     @IBOutlet private weak var notShowReceiptSwitch: UISwitch!
     @IBOutlet private weak var uidTextField: UITextField!
+    @IBOutlet private weak var disableReturnToDetailsSwitch: UISwitch!
     
     override var scrollView: UIScrollView? {
         return transferScrollView
@@ -58,6 +59,7 @@ final class TransferByTokenViewController: BaseViewController {
         let transferParams = TransferParams(attribute2: attribute2.text ?? "",
                                             attribute3: attribute3.text ?? "",
                                             attribute4: attribute4.text ?? "",
+                                            attribute5: "",
                                             billNumber: billNumb,
                                             billAmount: Double(billAmount.text ?? "") ?? 0,
                                             payeeId: payeeId.text ?? "")
@@ -66,6 +68,8 @@ final class TransferByTokenViewController: BaseViewController {
                                      styleSource: style,
                                      language: Language(rawValue: language.text ?? "") ?? .ukrainian,
                                      customUid: uidTextField.text)
+        
+        presenter?.setReturnToDetails(disabled: disableReturnToDetailsSwitch.isOn)
         
         let mask = UserDefaults.standard.string(forKey: Constants.cardMask)
         let token = UserDefaults.standard.string(forKey: Constants.cardToken)
