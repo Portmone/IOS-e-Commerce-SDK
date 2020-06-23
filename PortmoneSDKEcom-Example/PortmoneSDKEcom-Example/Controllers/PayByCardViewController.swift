@@ -18,6 +18,7 @@ final class PayByCardViewController: BaseViewController {
     @IBOutlet private weak var attribute2: UITextField!
     @IBOutlet private weak var attribute3: UITextField!
     @IBOutlet private weak var attribute4: UITextField!
+    @IBOutlet private weak var attribute5: UITextField!
     @IBOutlet private weak var billNumber: UITextField!
     @IBOutlet private weak var billCurrency: UITextField!
     @IBOutlet private weak var billAmount: UITextField!
@@ -31,6 +32,7 @@ final class PayByCardViewController: BaseViewController {
     @IBOutlet private weak var payWithCardSwitch: UISwitch!
     @IBOutlet private weak var notShowReceiptSwitch: UISwitch!
     @IBOutlet private weak var uidTextField: UITextField!
+    @IBOutlet private weak var disableReturningToDetailsSwitch: UISwitch!
     
     private var presenter: PaymentPresenter?
     private let pickerView = UIPickerView()
@@ -96,6 +98,7 @@ final class PayByCardViewController: BaseViewController {
                                        attribute2: attribute2.text ?? "",
                                        attribute3: attribute3.text ?? "",
                                        attribute4: attribute4.text ?? "",
+                                       attribute5: attribute5.text ?? "",
                                        billNumber: billNumb,
                                        preauthFlag: preauthFlag.isOn,
                                        billCurrency: Currency(rawValue: billCurrency.text ?? "") ?? .uah,
@@ -104,12 +107,14 @@ final class PayByCardViewController: BaseViewController {
                                        payeeId: payeeId.text ?? "",
                                        type: type,
                                        merchantIdentifier: merchantIdTextField.text ?? "",
-                                       paymentFlowType: flowType )
+                                       paymentFlowType: flowType)
         
         presenter = PaymentPresenter(delegate: self,
                                      styleSource: style,
                                      language: Language(rawValue: language.text ?? "") ?? .ukrainian,
                                      customUid: uidTextField.text)
+        
+        presenter?.setReturnToDetails(disabled: disableReturningToDetailsSwitch.isOn)
         
         presenter?.presentPaymentByCard(on: self,
                                         params: initParams,

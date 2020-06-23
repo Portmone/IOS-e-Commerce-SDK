@@ -18,6 +18,7 @@ final class PayByTokenViewController: BaseViewController {
     @IBOutlet private weak var attribute2: UITextField!
     @IBOutlet private weak var attribute3: UITextField!
     @IBOutlet private weak var attribute4: UITextField!
+    @IBOutlet private weak var attribute5: UITextField!
     @IBOutlet private weak var billNumber: UITextField!
     @IBOutlet private weak var billCurrency: UITextField!
     @IBOutlet private weak var billAmount: UITextField!
@@ -34,6 +35,7 @@ final class PayByTokenViewController: BaseViewController {
     @IBOutlet private weak var notShowReceiptSwitch: UISwitch!
     @IBOutlet private weak var withoutCvv: UISwitch!
     @IBOutlet private weak var uidTextField: UITextField!
+    @IBOutlet private weak var disableReturnToDetailsSwitch: UISwitch!
     
     private var presenter: PaymentPresenter?
     private let pickerView = UIPickerView()
@@ -106,6 +108,7 @@ final class PayByTokenViewController: BaseViewController {
                                           attribute2: attribute2.text ?? "",
                                           attribute3: attribute3.text ?? "",
                                           attribute4: attribute4.text ?? "",
+                                          attribute5: attribute5.text ?? "",
                                           billNumber: billNumb,
                                           preauthFlag: preauthFlag.isOn,
                                           billCurrency: Currency(rawValue: billCurrency.text ?? "") ?? .uah,
@@ -121,6 +124,8 @@ final class PayByTokenViewController: BaseViewController {
                                      language: Language(rawValue: language.text ?? "") ?? .ukrainian,
                                      biometricAuth: biometricFlag.isOn,
                                      customUid: uidTextField.text)
+        
+        presenter?.setReturnToDetails(disabled: disableReturnToDetailsSwitch.isOn)
         
         let mask = UserDefaults.standard.string(forKey: Constants.cardMask)
         let token = UserDefaults.standard.string(forKey: Constants.cardToken)
