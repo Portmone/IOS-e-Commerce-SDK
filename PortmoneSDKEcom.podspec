@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.platform = :ios
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '9.0'
 s.name = 'PortmoneSDKEcom'
 s.summary = 'Provides an opportunity for merchants to accept payments in their mobile app.'
 s.requires_arc = true
