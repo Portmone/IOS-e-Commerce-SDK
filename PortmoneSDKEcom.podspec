@@ -10,6 +10,10 @@ s.license = { :type => 'GPL 3.0', :file => 'LICENSE.md' }
 s.author = { 'Portmone' => 'support@portmone.com' }
 s.homepage = 'https://github.com/Portmone/IOS-e-Commerce-SDK'
 s.source = { :git => 'https://github.com/Portmone/IOS-e-Commerce-SDK.git', :tag => "v#{s.version}" }
+s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 s.vendored_frameworks = 'PortmoneSDKEcom.framework'
 s.swift_version = '5.0'
 
