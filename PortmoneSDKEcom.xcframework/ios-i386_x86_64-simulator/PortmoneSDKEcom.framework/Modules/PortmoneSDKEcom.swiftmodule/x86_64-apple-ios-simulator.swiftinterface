@@ -1,0 +1,234 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios8.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PortmoneSDKEcom
+import Foundation
+import LocalAuthentication
+import MessageUI
+import PassKit
+@_exported import PortmoneSDKEcom
+import Swift
+import UIKit
+import WebKit
+@objc public class PreauthParams : ObjectiveC.NSObject {
+  final public let payeeId: Swift.String
+  final public let accountId: Swift.String
+  final public let desc: Swift.String
+  final public let billNumber: Swift.String
+  @objc public init(payeeId: Swift.String, accountId: Swift.String = "", description: Swift.String = "", billNumber: Swift.String = "")
+  public func validate() -> Swift.Error?
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public class PaymentParams : ObjectiveC.NSObject {
+  final public let desc: Swift.String
+  final public let attribute1: Swift.String
+  final public let attribute2: Swift.String
+  final public let attribute3: Swift.String
+  final public let attribute4: Swift.String
+  final public let attribute5: Swift.String
+  final public let billNumber: Swift.String
+  public var contractNumber: Swift.String
+  final public let preauthFlag: Swift.Bool
+  public var billCurrency: PortmoneSDKEcom.Currency
+  public var billAmount: Swift.Double
+  public var billAmountWcvv: Swift.Double
+  final public let payeeId: Swift.String
+  final public let type: PortmoneSDKEcom.PaymentType
+  public var paymentFlowType: PortmoneSDKEcom.PaymentFlowType
+  public var merchantIdentifier: Swift.String?
+  @objc public init(description: Swift.String = "", attribute1: Swift.String = "", attribute2: Swift.String = "", attribute3: Swift.String = "", attribute4: Swift.String = "", attribute5: Swift.String = "", billNumber: Swift.String = "", contractNumber: Swift.String = "", preauthFlag: Swift.Bool = false, billCurrency: PortmoneSDKEcom.Currency = .uah, billAmount: Swift.Double, billAmountWcvv: Swift.Double = 0, payeeId: Swift.String, type: PortmoneSDKEcom.PaymentType = .payment, merchantIdentifier: Swift.String = "", paymentFlowType: PortmoneSDKEcom.PaymentFlowType = .byCard)
+  @objc public init(_ transferParams: PortmoneSDKEcom.TransferParams)
+  public func validate() -> Swift.Error?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol StyleSource : AnyObject {
+  @objc func titleFont() -> UIKit.UIFont
+  @objc func titleColor() -> UIKit.UIColor
+  @objc func titleBackgroundColor() -> UIKit.UIColor
+  @objc func headersFont() -> UIKit.UIFont
+  @objc func headersColor() -> UIKit.UIColor
+  @objc func headersBackgroundColor() -> UIKit.UIColor
+  @objc func placeholdersFont() -> UIKit.UIFont
+  @objc func placeholdersColor() -> UIKit.UIColor
+  @objc func textsFont() -> UIKit.UIFont
+  @objc func textsColor() -> UIKit.UIColor
+  @objc func errorsFont() -> UIKit.UIFont
+  @objc func errorsColor() -> UIKit.UIColor
+  @objc func backgroundColor() -> UIKit.UIColor
+  @objc func resultMessageFont() -> UIKit.UIFont
+  @objc func resultMessageColor() -> UIKit.UIColor
+  @objc func resultSaveReceiptColor() -> UIKit.UIColor
+  @objc func infoTextsFont() -> UIKit.UIFont
+  @objc func infoTextsColor() -> UIKit.UIColor
+  @objc func buttonTitleFont() -> UIKit.UIFont
+  @objc func buttonTitleColor() -> UIKit.UIColor
+  @objc func buttonColor() -> UIKit.UIColor
+  @objc func buttonCornerRadius() -> CoreGraphics.CGFloat
+  @objc func biometricButtonColor() -> UIKit.UIColor
+  @objc func successImage() -> UIKit.UIImage?
+  @objc func failureImage() -> UIKit.UIImage?
+}
+extension StyleSource {
+  public func titleFont() -> UIKit.UIFont
+  public func titleColor() -> UIKit.UIColor
+  public func titleBackgroundColor() -> UIKit.UIColor
+  public func headersFont() -> UIKit.UIFont
+  public func headersColor() -> UIKit.UIColor
+  public func headersBackgroundColor() -> UIKit.UIColor
+  public func placeholdersFont() -> UIKit.UIFont
+  public func placeholdersColor() -> UIKit.UIColor
+  public func textsFont() -> UIKit.UIFont
+  public func textsColor() -> UIKit.UIColor
+  public func errorsFont() -> UIKit.UIFont
+  public func errorsColor() -> UIKit.UIColor
+  public func backgroundColor() -> UIKit.UIColor
+  public func resultMessageFont() -> UIKit.UIFont
+  public func resultMessageColor() -> UIKit.UIColor
+  public func infoTextsFont() -> UIKit.UIFont
+  public func infoTextsColor() -> UIKit.UIColor
+  public func buttonTitleFont() -> UIKit.UIFont
+  public func buttonTitleColor() -> UIKit.UIColor
+  public func buttonColor() -> UIKit.UIColor
+  public func biometricButtonColor() -> UIKit.UIColor
+}
+@objc public protocol PaymentPresenterDelegate : AnyObject {
+  @objc func didFinishPayment(bill: PortmoneSDKEcom.Bill?, error: Swift.Error?)
+  @available(*, unavailable, renamed: "dismissedSDK")
+  @objc optional func didCancelPayment()
+  @objc optional func dismissedSDK()
+}
+@objc public class PaymentPresenter : ObjectiveC.NSObject {
+  @objc public init(delegate: PortmoneSDKEcom.PaymentPresenterDelegate, styleSource: PortmoneSDKEcom.StyleSource? = nil, language: PortmoneSDKEcom.Language, biometricAuth: Swift.Bool = false, customUid: Swift.String? = nil)
+  @objc public func presentPaymentByCard(on controller: UIKit.UIViewController, params: PortmoneSDKEcom.PaymentParams, showReceiptScreen: Swift.Bool)
+  @objc public func presentPreauthCard(on controller: UIKit.UIViewController, params: PortmoneSDKEcom.PreauthParams)
+  @objc public func presentPaymentByToken(on controller: UIKit.UIViewController, payParams: PortmoneSDKEcom.PaymentParams, tokenParams: PortmoneSDKEcom.TokenPaymentParams, showReceiptScreen: Swift.Bool = true)
+  @objc public func presentTransferByToken(on controller: UIKit.UIViewController, transferParams: PortmoneSDKEcom.TransferParams, tokenParams: PortmoneSDKEcom.TokenPaymentParams, showReceiptScreen: Swift.Bool = true)
+  @objc public func setReturnToDetails(disabled: Swift.Bool)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_hasMissingDesignatedInitializers @objc public class Bill : ObjectiveC.NSObject {
+  final public let billId: Swift.String?
+  public var status: Swift.String
+  final public let billAmount: Swift.Double
+  public var cardMask: Swift.String?
+  final public let commissionAmount: Swift.Double
+  public var recieptUrl: Swift.String?
+  final public let contractNumber: Swift.String?
+  final public let payDate: Foundation.Date?
+  final public let payeeName: Swift.String?
+  public var token: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum Language : Swift.Int, Swift.RawRepresentable {
+  case ukrainian
+  case russian
+  case english
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+}
+@objc public enum Currency : Swift.Int, Swift.RawRepresentable {
+  case uah
+  case usd
+  case eur
+  case gbr
+  case byn
+  case kzt
+  case rub
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+}
+@objc public enum PaymentType : Swift.Int {
+  case payment
+  case mobilePayment
+  case account
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum PaymentFlowType : Swift.Int {
+  case byCard
+  case byCardAndApplePay
+  case byApplePay
+  case withoutCVV
+  public init(payWithCard: Swift.Bool, payWithApplePay: Swift.Bool, withoutCVV: Swift.Bool)
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc open class StyleSourceModel : ObjectiveC.NSObject, PortmoneSDKEcom.StyleSource {
+  @objc open func titleFont() -> UIKit.UIFont
+  @objc open func titleColor() -> UIKit.UIColor
+  @objc open func titleBackgroundColor() -> UIKit.UIColor
+  @objc open func headersFont() -> UIKit.UIFont
+  @objc open func headersColor() -> UIKit.UIColor
+  @objc open func headersBackgroundColor() -> UIKit.UIColor
+  @objc open func placeholdersFont() -> UIKit.UIFont
+  @objc open func placeholdersColor() -> UIKit.UIColor
+  @objc open func textsFont() -> UIKit.UIFont
+  @objc open func textsColor() -> UIKit.UIColor
+  @objc open func errorsFont() -> UIKit.UIFont
+  @objc open func errorsColor() -> UIKit.UIColor
+  @objc open func backgroundColor() -> UIKit.UIColor
+  @objc open func resultMessageFont() -> UIKit.UIFont
+  @objc open func resultMessageColor() -> UIKit.UIColor
+  @objc open func resultSaveReceiptColor() -> UIKit.UIColor
+  @objc open func infoTextsFont() -> UIKit.UIFont
+  @objc open func infoTextsColor() -> UIKit.UIColor
+  @objc open func buttonTitleFont() -> UIKit.UIFont
+  @objc open func buttonTitleColor() -> UIKit.UIColor
+  @objc open func buttonColor() -> UIKit.UIColor
+  @objc open func buttonCornerRadius() -> CoreGraphics.CGFloat
+  @objc open func biometricButtonColor() -> UIKit.UIColor
+  @objc open func successImage() -> UIKit.UIImage?
+  @objc open func failureImage() -> UIKit.UIImage?
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public class TokenPaymentParams : ObjectiveC.NSObject {
+  final public let cardNumberMasked: Swift.String
+  final public let tokenData: Swift.String
+  @objc public init(cardNumberMasked: Swift.String, tokenData: Swift.String)
+  public func validate() -> Swift.Error?
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public class TransferParams : ObjectiveC.NSObject {
+  final public let attribute2: Swift.String
+  final public let attribute3: Swift.String
+  final public let attribute4: Swift.String
+  final public let attribute5: Swift.String
+  final public let billNumber: Swift.String
+  public var contractNumber: Swift.String
+  public var billAmount: Swift.Double
+  final public let payeeId: Swift.String
+  public var billCurrency: PortmoneSDKEcom.Currency {
+    get
+  }
+  @objc public init(attribute2: Swift.String = "", attribute3: Swift.String = "", attribute4: Swift.String = "", attribute5: Swift.String = "", billNumber: Swift.String = "", billAmount: Swift.Double, payeeId: Swift.String)
+  public func validate() -> Swift.Error?
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension PortmoneSDKEcom.Language : Swift.Equatable {}
+extension PortmoneSDKEcom.Language : Swift.Hashable {}
+extension PortmoneSDKEcom.Currency : Swift.Equatable {}
+extension PortmoneSDKEcom.Currency : Swift.Hashable {}
+extension PortmoneSDKEcom.PaymentType : Swift.Equatable {}
+extension PortmoneSDKEcom.PaymentType : Swift.Hashable {}
+extension PortmoneSDKEcom.PaymentType : Swift.RawRepresentable {}
+extension PortmoneSDKEcom.PaymentFlowType : Swift.Equatable {}
+extension PortmoneSDKEcom.PaymentFlowType : Swift.Hashable {}
+extension PortmoneSDKEcom.PaymentFlowType : Swift.RawRepresentable {}
