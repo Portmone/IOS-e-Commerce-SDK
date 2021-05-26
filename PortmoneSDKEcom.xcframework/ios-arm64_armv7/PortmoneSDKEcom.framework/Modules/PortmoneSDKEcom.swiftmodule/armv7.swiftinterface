@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target armv7-apple-ios8.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PortmoneSDKEcom
 import Foundation
 import LocalAuthentication
@@ -16,8 +16,8 @@ import WebKit
   final public let billNumber: Swift.String
   @objc public init(payeeId: Swift.String, accountId: Swift.String = "", description: Swift.String = "", billNumber: Swift.String = "")
   public func validate() -> Swift.Error?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc public class PaymentParams : ObjectiveC.NSObject {
   final public let desc: Swift.String
@@ -42,7 +42,7 @@ import WebKit
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public protocol StyleSource : AnyObject {
+@objc public protocol StyleSource {
   @objc func titleFont() -> UIKit.UIFont
   @objc func titleColor() -> UIKit.UIColor
   @objc func titleBackgroundColor() -> UIKit.UIColor
@@ -92,7 +92,7 @@ extension StyleSource {
   public func buttonColor() -> UIKit.UIColor
   public func biometricButtonColor() -> UIKit.UIColor
 }
-@objc public protocol PaymentPresenterDelegate : AnyObject {
+@objc public protocol PaymentPresenterDelegate {
   @objc func didFinishPayment(bill: PortmoneSDKEcom.Bill?, error: Swift.Error?)
   @available(*, unavailable, renamed: "dismissedSDK")
   @objc optional func didCancelPayment()
@@ -105,8 +105,8 @@ extension StyleSource {
   @objc public func presentPaymentByToken(on controller: UIKit.UIViewController, payParams: PortmoneSDKEcom.PaymentParams, tokenParams: PortmoneSDKEcom.TokenPaymentParams, showReceiptScreen: Swift.Bool = true)
   @objc public func presentTransferByToken(on controller: UIKit.UIViewController, transferParams: PortmoneSDKEcom.TransferParams, tokenParams: PortmoneSDKEcom.TokenPaymentParams, showReceiptScreen: Swift.Bool = true)
   @objc public func setReturnToDetails(disabled: Swift.Bool)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class Bill : ObjectiveC.NSObject {
   final public let billId: Swift.String?
@@ -126,11 +126,11 @@ extension StyleSource {
   case ukrainian
   case russian
   case english
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
   public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
 }
 @objc public enum Currency : Swift.Int, Swift.RawRepresentable {
   case uah
@@ -140,18 +140,18 @@ extension StyleSource {
   case byn
   case kzt
   case rub
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
   public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
 }
 @objc public enum PaymentType : Swift.Int {
   case payment
   case mobilePayment
   case account
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -162,8 +162,8 @@ extension StyleSource {
   case byApplePay
   case withoutCVV
   public init(payWithCard: Swift.Bool, payWithApplePay: Swift.Bool, withoutCVV: Swift.Bool)
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -194,16 +194,16 @@ extension StyleSource {
   @objc open func biometricButtonColor() -> UIKit.UIColor
   @objc open func successImage() -> UIKit.UIImage?
   @objc open func failureImage() -> UIKit.UIImage?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc public class TokenPaymentParams : ObjectiveC.NSObject {
   final public let cardNumberMasked: Swift.String
   final public let tokenData: Swift.String
   @objc public init(cardNumberMasked: Swift.String, tokenData: Swift.String)
   public func validate() -> Swift.Error?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc public class TransferParams : ObjectiveC.NSObject {
   final public let attribute2: Swift.String
@@ -219,8 +219,8 @@ extension StyleSource {
   }
   @objc public init(attribute2: Swift.String = "", attribute3: Swift.String = "", attribute4: Swift.String = "", attribute5: Swift.String = "", billNumber: Swift.String = "", billAmount: Swift.Double, payeeId: Swift.String)
   public func validate() -> Swift.Error?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 extension PortmoneSDKEcom.Language : Swift.Equatable {}
 extension PortmoneSDKEcom.Language : Swift.Hashable {}

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C280F50260DD7040018AD03 /* PortmoneSDKEcom.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C280F4F260DD7040018AD03 /* PortmoneSDKEcom.xcframework */; };
-		0C280F51260DD7040018AD03 /* PortmoneSDKEcom.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C280F4F260DD7040018AD03 /* PortmoneSDKEcom.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0CB8DEDA265E2502003BDC98 /* PortmoneSDKEcom.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB8DED8265E24F9003BDC98 /* PortmoneSDKEcom.xcframework */; };
+		0CB8DEDB265E2502003BDC98 /* PortmoneSDKEcom.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB8DED8265E24F9003BDC98 /* PortmoneSDKEcom.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E6A6D17234CBF05000C84CE /* TransferByTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A6D16234CBF05000C84CE /* TransferByTokenViewController.swift */; };
 		7E6A6D19234CBF11000C84CE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A6D18234CBF11000C84CE /* Constants.swift */; };
 		9860B04D227E1B69005B804B /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9860B04C227E1B69005B804B /* AlertPresentable.swift */; };
@@ -31,13 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0C280F52260DD7040018AD03 /* Embed Frameworks */ = {
+		0CB8DEDC265E2502003BDC98 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0C280F51260DD7040018AD03 /* PortmoneSDKEcom.xcframework in Embed Frameworks */,
+				0CB8DEDB265E2502003BDC98 /* PortmoneSDKEcom.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0C280F4F260DD7040018AD03 /* PortmoneSDKEcom.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PortmoneSDKEcom.xcframework; sourceTree = "<group>"; };
+		0CB8DED8265E24F9003BDC98 /* PortmoneSDKEcom.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PortmoneSDKEcom.xcframework; sourceTree = "<group>"; };
 		7E6A6D16234CBF05000C84CE /* TransferByTokenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferByTokenViewController.swift; sourceTree = "<group>"; };
 		7E6A6D18234CBF11000C84CE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9860B04C227E1B69005B804B /* AlertPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertPresentable.swift; path = "../../../PortmoneSDKEcom-Example/PortmoneSDKEcom-Example/Protocols/AlertPresentable.swift"; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C280F50260DD7040018AD03 /* PortmoneSDKEcom.xcframework in Frameworks */,
+				0CB8DEDA265E2502003BDC98 /* PortmoneSDKEcom.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 		0C280F4E260DD7040018AD03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C280F4F260DD7040018AD03 /* PortmoneSDKEcom.xcframework */,
+				0CB8DED8265E24F9003BDC98 /* PortmoneSDKEcom.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 				9899C917221B014B0019DEF7 /* Sources */,
 				9899C918221B014B0019DEF7 /* Frameworks */,
 				9899C919221B014B0019DEF7 /* Resources */,
-				0C280F52260DD7040018AD03 /* Embed Frameworks */,
+				0CB8DEDC265E2502003BDC98 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
