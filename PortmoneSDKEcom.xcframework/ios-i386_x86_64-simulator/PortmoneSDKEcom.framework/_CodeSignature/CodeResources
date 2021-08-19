@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		l4YQwgBqC4pKRNAWCDXPG3wOYc0=
+		t1gKSieTKSE/QXs/oL0RyWfXGpw=
 		</data>
 		<key>Headers/CardIO.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mZC2qpFOTpC/IXmthADmK7nj6HI=
+		10CtZm0dCx/JeB0oYtO7E7DpJKQ=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -146,11 +146,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l4YQwgBqC4pKRNAWCDXPG3wOYc0=
+			t1gKSieTKSE/QXs/oL0RyWfXGpw=
 			</data>
 			<key>hash2</key>
 			<data>
-			cjHGIYl5RCApmnEs0TOrHK3Y67lll1iqAHxeoZi43y4=
+			RXHiC4z1n4pd7SX7aP6jNKs4FBC/Ie4bEpTLRQsZZDY=
 			</data>
 		</dict>
 		<key>Headers/CardIO.h</key>
