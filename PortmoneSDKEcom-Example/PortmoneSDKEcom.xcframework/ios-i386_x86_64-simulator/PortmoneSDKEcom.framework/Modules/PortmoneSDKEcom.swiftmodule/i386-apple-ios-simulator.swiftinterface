@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target i386-apple-ios8.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PortmoneSDKEcom
 import Foundation
 import LocalAuthentication
@@ -9,6 +9,7 @@ import PassKit
 import Swift
 import UIKit
 import WebKit
+import _Concurrency
 @objc public class PreauthParams : ObjectiveC.NSObject {
   final public let payeeId: Swift.String
   final public let accountId: Swift.String
@@ -16,7 +17,6 @@ import WebKit
   final public let billNumber: Swift.String
   @objc public init(payeeId: Swift.String, accountId: Swift.String = "", description: Swift.String = "", billNumber: Swift.String = "")
   public func validate() -> Swift.Error?
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class PaymentParams : ObjectiveC.NSObject {
@@ -39,7 +39,6 @@ import WebKit
   @objc public init(description: Swift.String = "", attribute1: Swift.String = "", attribute2: Swift.String = "", attribute3: Swift.String = "", attribute4: Swift.String = "", attribute5: Swift.String = "", billNumber: Swift.String = "", contractNumber: Swift.String = "", preauthFlag: Swift.Bool = false, billCurrency: PortmoneSDKEcom.Currency = .uah, billAmount: Swift.Double, billAmountWcvv: Swift.Double = 0, payeeId: Swift.String, type: PortmoneSDKEcom.PaymentType = .payment, merchantIdentifier: Swift.String = "", paymentFlowType: PortmoneSDKEcom.PaymentFlowType = .byCard)
   @objc public init(_ transferParams: PortmoneSDKEcom.TransferParams)
   public func validate() -> Swift.Error?
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol StyleSource {
@@ -69,7 +68,7 @@ import WebKit
   @objc func successImage() -> UIKit.UIImage?
   @objc func failureImage() -> UIKit.UIImage?
 }
-extension StyleSource {
+extension PortmoneSDKEcom.StyleSource {
   public func titleFont() -> UIKit.UIFont
   public func titleColor() -> UIKit.UIColor
   public func titleBackgroundColor() -> UIKit.UIColor
@@ -105,7 +104,6 @@ extension StyleSource {
   @objc public func presentPaymentByToken(on controller: UIKit.UIViewController, payParams: PortmoneSDKEcom.PaymentParams, tokenParams: PortmoneSDKEcom.TokenPaymentParams, showReceiptScreen: Swift.Bool = true)
   @objc public func presentTransferByToken(on controller: UIKit.UIViewController, transferParams: PortmoneSDKEcom.TransferParams, tokenParams: PortmoneSDKEcom.TokenPaymentParams, showReceiptScreen: Swift.Bool = true)
   @objc public func setReturnToDetails(disabled: Swift.Bool)
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class Bill : ObjectiveC.NSObject {
@@ -119,7 +117,6 @@ extension StyleSource {
   final public let payDate: Foundation.Date?
   final public let payeeName: Swift.String?
   public var token: Swift.String?
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum Language : Swift.Int, Swift.RawRepresentable {
@@ -136,7 +133,7 @@ extension StyleSource {
   case uah
   case usd
   case eur
-  case gbr
+  case gbp
   case byn
   case kzt
   case rub
@@ -202,7 +199,6 @@ extension StyleSource {
   final public let tokenData: Swift.String
   @objc public init(cardNumberMasked: Swift.String, tokenData: Swift.String)
   public func validate() -> Swift.Error?
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class TransferParams : ObjectiveC.NSObject {
@@ -219,7 +215,6 @@ extension StyleSource {
   }
   @objc public init(attribute2: Swift.String = "", attribute3: Swift.String = "", attribute4: Swift.String = "", attribute5: Swift.String = "", billNumber: Swift.String = "", billAmount: Swift.Double, payeeId: Swift.String)
   public func validate() -> Swift.Error?
-  @objc override dynamic public init()
   @objc deinit
 }
 extension PortmoneSDKEcom.Language : Swift.Equatable {}
