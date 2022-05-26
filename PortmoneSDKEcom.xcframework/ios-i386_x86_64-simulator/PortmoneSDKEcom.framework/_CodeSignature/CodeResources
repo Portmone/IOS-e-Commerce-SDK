@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		t1gKSieTKSE/QXs/oL0RyWfXGpw=
+		Q8Q5kFkhpZqLm2lWxnMnx0vJGBQ=
 		</data>
 		<key>Headers/CardIO.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/PortmoneSDKEcom-Swift.h</key>
 		<data>
-		ORPNpYOboPCs4puDtXInc4vKE/E=
+		T4dmdBz4L6jBUEvrmm+M5FZRrDY=
 		</data>
 		<key>Headers/PortmoneSDKEcom.h</key>
 		<data>
@@ -50,55 +50,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		10CtZm0dCx/JeB0oYtO7E7DpJKQ=
+		Fh0Mm+1ciUcCiJBqOKflBbP3tmU=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Lx2v5j0w2voBRnF3RsNfrcWH2cg=
+		yXKZVF+3OAMyDT14uygFHTGyv9c=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		x4YBu3/ETMOv5lBMb9OvX5UPG68=
+		qd8YDjKiZy9Zx5SbVLdMjbndV7g=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UMjbnzH0Bve3dUm2sFoapw7T/0E=
+		W7zQ02JdwYysTNq4xEqsZVWLQTg=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386.swiftdoc</key>
 		<data>
-		Lx2v5j0w2voBRnF3RsNfrcWH2cg=
+		yXKZVF+3OAMyDT14uygFHTGyv9c=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386.swiftinterface</key>
 		<data>
-		x4YBu3/ETMOv5lBMb9OvX5UPG68=
+		qd8YDjKiZy9Zx5SbVLdMjbndV7g=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386.swiftmodule</key>
 		<data>
-		UMjbnzH0Bve3dUm2sFoapw7T/0E=
+		W7zQ02JdwYysTNq4xEqsZVWLQTg=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		spfQxzAEPEQ/ltVS9Pg8H+WmIZQ=
+		4nEtsht0Pm0UY+RabpwrdHbc67Q=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pX8FUHLAehGxrm6bnt9YRZVvmG4=
+		+PGFmcOFIvzpXp3DrI3HkbxzDoc=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dWDY75U626khxdzQRfKcQDt5uCM=
+		bTYdToVc4YNBTm6e9Xd+LzF2pqk=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		spfQxzAEPEQ/ltVS9Pg8H+WmIZQ=
+		4nEtsht0Pm0UY+RabpwrdHbc67Q=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		pX8FUHLAehGxrm6bnt9YRZVvmG4=
+		+PGFmcOFIvzpXp3DrI3HkbxzDoc=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		dWDY75U626khxdzQRfKcQDt5uCM=
+		bTYdToVc4YNBTm6e9Xd+LzF2pqk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -108,7 +108,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PzDo4odqGxdTCtyHygwnBDdsk4U=
+			hPGajTOXkFtWKTMueayjvuh0PPs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -125,7 +125,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yc59lU/6csC6ISqdnfPM+dR8gQI=
+			72sNpjE0oXcINSoK6+DPFUOq1I4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -134,7 +134,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MmfE1sTAC38b5GW2h7aLscWSRDo=
+			9NAP35RY+JN661jMYSeZ4PU2CMQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -146,11 +146,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t1gKSieTKSE/QXs/oL0RyWfXGpw=
+			Q8Q5kFkhpZqLm2lWxnMnx0vJGBQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			RXHiC4z1n4pd7SX7aP6jNKs4FBC/Ie4bEpTLRQsZZDY=
+			vhsBukeAB4bWXOowyPmIdb9d5KyF3FMKDB2qv4jXp28=
 			</data>
 		</dict>
 		<key>Headers/CardIO.h</key>
@@ -245,11 +245,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ORPNpYOboPCs4puDtXInc4vKE/E=
+			T4dmdBz4L6jBUEvrmm+M5FZRrDY=
 			</data>
 			<key>hash2</key>
 			<data>
-			WZNAPvyqTm2hLNrklqbqmpkEPaizO2rl4MF4AnJFXiA=
+			ocmFLJgKaDRFZwPLnbKUXsQh2WNYe6G+MSg16uQv2F4=
 			</data>
 		</dict>
 		<key>Headers/PortmoneSDKEcom.h</key>
@@ -267,132 +267,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Lx2v5j0w2voBRnF3RsNfrcWH2cg=
+			yXKZVF+3OAMyDT14uygFHTGyv9c=
 			</data>
 			<key>hash2</key>
 			<data>
-			T3rD86/IZA3upwYgeNAZgA9uSIDFvRqVmcVaEBPOpDE=
+			3AuCVhuiRJxLihRatFV1c386uZem1OMm1zdZDLRPvYQ=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x4YBu3/ETMOv5lBMb9OvX5UPG68=
+			qd8YDjKiZy9Zx5SbVLdMjbndV7g=
 			</data>
 			<key>hash2</key>
 			<data>
-			D290IXqycagZvIwrX6O3SST2/VcGyMKdQEyuSWJPWUg=
+			2JulH/uUeKUZSm1Tc+oEk04OZaPv+UrJvL+l2crBo/c=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UMjbnzH0Bve3dUm2sFoapw7T/0E=
+			W7zQ02JdwYysTNq4xEqsZVWLQTg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y8qlZ4SsAbYxjdfBHqXeOkoovekm7I8iV5D8HX7+/uU=
+			AZ64iFOdxouL1ks1YEIbMy02BLcqr0rUjkXEPXgmOSE=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Lx2v5j0w2voBRnF3RsNfrcWH2cg=
+			yXKZVF+3OAMyDT14uygFHTGyv9c=
 			</data>
 			<key>hash2</key>
 			<data>
-			T3rD86/IZA3upwYgeNAZgA9uSIDFvRqVmcVaEBPOpDE=
+			3AuCVhuiRJxLihRatFV1c386uZem1OMm1zdZDLRPvYQ=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x4YBu3/ETMOv5lBMb9OvX5UPG68=
+			qd8YDjKiZy9Zx5SbVLdMjbndV7g=
 			</data>
 			<key>hash2</key>
 			<data>
-			D290IXqycagZvIwrX6O3SST2/VcGyMKdQEyuSWJPWUg=
+			2JulH/uUeKUZSm1Tc+oEk04OZaPv+UrJvL+l2crBo/c=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UMjbnzH0Bve3dUm2sFoapw7T/0E=
+			W7zQ02JdwYysTNq4xEqsZVWLQTg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y8qlZ4SsAbYxjdfBHqXeOkoovekm7I8iV5D8HX7+/uU=
+			AZ64iFOdxouL1ks1YEIbMy02BLcqr0rUjkXEPXgmOSE=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			spfQxzAEPEQ/ltVS9Pg8H+WmIZQ=
+			4nEtsht0Pm0UY+RabpwrdHbc67Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			+4ZFtHCGOFlK+4i1zPxPwtJdqpLl/8Gs7yN3E3B4HN0=
+			YARxJGR0dBxlxEz+cGAaFHTeLQr+e8QBThIk2xKk+bE=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pX8FUHLAehGxrm6bnt9YRZVvmG4=
+			+PGFmcOFIvzpXp3DrI3HkbxzDoc=
 			</data>
 			<key>hash2</key>
 			<data>
-			38nKQTYsuBSMgfYsY2BJPN1bWwdAg3OU7E9bSo3pEbY=
+			klYBp3errIQ+6wUkCcolSioieU/D/GKMzogSVePbHyM=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dWDY75U626khxdzQRfKcQDt5uCM=
+			bTYdToVc4YNBTm6e9Xd+LzF2pqk=
 			</data>
 			<key>hash2</key>
 			<data>
-			88UE40kx9bj2RqwEWiiuhpFaLnnpT+4oQTFFzeWD7kQ=
+			AGDKJJpcaHbOUEa0U8f1FN0NeN3rlm8UuQvk9AvGVYU=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			spfQxzAEPEQ/ltVS9Pg8H+WmIZQ=
+			4nEtsht0Pm0UY+RabpwrdHbc67Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			+4ZFtHCGOFlK+4i1zPxPwtJdqpLl/8Gs7yN3E3B4HN0=
+			YARxJGR0dBxlxEz+cGAaFHTeLQr+e8QBThIk2xKk+bE=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pX8FUHLAehGxrm6bnt9YRZVvmG4=
+			+PGFmcOFIvzpXp3DrI3HkbxzDoc=
 			</data>
 			<key>hash2</key>
 			<data>
-			38nKQTYsuBSMgfYsY2BJPN1bWwdAg3OU7E9bSo3pEbY=
+			klYBp3errIQ+6wUkCcolSioieU/D/GKMzogSVePbHyM=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dWDY75U626khxdzQRfKcQDt5uCM=
+			bTYdToVc4YNBTm6e9Xd+LzF2pqk=
 			</data>
 			<key>hash2</key>
 			<data>
-			88UE40kx9bj2RqwEWiiuhpFaLnnpT+4oQTFFzeWD7kQ=
+			AGDKJJpcaHbOUEa0U8f1FN0NeN3rlm8UuQvk9AvGVYU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -410,11 +410,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PzDo4odqGxdTCtyHygwnBDdsk4U=
+			hPGajTOXkFtWKTMueayjvuh0PPs=
 			</data>
 			<key>hash2</key>
 			<data>
-			ihC53S7ZkjI7iE12kuEo89clLoApxnLTm2ubibx1T1M=
+			lVgYBexL82911nywB3tivswch5TNp5pgzeLRWSOjI+0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -445,11 +445,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yc59lU/6csC6ISqdnfPM+dR8gQI=
+			72sNpjE0oXcINSoK6+DPFUOq1I4=
 			</data>
 			<key>hash2</key>
 			<data>
-			+PJdb65KMHr5m6CRwf3/0SKbdy4bS/C+n9T/XuIJHpc=
+			9n66QhwkKfBZjIcJi2zaz5zL8cL7DMG02SZXVqqIH0A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -458,11 +458,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MmfE1sTAC38b5GW2h7aLscWSRDo=
+			9NAP35RY+JN661jMYSeZ4PU2CMQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			QFNi3/Tx5KLs+wClwQZtD1OFqTLVnDQkmNBPhhTJ5as=
+			Ojx9xffDK4ib8OAWhR55/ot0SU9x1IIEoJXYH73AH6Q=
 			</data>
 			<key>optional</key>
 			<true/>
