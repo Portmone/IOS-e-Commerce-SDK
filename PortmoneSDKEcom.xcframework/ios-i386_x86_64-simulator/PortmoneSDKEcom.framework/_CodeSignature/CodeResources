@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		W7zQ02JdwYysTNq4xEqsZVWLQTg=
+		cfirPllVNHRaiRpJljN8Uk3mkCw=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386.swiftmodule</key>
 		<data>
-		W7zQ02JdwYysTNq4xEqsZVWLQTg=
+		cfirPllVNHRaiRpJljN8Uk3mkCw=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bTYdToVc4YNBTm6e9Xd+LzF2pqk=
+		5pE/hqesp2WqD7gX6r7p2+rR8Fs=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		bTYdToVc4YNBTm6e9Xd+LzF2pqk=
+		5pE/hqesp2WqD7gX6r7p2+rR8Fs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -289,11 +289,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W7zQ02JdwYysTNq4xEqsZVWLQTg=
+			cfirPllVNHRaiRpJljN8Uk3mkCw=
 			</data>
 			<key>hash2</key>
 			<data>
-			AZ64iFOdxouL1ks1YEIbMy02BLcqr0rUjkXEPXgmOSE=
+			vTQYsccH/55Y43O4zdy1BI9+iVyjaounS2n3AGFzpBo=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/i386.swiftdoc</key>
@@ -322,11 +322,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W7zQ02JdwYysTNq4xEqsZVWLQTg=
+			cfirPllVNHRaiRpJljN8Uk3mkCw=
 			</data>
 			<key>hash2</key>
 			<data>
-			AZ64iFOdxouL1ks1YEIbMy02BLcqr0rUjkXEPXgmOSE=
+			vTQYsccH/55Y43O4zdy1BI9+iVyjaounS2n3AGFzpBo=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -355,11 +355,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bTYdToVc4YNBTm6e9Xd+LzF2pqk=
+			5pE/hqesp2WqD7gX6r7p2+rR8Fs=
 			</data>
 			<key>hash2</key>
 			<data>
-			AGDKJJpcaHbOUEa0U8f1FN0NeN3rlm8UuQvk9AvGVYU=
+			9BN7sUx6whE0/KOzZc+nZwyHTCqDVm/9U4H45vowcMg=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64.swiftdoc</key>
@@ -388,11 +388,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bTYdToVc4YNBTm6e9Xd+LzF2pqk=
+			5pE/hqesp2WqD7gX6r7p2+rR8Fs=
 			</data>
 			<key>hash2</key>
 			<data>
-			AGDKJJpcaHbOUEa0U8f1FN0NeN3rlm8UuQvk9AvGVYU=
+			9BN7sUx6whE0/KOzZc+nZwyHTCqDVm/9U4H45vowcMg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
