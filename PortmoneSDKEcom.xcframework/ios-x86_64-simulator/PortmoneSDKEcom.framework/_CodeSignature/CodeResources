@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		goF7BViwEkHFikzFr7Ab1BlWdbc=
+		4nNQg/QtjqOLbSECydZXqrfmbrQ=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SgkHxDrjrP7AIaZOdgoruLFl0rs=
+		x6w+O1MparmAYwiRKMIiCaHPRBA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -195,7 +195,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MAnOZcSsmRb3MEUZzVYkFZY0gs0VnSkn/I1mwQmtGCY=
+			Hv2op3uSNdtA6wdPwX/QBITDqGfIhUWmIAJAHhkBNKg=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -223,7 +223,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6E+2wpCsx/XaKep1dbc8F1WMxVC9cWmWLaA0hLA34do=
+			U/osK3Q5Lha36o/Fuy5Jq3KH3hCgCW3CO3RU4pKA08g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
