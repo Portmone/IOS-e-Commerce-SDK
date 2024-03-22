@@ -5,7 +5,7 @@ s.ios.deployment_target = '9.0'
 s.name = 'PortmoneSDKEcom'
 s.summary = 'Provides an opportunity for merchants to accept payments in their mobile app.'
 s.requires_arc = true
-s.version = '1.7.14'
+s.version = '1.7.20'
 s.license = { :type => 'GPL 3.0', :file => 'LICENSE.md' }
 s.author = { 'Portmone' => 'support@portmone.com' }
 s.homepage = 'https://github.com/Portmone/IOS-e-Commerce-SDK'
