@@ -5,7 +5,7 @@ s.ios.deployment_target = '9.0'
 s.name = 'PortmoneSDKEcom'
 s.summary = 'Provides an opportunity for merchants to accept payments in their mobile app.'
 s.requires_arc = true
-s.version = '1.7.14'
+s.version = '1.7.21'
 s.license = { :type => 'GPL 3.0', :file => 'LICENSE.md' }
 s.author = { 'Portmone' => 'support@portmone.com' }
 s.homepage = 'https://github.com/Portmone/IOS-e-Commerce-SDK'
@@ -16,5 +16,6 @@ s.pod_target_xcconfig = {
 s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 s.vendored_frameworks = 'PortmoneSDKEcom.xcframework'
 s.swift_version = '5.0'
+s.resource_bundles = {'PortmoneSDKEcom' => ['PortmoneSDKEcom/PrivacyInfo.xcprivacy']}
 
 end
