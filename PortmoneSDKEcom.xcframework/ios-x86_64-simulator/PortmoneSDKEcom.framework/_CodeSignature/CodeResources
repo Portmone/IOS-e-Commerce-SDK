@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		GrLOzkOMloDPsxuNRIihmubh0Bo=
+		qVawwdSY83l36RSXuf8kS/1HlHM=
 		</data>
 		<key>Headers/CardIO.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/PortmoneSDKEcom-Swift.h</key>
 		<data>
-		1YonZeBnzTRpGhV3JjzRX9xf70k=
+		u+kY3dq5Hz/MltXeRshl6BGQPsg=
 		</data>
 		<key>Headers/PortmoneSDKEcom.h</key>
 		<data>
@@ -50,37 +50,41 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zj+/Ue340Wem1+wDaD11KMOZ0TI=
+		q2Ceme0zN2n4EGqAXISF9OkjaHw=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4nNQg/QtjqOLbSECydZXqrfmbrQ=
+		mQfLfIAI4LBgbg9y9euElstDrHU=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		H8TQ8PPJJ9D0m1X8Khike2ooS7I=
+		E0qvCFK3YG2MxFq+O+ZARPkGtng=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		WOEY8mqmoUdqFIAe1VgKicdFkaE=
+		6V5MmVpFQIh0ICAEd/7uj4nRHL0=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		H8TQ8PPJJ9D0m1X8Khike2ooS7I=
+		E0qvCFK3YG2MxFq+O+ZARPkGtng=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		x6w+O1MparmAYwiRKMIiCaHPRBA=
+		huxKa2v7ux8jS5UxDqjpXVB+4QE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		UMBUDRjWvau0nfIk00nc7Yq2A2M=
+		MhPsy5D27GOJH27+gIjdIduxjc4=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		J0wVXatKP+nx/jlb8JadK826ThU=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			186+pqpNI7Xw0qItY2UFE0hJn5M=
+			IjCLXn7yOXRS8Y82UIYDsCkJCBs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -97,7 +101,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+1n7tvpQwwqLj19dx2xrQ1JnjDw=
+			RB/4GpR1jiG+B/04gJEzVnQp+Z0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -106,7 +110,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3xIE9qKoQ62YM7Dx+OAIekDIuqw=
+			TBif5htHOsZI20vLMMMw+v7gwt0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -118,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fqipo1lv6+EP5tN7yj9ARO4rH/yQOF+G/ZIVEuh3CgI=
+			8b8WiWRo2qxEkWpdHQUO2gIuA5clfyLD5iZlVf0m3m0=
 			</data>
 		</dict>
 		<key>Headers/CardIO.h</key>
@@ -181,7 +185,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qLnagFpLFY0ShmXEWeI6E4hrmkjVxdRkfz/Aagd2wQg=
+			qVXuZD/oZN3KQn4yMBn+LFGVtyOXhnRY8ZxKyCi5JeU=
 			</data>
 		</dict>
 		<key>Headers/PortmoneSDKEcom.h</key>
@@ -195,49 +199,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hv2op3uSNdtA6wdPwX/QBITDqGfIhUWmIAJAHhkBNKg=
+			O4aWVWeeG3ruU2Y5bN8Jn9v3TZ6eQd2XYQ7CfAjHVJw=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TurjYuWaArzLUV1M4U0irbhY7FVm6VgBfzxZr8/6J5M=
+			N+CQo1Pqv37hUOm2iPeQpymZ5AAxvJyH6ejCvE7sqLI=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cfac6JrGX3mxL9lmbtlZKhbHoCsroYl2fcgUwuElezI=
+			cSpwxGr7n2HptJKulSvnF6pSQ8mqgiZGO4hpFbZ72PE=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TurjYuWaArzLUV1M4U0irbhY7FVm6VgBfzxZr8/6J5M=
+			N+CQo1Pqv37hUOm2iPeQpymZ5AAxvJyH6ejCvE7sqLI=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U/osK3Q5Lha36o/Fuy5Jq3KH3hCgCW3CO3RU4pKA08g=
+			qLk8xjQapaBshBB21du7hj/3OfhriulEWn1pjy6e1hU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KCnBtKjkou3DXEu+q/g6eRsuWzUDS/jkW+JQI1Os3Vo=
+			KZGJ8RPqCDGnvSg16aDBNTDNSnXlfb/e7RvHWs2qTYQ=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			h77R0mLtQEp7He1nM4xPtAWCTRqVGTAxI5LlBluZIBM=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n7m7LJyU/uGGAa0VZYae71yrBdmL/SMU3keyrjSaSLI=
+			uB43+3T2ah0d6BRGR8f1DasjHK8pRZtgaw3pBHNq07E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -260,7 +271,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e0uHX3TdyDbS9u1+bIMiuXvvRFaZJDufgI2jyiR7Xrk=
+			y8GSpb1m9tNjTB/rrbYZsSMF+ZYF7tyaLRaMg/XxsxQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -269,7 +280,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZT4Vd3xYiRmYLI3PzqDkwVC4rnaAmAKi9IxC3nfy3Ow=
+			77yeBziww30P+zulbZU/KSNUjeu7WUSGUIKTswzpRs8=
 			</data>
 			<key>optional</key>
 			<true/>

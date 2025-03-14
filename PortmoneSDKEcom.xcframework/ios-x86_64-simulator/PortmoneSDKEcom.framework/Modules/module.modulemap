@@ -1,7 +1,7 @@
 framework module PortmoneSDKEcom {
   umbrella header "PortmoneSDKEcom.h"
-
   export *
+
   module * { export * }
 }
 
