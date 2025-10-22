@@ -18,10 +18,10 @@ import _SwiftConcurrencyShims
 @objc public class BillsPaymentParams : ObjectiveC.NSObject {
   public var contractNumber: Swift.String
   public var paymentBills: [PortmoneSDKEcom.PaymentBill]
-  public var billCurrency: PortmoneSDKEcom.Currency
+  public var billCurrency: PortmoneSDKEcom.PMCurrency
   public var paymentFlowType: PortmoneSDKEcom.PaymentFlowType
   public var merchantIdentifier: Swift.String?
-  @objc public init(contractNumber: Swift.String = "", paymentBills: [PortmoneSDKEcom.PaymentBill] = [], billCurrency: PortmoneSDKEcom.Currency = .uah, paymentFlowType: PortmoneSDKEcom.PaymentFlowType = .byCard, merchantIdentifier: Swift.String = "")
+  @objc public init(contractNumber: Swift.String = "", paymentBills: [PortmoneSDKEcom.PaymentBill] = [], billCurrency: PortmoneSDKEcom.PMCurrency = .uah, paymentFlowType: PortmoneSDKEcom.PaymentFlowType = .byCard, merchantIdentifier: Swift.String = "")
   public func validate() -> (any Swift.Error)?
   @objc deinit
 }
@@ -87,7 +87,7 @@ import _SwiftConcurrencyShims
   final public let billNumber: Swift.String
   public var contractNumber: Swift.String
   final public let preauthFlag: Swift.Bool
-  public var billCurrency: PortmoneSDKEcom.Currency
+  public var billCurrency: PortmoneSDKEcom.PMCurrency
   public var billAmount: Swift.Double
   public var billAmountWcvv: Swift.Double
   final public let payeeId: Swift.String
@@ -96,7 +96,7 @@ import _SwiftConcurrencyShims
   public var merchantIdentifier: Swift.String?
   final public let emailAddress: Swift.String
   public var shopBillId: Swift.String
-  @objc public init(description: Swift.String = "", attribute1: Swift.String = "", attribute2: Swift.String = "", attribute3: Swift.String = "", attribute4: Swift.String = "", attribute5: Swift.String = "", billNumber: Swift.String = "", contractNumber: Swift.String = "", preauthFlag: Swift.Bool = false, billCurrency: PortmoneSDKEcom.Currency = .uah, billAmount: Swift.Double, billAmountWcvv: Swift.Double = 0, payeeId: Swift.String, type: PortmoneSDKEcom.PaymentType = .payment, merchantIdentifier: Swift.String = "", paymentFlowType: PortmoneSDKEcom.PaymentFlowType = .byCard, emailAddress: Swift.String = "", shopBillId: Swift.String = "")
+  @objc public init(description: Swift.String = "", attribute1: Swift.String = "", attribute2: Swift.String = "", attribute3: Swift.String = "", attribute4: Swift.String = "", attribute5: Swift.String = "", billNumber: Swift.String = "", contractNumber: Swift.String = "", preauthFlag: Swift.Bool = false, billCurrency: PortmoneSDKEcom.PMCurrency = .uah, billAmount: Swift.Double, billAmountWcvv: Swift.Double = 0, payeeId: Swift.String, type: PortmoneSDKEcom.PaymentType = .payment, merchantIdentifier: Swift.String = "", paymentFlowType: PortmoneSDKEcom.PaymentFlowType = .byCard, emailAddress: Swift.String = "", shopBillId: Swift.String = "")
   @objc public init(_ transferParams: PortmoneSDKEcom.TransferParams)
   public func validate() -> (any Swift.Error)?
   @objc deinit
@@ -205,7 +205,7 @@ extension PortmoneSDKEcom.StyleSource {
   }
   public init?(rawValue: Swift.String)
 }
-@objc public enum Currency : Swift.Int, Swift.RawRepresentable {
+@objc public enum PMCurrency : Swift.Int, Swift.RawRepresentable {
   case uah
   case usd
   case eur
@@ -302,7 +302,7 @@ extension PortmoneSDKEcom.StyleSource {
   public var contractNumber: Swift.String
   public var billAmount: Swift.Double
   final public let payeeId: Swift.String
-  public var billCurrency: PortmoneSDKEcom.Currency {
+  public var billCurrency: PortmoneSDKEcom.PMCurrency {
     get
   }
   @objc public init(attribute2: Swift.String = "", attribute3: Swift.String = "", attribute4: Swift.String = "", attribute5: Swift.String = "", billNumber: Swift.String = "", billAmount: Swift.Double, payeeId: Swift.String)
@@ -311,8 +311,8 @@ extension PortmoneSDKEcom.StyleSource {
 }
 extension PortmoneSDKEcom.Language : Swift.Equatable {}
 extension PortmoneSDKEcom.Language : Swift.Hashable {}
-extension PortmoneSDKEcom.Currency : Swift.Equatable {}
-extension PortmoneSDKEcom.Currency : Swift.Hashable {}
+extension PortmoneSDKEcom.PMCurrency : Swift.Equatable {}
+extension PortmoneSDKEcom.PMCurrency : Swift.Hashable {}
 extension PortmoneSDKEcom.PaymentType : Swift.Equatable {}
 extension PortmoneSDKEcom.PaymentType : Swift.Hashable {}
 extension PortmoneSDKEcom.PaymentType : Swift.RawRepresentable {}

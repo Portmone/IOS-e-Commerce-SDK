@@ -315,28 +315,17 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom4Bill")
 
 @class NSString;
 @class PaymentBill;
-enum Currency : NSInteger;
+enum PMCurrency : NSInteger;
 enum PaymentFlowType : NSInteger;
 
 /// Payment bills
 SWIFT_CLASS("_TtC15PortmoneSDKEcom18BillsPaymentParams")
 @interface BillsPaymentParams : NSObject
 /// Init
-- (nonnull instancetype)initWithContractNumber:(NSString * _Nonnull)contractNumber paymentBills:(NSArray<PaymentBill *> * _Nonnull)paymentBills billCurrency:(enum Currency)billCurrency paymentFlowType:(enum PaymentFlowType)paymentFlowType merchantIdentifier:(NSString * _Nonnull)merchantIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithContractNumber:(NSString * _Nonnull)contractNumber paymentBills:(NSArray<PaymentBill *> * _Nonnull)paymentBills billCurrency:(enum PMCurrency)billCurrency paymentFlowType:(enum PaymentFlowType)paymentFlowType merchantIdentifier:(NSString * _Nonnull)merchantIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-/// Supported currencies
-typedef SWIFT_ENUM(NSInteger, Currency, open) {
-  CurrencyUah = 0,
-  CurrencyUsd = 1,
-  CurrencyEur = 2,
-  CurrencyGbp = 3,
-  CurrencyByn = 4,
-  CurrencyKzt = 5,
-  CurrencyRub = 6,
-};
 
 
 /// Supported languages
@@ -366,6 +355,17 @@ typedef SWIFT_ENUM(NSInteger, MerchantViewFlowType, open) {
   MerchantViewFlowTypePreauthCard = 1,
 };
 
+/// Supported currencies
+typedef SWIFT_ENUM(NSInteger, PMCurrency, open) {
+  PMCurrencyUah = 0,
+  PMCurrencyUsd = 1,
+  PMCurrencyEur = 2,
+  PMCurrencyGbp = 3,
+  PMCurrencyByn = 4,
+  PMCurrencyKzt = 5,
+  PMCurrencyRub = 6,
+};
+
 
 /// Payment Bill
 SWIFT_CLASS("_TtC15PortmoneSDKEcom11PaymentBill")
@@ -392,7 +392,7 @@ enum PaymentType : NSInteger;
 SWIFT_CLASS("_TtC15PortmoneSDKEcom13PaymentParams")
 @interface PaymentParams : NSObject
 /// Init
-- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description attribute1:(NSString * _Nonnull)attribute1 attribute2:(NSString * _Nonnull)attribute2 attribute3:(NSString * _Nonnull)attribute3 attribute4:(NSString * _Nonnull)attribute4 attribute5:(NSString * _Nonnull)attribute5 billNumber:(NSString * _Nonnull)billNumber contractNumber:(NSString * _Nonnull)contractNumber preauthFlag:(BOOL)preauthFlag billCurrency:(enum Currency)billCurrency billAmount:(double)billAmount billAmountWcvv:(double)billAmountWcvv payeeId:(NSString * _Nonnull)payeeId type:(enum PaymentType)type merchantIdentifier:(NSString * _Nonnull)merchantIdentifier paymentFlowType:(enum PaymentFlowType)paymentFlowType emailAddress:(NSString * _Nonnull)emailAddress shopBillId:(NSString * _Nonnull)shopBillId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description attribute1:(NSString * _Nonnull)attribute1 attribute2:(NSString * _Nonnull)attribute2 attribute3:(NSString * _Nonnull)attribute3 attribute4:(NSString * _Nonnull)attribute4 attribute5:(NSString * _Nonnull)attribute5 billNumber:(NSString * _Nonnull)billNumber contractNumber:(NSString * _Nonnull)contractNumber preauthFlag:(BOOL)preauthFlag billCurrency:(enum PMCurrency)billCurrency billAmount:(double)billAmount billAmountWcvv:(double)billAmountWcvv payeeId:(NSString * _Nonnull)payeeId type:(enum PaymentType)type merchantIdentifier:(NSString * _Nonnull)merchantIdentifier paymentFlowType:(enum PaymentFlowType)paymentFlowType emailAddress:(NSString * _Nonnull)emailAddress shopBillId:(NSString * _Nonnull)shopBillId OBJC_DESIGNATED_INITIALIZER;
 /// Init from Transfer parms
 - (nonnull instancetype)init:(TransferParams * _Nonnull)transferParams OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

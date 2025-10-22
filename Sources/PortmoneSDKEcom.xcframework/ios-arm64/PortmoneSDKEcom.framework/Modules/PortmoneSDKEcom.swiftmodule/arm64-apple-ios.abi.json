@@ -252,14 +252,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Currency",
-                "printedName": "PortmoneSDKEcom.Currency",
-                "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                "name": "PMCurrency",
+                "printedName": "PortmoneSDKEcom.PMCurrency",
+                "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA0G0Ovp",
-            "mangledName": "$s15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA0G0Ovp",
+            "usr": "s:15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA10PMCurrencyOvp",
+            "mangledName": "$s15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA10PMCurrencyOvp",
             "moduleName": "PortmoneSDKEcom",
             "declAttributes": [
               "HasStorage",
@@ -275,14 +275,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA0G0Ovg",
-                "mangledName": "$s15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA0G0Ovg",
+                "usr": "s:15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA10PMCurrencyOvg",
+                "mangledName": "$s15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA10PMCurrencyOvg",
                 "moduleName": "PortmoneSDKEcom",
                 "implicit": true,
                 "accessorKind": "get"
@@ -299,14 +299,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA0G0Ovs",
-                "mangledName": "$s15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA0G0Ovs",
+                "usr": "s:15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA10PMCurrencyOvs",
+                "mangledName": "$s15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA10PMCurrencyOvs",
                 "moduleName": "PortmoneSDKEcom",
                 "implicit": true,
                 "accessorKind": "set"
@@ -323,8 +323,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA0G0OvM",
-                "mangledName": "$s15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA0G0OvM",
+                "usr": "s:15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA10PMCurrencyOvM",
+                "mangledName": "$s15PortmoneSDKEcom18BillsPaymentParamsC12billCurrencyAA10PMCurrencyOvM",
                 "moduleName": "PortmoneSDKEcom",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -563,10 +563,10 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Currency",
-                "printedName": "PortmoneSDKEcom.Currency",
+                "name": "PMCurrency",
+                "printedName": "PortmoneSDKEcom.PMCurrency",
                 "hasDefaultArg": true,
-                "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
               },
               {
                 "kind": "TypeNominal",
@@ -585,7 +585,7 @@
             ],
             "declKind": "Constructor",
             "usr": "c:@M@PortmoneSDKEcom@objc(cs)BillsPaymentParams(im)initWithContractNumber:paymentBills:billCurrency:paymentFlowType:merchantIdentifier:",
-            "mangledName": "$s15PortmoneSDKEcom18BillsPaymentParamsC14contractNumber07paymentC012billCurrency0H8FlowType18merchantIdentifierACSS_SayAA0D4BillCGAA0J0OAA0dkL0OSStcfc",
+            "mangledName": "$s15PortmoneSDKEcom18BillsPaymentParamsC14contractNumber07paymentC012billCurrency0H8FlowType18merchantIdentifierACSS_SayAA0D4BillCGAA10PMCurrencyOAA0dkL0OSStcfc",
             "moduleName": "PortmoneSDKEcom",
             "objc_name": "initWithContractNumber:paymentBills:billCurrency:paymentFlowType:merchantIdentifier:",
             "declAttributes": [
@@ -802,6 +802,16 @@
         "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PortmoneSDKEcom",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "PortmoneSDKEcom",
         "declAttributes": [
@@ -2996,6 +3006,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PortmoneSDKEcom",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4591,14 +4611,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Currency",
-                "printedName": "PortmoneSDKEcom.Currency",
-                "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                "name": "PMCurrency",
+                "printedName": "PortmoneSDKEcom.PMCurrency",
+                "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA0F0Ovp",
-            "mangledName": "$s15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA0F0Ovp",
+            "usr": "s:15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA10PMCurrencyOvp",
+            "mangledName": "$s15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA10PMCurrencyOvp",
             "moduleName": "PortmoneSDKEcom",
             "declAttributes": [
               "HasStorage",
@@ -4614,14 +4634,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA0F0Ovg",
-                "mangledName": "$s15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA0F0Ovg",
+                "usr": "s:15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA10PMCurrencyOvg",
+                "mangledName": "$s15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA10PMCurrencyOvg",
                 "moduleName": "PortmoneSDKEcom",
                 "implicit": true,
                 "accessorKind": "get"
@@ -4638,14 +4658,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA0F0Ovs",
-                "mangledName": "$s15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA0F0Ovs",
+                "usr": "s:15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA10PMCurrencyOvs",
+                "mangledName": "$s15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA10PMCurrencyOvs",
                 "moduleName": "PortmoneSDKEcom",
                 "implicit": true,
                 "accessorKind": "set"
@@ -4662,8 +4682,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA0F0OvM",
-                "mangledName": "$s15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA0F0OvM",
+                "usr": "s:15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA10PMCurrencyOvM",
+                "mangledName": "$s15PortmoneSDKEcom13PaymentParamsC12billCurrencyAA10PMCurrencyOvM",
                 "moduleName": "PortmoneSDKEcom",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5348,10 +5368,10 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Currency",
-                "printedName": "PortmoneSDKEcom.Currency",
+                "name": "PMCurrency",
+                "printedName": "PortmoneSDKEcom.PMCurrency",
                 "hasDefaultArg": true,
-                "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
               },
               {
                 "kind": "TypeNominal",
@@ -5410,7 +5430,7 @@
             ],
             "declKind": "Constructor",
             "usr": "c:@M@PortmoneSDKEcom@objc(cs)PaymentParams(im)initWithDescription:attribute1:attribute2:attribute3:attribute4:attribute5:billNumber:contractNumber:preauthFlag:billCurrency:billAmount:billAmountWcvv:payeeId:type:merchantIdentifier:paymentFlowType:emailAddress:shopBillId:",
-            "mangledName": "$s15PortmoneSDKEcom13PaymentParamsC11description10attribute110attribute210attribute310attribute410attribute510billNumber08contractL011preauthFlag0K8Currency0K6Amount0kQ4Wcvv7payeeId4type18merchantIdentifier15paymentFlowType12emailAddress08shopBillT0ACSS_S7SSbAA0P0OS2dSSAA0cZ0OSSAA0cyZ0OS2Stcfc",
+            "mangledName": "$s15PortmoneSDKEcom13PaymentParamsC11description10attribute110attribute210attribute310attribute410attribute510billNumber08contractL011preauthFlag0K8Currency0K6Amount0kQ4Wcvv7payeeId4type18merchantIdentifier15paymentFlowType12emailAddress08shopBillT0ACSS_S7SSbAA10PMCurrencyOS2dSSAA0cZ0OSSAA0cyZ0OS2Stcfc",
             "moduleName": "PortmoneSDKEcom",
             "objc_name": "initWithDescription:attribute1:attribute2:attribute3:attribute4:attribute5:billNumber:contractNumber:preauthFlag:billCurrency:billAmount:billAmountWcvv:payeeId:type:merchantIdentifier:paymentFlowType:emailAddress:shopBillId:",
             "declAttributes": [
@@ -7830,6 +7850,16 @@
         "moduleName": "PortmoneSDKEcom"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PortmoneSDKEcom",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "Bill",
         "printedName": "Bill",
@@ -8767,6 +8797,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PortmoneSDKEcom",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -9056,8 +9096,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Currency",
-        "printedName": "Currency",
+        "name": "PMCurrency",
+        "printedName": "PMCurrency",
         "children": [
           {
             "kind": "Var",
@@ -9067,24 +9107,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PortmoneSDKEcom.Currency.Type) -> PortmoneSDKEcom.Currency",
+                "printedName": "(PortmoneSDKEcom.PMCurrency.Type) -> PortmoneSDKEcom.PMCurrency",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PortmoneSDKEcom.Currency.Type",
+                    "printedName": "PortmoneSDKEcom.PMCurrency.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Currency",
-                        "printedName": "PortmoneSDKEcom.Currency",
-                        "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                        "name": "PMCurrency",
+                        "printedName": "PortmoneSDKEcom.PMCurrency",
+                        "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                       }
                     ]
                   }
@@ -9092,8 +9132,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@PortmoneSDKEcom@E@Currency@CurrencyUah",
-            "mangledName": "$s15PortmoneSDKEcom8CurrencyO3uahyA2CmF",
+            "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency@PMCurrencyUah",
+            "mangledName": "$s15PortmoneSDKEcom10PMCurrencyO3uahyA2CmF",
             "moduleName": "PortmoneSDKEcom",
             "declAttributes": [
               "ObjC"
@@ -9108,24 +9148,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PortmoneSDKEcom.Currency.Type) -> PortmoneSDKEcom.Currency",
+                "printedName": "(PortmoneSDKEcom.PMCurrency.Type) -> PortmoneSDKEcom.PMCurrency",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PortmoneSDKEcom.Currency.Type",
+                    "printedName": "PortmoneSDKEcom.PMCurrency.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Currency",
-                        "printedName": "PortmoneSDKEcom.Currency",
-                        "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                        "name": "PMCurrency",
+                        "printedName": "PortmoneSDKEcom.PMCurrency",
+                        "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                       }
                     ]
                   }
@@ -9133,8 +9173,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@PortmoneSDKEcom@E@Currency@CurrencyUsd",
-            "mangledName": "$s15PortmoneSDKEcom8CurrencyO3usdyA2CmF",
+            "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency@PMCurrencyUsd",
+            "mangledName": "$s15PortmoneSDKEcom10PMCurrencyO3usdyA2CmF",
             "moduleName": "PortmoneSDKEcom",
             "declAttributes": [
               "ObjC"
@@ -9149,24 +9189,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PortmoneSDKEcom.Currency.Type) -> PortmoneSDKEcom.Currency",
+                "printedName": "(PortmoneSDKEcom.PMCurrency.Type) -> PortmoneSDKEcom.PMCurrency",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PortmoneSDKEcom.Currency.Type",
+                    "printedName": "PortmoneSDKEcom.PMCurrency.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Currency",
-                        "printedName": "PortmoneSDKEcom.Currency",
-                        "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                        "name": "PMCurrency",
+                        "printedName": "PortmoneSDKEcom.PMCurrency",
+                        "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                       }
                     ]
                   }
@@ -9174,8 +9214,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@PortmoneSDKEcom@E@Currency@CurrencyEur",
-            "mangledName": "$s15PortmoneSDKEcom8CurrencyO3euryA2CmF",
+            "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency@PMCurrencyEur",
+            "mangledName": "$s15PortmoneSDKEcom10PMCurrencyO3euryA2CmF",
             "moduleName": "PortmoneSDKEcom",
             "declAttributes": [
               "ObjC"
@@ -9190,24 +9230,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PortmoneSDKEcom.Currency.Type) -> PortmoneSDKEcom.Currency",
+                "printedName": "(PortmoneSDKEcom.PMCurrency.Type) -> PortmoneSDKEcom.PMCurrency",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PortmoneSDKEcom.Currency.Type",
+                    "printedName": "PortmoneSDKEcom.PMCurrency.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Currency",
-                        "printedName": "PortmoneSDKEcom.Currency",
-                        "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                        "name": "PMCurrency",
+                        "printedName": "PortmoneSDKEcom.PMCurrency",
+                        "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                       }
                     ]
                   }
@@ -9215,8 +9255,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@PortmoneSDKEcom@E@Currency@CurrencyGbp",
-            "mangledName": "$s15PortmoneSDKEcom8CurrencyO3gbpyA2CmF",
+            "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency@PMCurrencyGbp",
+            "mangledName": "$s15PortmoneSDKEcom10PMCurrencyO3gbpyA2CmF",
             "moduleName": "PortmoneSDKEcom",
             "declAttributes": [
               "ObjC"
@@ -9231,24 +9271,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PortmoneSDKEcom.Currency.Type) -> PortmoneSDKEcom.Currency",
+                "printedName": "(PortmoneSDKEcom.PMCurrency.Type) -> PortmoneSDKEcom.PMCurrency",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PortmoneSDKEcom.Currency.Type",
+                    "printedName": "PortmoneSDKEcom.PMCurrency.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Currency",
-                        "printedName": "PortmoneSDKEcom.Currency",
-                        "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                        "name": "PMCurrency",
+                        "printedName": "PortmoneSDKEcom.PMCurrency",
+                        "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                       }
                     ]
                   }
@@ -9256,8 +9296,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@PortmoneSDKEcom@E@Currency@CurrencyByn",
-            "mangledName": "$s15PortmoneSDKEcom8CurrencyO3bynyA2CmF",
+            "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency@PMCurrencyByn",
+            "mangledName": "$s15PortmoneSDKEcom10PMCurrencyO3bynyA2CmF",
             "moduleName": "PortmoneSDKEcom",
             "declAttributes": [
               "ObjC"
@@ -9272,24 +9312,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PortmoneSDKEcom.Currency.Type) -> PortmoneSDKEcom.Currency",
+                "printedName": "(PortmoneSDKEcom.PMCurrency.Type) -> PortmoneSDKEcom.PMCurrency",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PortmoneSDKEcom.Currency.Type",
+                    "printedName": "PortmoneSDKEcom.PMCurrency.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Currency",
-                        "printedName": "PortmoneSDKEcom.Currency",
-                        "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                        "name": "PMCurrency",
+                        "printedName": "PortmoneSDKEcom.PMCurrency",
+                        "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                       }
                     ]
                   }
@@ -9297,8 +9337,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@PortmoneSDKEcom@E@Currency@CurrencyKzt",
-            "mangledName": "$s15PortmoneSDKEcom8CurrencyO3kztyA2CmF",
+            "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency@PMCurrencyKzt",
+            "mangledName": "$s15PortmoneSDKEcom10PMCurrencyO3kztyA2CmF",
             "moduleName": "PortmoneSDKEcom",
             "declAttributes": [
               "ObjC"
@@ -9313,24 +9353,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PortmoneSDKEcom.Currency.Type) -> PortmoneSDKEcom.Currency",
+                "printedName": "(PortmoneSDKEcom.PMCurrency.Type) -> PortmoneSDKEcom.PMCurrency",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PortmoneSDKEcom.Currency.Type",
+                    "printedName": "PortmoneSDKEcom.PMCurrency.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Currency",
-                        "printedName": "PortmoneSDKEcom.Currency",
-                        "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                        "name": "PMCurrency",
+                        "printedName": "PortmoneSDKEcom.PMCurrency",
+                        "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                       }
                     ]
                   }
@@ -9338,8 +9378,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@PortmoneSDKEcom@E@Currency@CurrencyRub",
-            "mangledName": "$s15PortmoneSDKEcom8CurrencyO3rubyA2CmF",
+            "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency@PMCurrencyRub",
+            "mangledName": "$s15PortmoneSDKEcom10PMCurrencyO3rubyA2CmF",
             "moduleName": "PortmoneSDKEcom",
             "declAttributes": [
               "ObjC"
@@ -9359,8 +9399,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15PortmoneSDKEcom8CurrencyO8rawValueSSvp",
-            "mangledName": "$s15PortmoneSDKEcom8CurrencyO8rawValueSSvp",
+            "usr": "s:15PortmoneSDKEcom10PMCurrencyO8rawValueSSvp",
+            "mangledName": "$s15PortmoneSDKEcom10PMCurrencyO8rawValueSSvp",
             "moduleName": "PortmoneSDKEcom",
             "declAttributes": [
               "AccessControl",
@@ -9380,8 +9420,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15PortmoneSDKEcom8CurrencyO8rawValueSSvg",
-                "mangledName": "$s15PortmoneSDKEcom8CurrencyO8rawValueSSvg",
+                "usr": "s:15PortmoneSDKEcom10PMCurrencyO8rawValueSSvg",
+                "mangledName": "$s15PortmoneSDKEcom10PMCurrencyO8rawValueSSvg",
                 "moduleName": "PortmoneSDKEcom",
                 "accessorKind": "get"
               }
@@ -9395,13 +9435,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "PortmoneSDKEcom.Currency?",
+                "printedName": "PortmoneSDKEcom.PMCurrency?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   }
                 ],
                 "usr": "s:Sq"
@@ -9414,8 +9454,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15PortmoneSDKEcom8CurrencyO8rawValueACSgSS_tcfc",
-            "mangledName": "$s15PortmoneSDKEcom8CurrencyO8rawValueACSgSS_tcfc",
+            "usr": "s:15PortmoneSDKEcom10PMCurrencyO8rawValueACSgSS_tcfc",
+            "mangledName": "$s15PortmoneSDKEcom10PMCurrencyO8rawValueACSgSS_tcfc",
             "moduleName": "PortmoneSDKEcom",
             "declAttributes": [
               "AccessControl",
@@ -9425,8 +9465,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "c:@M@PortmoneSDKEcom@E@Currency",
-        "mangledName": "$s15PortmoneSDKEcom8CurrencyO",
+        "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency",
+        "mangledName": "$s15PortmoneSDKEcom10PMCurrencyO",
         "moduleName": "PortmoneSDKEcom",
         "declAttributes": [
           "AccessControl",
@@ -12100,14 +12140,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Currency",
-                "printedName": "PortmoneSDKEcom.Currency",
-                "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                "name": "PMCurrency",
+                "printedName": "PortmoneSDKEcom.PMCurrency",
+                "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15PortmoneSDKEcom14TransferParamsC12billCurrencyAA0F0Ovp",
-            "mangledName": "$s15PortmoneSDKEcom14TransferParamsC12billCurrencyAA0F0Ovp",
+            "usr": "s:15PortmoneSDKEcom14TransferParamsC12billCurrencyAA10PMCurrencyOvp",
+            "mangledName": "$s15PortmoneSDKEcom14TransferParamsC12billCurrencyAA10PMCurrencyOvp",
             "moduleName": "PortmoneSDKEcom",
             "declAttributes": [
               "AccessControl",
@@ -12121,14 +12161,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Currency",
-                    "printedName": "PortmoneSDKEcom.Currency",
-                    "usr": "c:@M@PortmoneSDKEcom@E@Currency"
+                    "name": "PMCurrency",
+                    "printedName": "PortmoneSDKEcom.PMCurrency",
+                    "usr": "c:@M@PortmoneSDKEcom@E@PMCurrency"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15PortmoneSDKEcom14TransferParamsC12billCurrencyAA0F0Ovg",
-                "mangledName": "$s15PortmoneSDKEcom14TransferParamsC12billCurrencyAA0F0Ovg",
+                "usr": "s:15PortmoneSDKEcom14TransferParamsC12billCurrencyAA10PMCurrencyOvg",
+                "mangledName": "$s15PortmoneSDKEcom14TransferParamsC12billCurrencyAA10PMCurrencyOvg",
                 "moduleName": "PortmoneSDKEcom",
                 "accessorKind": "get"
               }
@@ -12760,6 +12800,13 @@
       "value": "\"payBillsSdk\""
     },
     {
+      "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Constants\/ApiConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1374,
+      "length": 6,
+      "value": "\"p705\""
+    },
+    {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/RestApiManager\/RestApiManagers\/URLSessionRestApiManager\/URLSessionRestApiManager.swift",
       "kind": "Array",
       "offset": 915,
@@ -12811,21 +12858,21 @@
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/BillsPaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 805,
+      "offset": 807,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/BillsPaymentParams.swift",
       "kind": "Array",
-      "offset": 861,
+      "offset": 863,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/BillsPaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 1035,
+      "offset": 1039,
       "length": 2,
       "value": "\"\""
     },
@@ -13222,6 +13269,48 @@
       "value": "\"id\""
     },
     {
+      "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/API\/Response.swift",
+      "kind": "StringLiteral",
+      "offset": 1901,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Views\/Controllers\/RecipientDetailsViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 275,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Views\/Controllers\/RecipientDetailsViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 321,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Views\/Controllers\/RecipientDetailsViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 363,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Views\/Controllers\/RecipientDetailsViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 409,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Views\/Controllers\/RecipientDetailsViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7475,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Utils\/Validators\/CardNumberValidator.swift",
       "kind": "StringLiteral",
       "offset": 254,
@@ -13245,14 +13334,14 @@
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Views\/HeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 226,
+      "offset": 321,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Views\/HeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 263,
+      "offset": 358,
       "length": 2,
       "value": "40"
     },
@@ -13371,7 +13460,7 @@
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Views\/Controllers\/PaymentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7783,
+      "offset": 7900,
       "length": 5,
       "value": "false"
     },
@@ -13392,91 +13481,91 @@
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 1691,
+      "offset": 1695,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 1738,
+      "offset": 1742,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 1785,
+      "offset": 1789,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 1832,
+      "offset": 1836,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 1879,
+      "offset": 1883,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 1926,
+      "offset": 1930,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 1973,
+      "offset": 1977,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 2024,
+      "offset": 2028,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "BooleanLiteral",
-      "offset": 2070,
+      "offset": 2074,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 2219,
+      "offset": 2225,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 2364,
+      "offset": 2370,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 2479,
+      "offset": 2485,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/PaymentParams.swift",
       "kind": "StringLiteral",
-      "offset": 2526,
+      "offset": 2532,
       "length": 2,
       "value": "\"\""
     },
@@ -14834,98 +14923,98 @@
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1065,
+      "offset": 1067,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1078,
+      "offset": 1080,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1091,
+      "offset": 1093,
       "length": 3,
       "value": "3"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1104,
+      "offset": 1106,
       "length": 3,
       "value": "4"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1117,
+      "offset": 1119,
       "length": 3,
       "value": "5"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1130,
+      "offset": 1132,
       "length": 3,
       "value": "6"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 2227,
+      "offset": 2229,
       "length": 13,
       "value": "1"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 2250,
+      "offset": 2252,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 2388,
+      "offset": 2390,
       "length": 17,
       "value": "1"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 2415,
+      "offset": 2417,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 2435,
+      "offset": 2437,
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 2455,
+      "offset": 2457,
       "length": 21,
       "value": "4"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "BooleanLiteral",
-      "offset": 2651,
+      "offset": 2653,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 3297,
+      "offset": 3299,
       "length": 11,
       "value": "1"
     },
@@ -14967,7 +15056,7 @@
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/ViewModels\/Commission\/CommissionByTokenTransferViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2446,
+      "offset": 2452,
       "length": 4,
       "value": "true"
     },
@@ -15471,35 +15560,35 @@
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/TransferParams.swift",
       "kind": "StringLiteral",
-      "offset": 873,
+      "offset": 875,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/TransferParams.swift",
       "kind": "StringLiteral",
-      "offset": 920,
+      "offset": 922,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/TransferParams.swift",
       "kind": "StringLiteral",
-      "offset": 967,
+      "offset": 969,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/TransferParams.swift",
       "kind": "StringLiteral",
-      "offset": 1014,
+      "offset": 1016,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/robertm\/Desktop\/portmone-b2c-ios-ecom-sdk\/PortmoneSDKEcom\/Models\/Public\/Params\/TransferParams.swift",
       "kind": "StringLiteral",
-      "offset": 1061,
+      "offset": 1063,
       "length": 2,
       "value": "\"\""
     },
@@ -16962,707 +17051,714 @@
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28405,
+      "offset": 28394,
+      "length": 6,
+      "value": "\"info\""
+    },
+    {
+      "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 28529,
       "length": 12,
       "value": "\"privat_pay\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28551,
+      "offset": 28675,
       "length": 15,
       "value": "\"touch-error-0\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28700,
+      "offset": 28824,
       "length": 15,
       "value": "\"touch-error-1\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28851,
+      "offset": 28975,
       "length": 16,
       "value": "\"touch-error-10\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29003,
+      "offset": 29127,
       "length": 16,
       "value": "\"touch-error-11\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29155,
+      "offset": 29279,
       "length": 16,
       "value": "\"touch-error-12\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29307,
+      "offset": 29431,
       "length": 16,
       "value": "\"touch-error-13\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29459,
+      "offset": 29583,
       "length": 16,
       "value": "\"touch-error-14\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29611,
+      "offset": 29735,
       "length": 16,
       "value": "\"touch-error-15\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29763,
+      "offset": 29887,
       "length": 16,
       "value": "\"touch-error-16\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29915,
+      "offset": 30039,
       "length": 16,
       "value": "\"touch-error-17\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30067,
+      "offset": 30191,
       "length": 16,
       "value": "\"touch-error-18\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30219,
+      "offset": 30343,
       "length": 16,
       "value": "\"touch-error-19\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30369,
+      "offset": 30493,
       "length": 15,
       "value": "\"touch-error-2\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30520,
+      "offset": 30644,
       "length": 16,
       "value": "\"touch-error-20\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30672,
+      "offset": 30796,
       "length": 16,
       "value": "\"touch-error-21\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30824,
+      "offset": 30948,
       "length": 16,
       "value": "\"touch-error-22\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30976,
+      "offset": 31100,
       "length": 16,
       "value": "\"touch-error-23\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31128,
+      "offset": 31252,
       "length": 16,
       "value": "\"touch-error-24\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31280,
+      "offset": 31404,
       "length": 16,
       "value": "\"touch-error-25\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31432,
+      "offset": 31556,
       "length": 16,
       "value": "\"touch-error-26\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31584,
+      "offset": 31708,
       "length": 16,
       "value": "\"touch-error-27\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31736,
+      "offset": 31860,
       "length": 16,
       "value": "\"touch-error-28\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31888,
+      "offset": 32012,
       "length": 16,
       "value": "\"touch-error-29\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32038,
+      "offset": 32162,
       "length": 15,
       "value": "\"touch-error-3\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32189,
+      "offset": 32313,
       "length": 16,
       "value": "\"touch-error-30\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32341,
+      "offset": 32465,
       "length": 16,
       "value": "\"touch-error-31\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32493,
+      "offset": 32617,
       "length": 16,
       "value": "\"touch-error-32\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32645,
+      "offset": 32769,
       "length": 16,
       "value": "\"touch-error-33\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32797,
+      "offset": 32921,
       "length": 16,
       "value": "\"touch-error-34\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32949,
+      "offset": 33073,
       "length": 16,
       "value": "\"touch-error-35\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33101,
+      "offset": 33225,
       "length": 16,
       "value": "\"touch-error-36\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33253,
+      "offset": 33377,
       "length": 16,
       "value": "\"touch-error-37\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33405,
+      "offset": 33529,
       "length": 16,
       "value": "\"touch-error-38\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33557,
+      "offset": 33681,
       "length": 16,
       "value": "\"touch-error-39\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33707,
+      "offset": 33831,
       "length": 15,
       "value": "\"touch-error-4\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 33858,
+      "offset": 33982,
       "length": 16,
       "value": "\"touch-error-40\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34010,
+      "offset": 34134,
       "length": 16,
       "value": "\"touch-error-41\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34162,
+      "offset": 34286,
       "length": 16,
       "value": "\"touch-error-42\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34314,
+      "offset": 34438,
       "length": 16,
       "value": "\"touch-error-43\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34466,
+      "offset": 34590,
       "length": 16,
       "value": "\"touch-error-44\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34618,
+      "offset": 34742,
       "length": 16,
       "value": "\"touch-error-45\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34770,
+      "offset": 34894,
       "length": 16,
       "value": "\"touch-error-46\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 34922,
+      "offset": 35046,
       "length": 16,
       "value": "\"touch-error-47\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35074,
+      "offset": 35198,
       "length": 16,
       "value": "\"touch-error-48\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35226,
+      "offset": 35350,
       "length": 16,
       "value": "\"touch-error-49\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35376,
+      "offset": 35500,
       "length": 15,
       "value": "\"touch-error-5\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35525,
+      "offset": 35649,
       "length": 15,
       "value": "\"touch-error-6\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35674,
+      "offset": 35798,
       "length": 15,
       "value": "\"touch-error-7\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35823,
+      "offset": 35947,
       "length": 15,
       "value": "\"touch-error-8\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 35972,
+      "offset": 36096,
       "length": 15,
       "value": "\"touch-error-9\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36125,
+      "offset": 36249,
       "length": 17,
       "value": "\"touch-success-0\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36280,
+      "offset": 36404,
       "length": 17,
       "value": "\"touch-success-1\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36437,
+      "offset": 36561,
       "length": 18,
       "value": "\"touch-success-10\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36595,
+      "offset": 36719,
       "length": 18,
       "value": "\"touch-success-11\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36753,
+      "offset": 36877,
       "length": 18,
       "value": "\"touch-success-12\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 36911,
+      "offset": 37035,
       "length": 18,
       "value": "\"touch-success-13\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 37069,
+      "offset": 37193,
       "length": 18,
       "value": "\"touch-success-14\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 37227,
+      "offset": 37351,
       "length": 18,
       "value": "\"touch-success-15\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 37385,
+      "offset": 37509,
       "length": 18,
       "value": "\"touch-success-16\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 37543,
+      "offset": 37667,
       "length": 18,
       "value": "\"touch-success-17\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 37701,
+      "offset": 37825,
       "length": 18,
       "value": "\"touch-success-18\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 37859,
+      "offset": 37983,
       "length": 18,
       "value": "\"touch-success-19\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38015,
+      "offset": 38139,
       "length": 17,
       "value": "\"touch-success-2\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38172,
+      "offset": 38296,
       "length": 18,
       "value": "\"touch-success-20\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38330,
+      "offset": 38454,
       "length": 18,
       "value": "\"touch-success-21\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38488,
+      "offset": 38612,
       "length": 18,
       "value": "\"touch-success-22\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38646,
+      "offset": 38770,
       "length": 18,
       "value": "\"touch-success-23\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38804,
+      "offset": 38928,
       "length": 18,
       "value": "\"touch-success-24\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 38962,
+      "offset": 39086,
       "length": 18,
       "value": "\"touch-success-25\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39120,
+      "offset": 39244,
       "length": 18,
       "value": "\"touch-success-26\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39278,
+      "offset": 39402,
       "length": 18,
       "value": "\"touch-success-27\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39436,
+      "offset": 39560,
       "length": 18,
       "value": "\"touch-success-28\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39594,
+      "offset": 39718,
       "length": 18,
       "value": "\"touch-success-29\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39750,
+      "offset": 39874,
       "length": 17,
       "value": "\"touch-success-3\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 39907,
+      "offset": 40031,
       "length": 18,
       "value": "\"touch-success-30\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 40065,
+      "offset": 40189,
       "length": 18,
       "value": "\"touch-success-31\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 40223,
+      "offset": 40347,
       "length": 18,
       "value": "\"touch-success-32\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 40381,
+      "offset": 40505,
       "length": 18,
       "value": "\"touch-success-33\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 40539,
+      "offset": 40663,
       "length": 18,
       "value": "\"touch-success-34\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 40697,
+      "offset": 40821,
       "length": 18,
       "value": "\"touch-success-35\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 40855,
+      "offset": 40979,
       "length": 18,
       "value": "\"touch-success-36\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41013,
+      "offset": 41137,
       "length": 18,
       "value": "\"touch-success-37\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41171,
+      "offset": 41295,
       "length": 18,
       "value": "\"touch-success-38\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41329,
+      "offset": 41453,
       "length": 18,
       "value": "\"touch-success-39\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41485,
+      "offset": 41609,
       "length": 17,
       "value": "\"touch-success-4\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41642,
+      "offset": 41766,
       "length": 18,
       "value": "\"touch-success-40\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41800,
+      "offset": 41924,
       "length": 18,
       "value": "\"touch-success-41\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 41958,
+      "offset": 42082,
       "length": 18,
       "value": "\"touch-success-42\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 42116,
+      "offset": 42240,
       "length": 18,
       "value": "\"touch-success-43\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 42274,
+      "offset": 42398,
       "length": 18,
       "value": "\"touch-success-44\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 42432,
+      "offset": 42556,
       "length": 18,
       "value": "\"touch-success-45\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 42590,
+      "offset": 42714,
       "length": 18,
       "value": "\"touch-success-46\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 42748,
+      "offset": 42872,
       "length": 18,
       "value": "\"touch-success-47\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 42906,
+      "offset": 43030,
       "length": 18,
       "value": "\"touch-success-48\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43064,
+      "offset": 43188,
       "length": 18,
       "value": "\"touch-success-49\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43220,
+      "offset": 43344,
       "length": 17,
       "value": "\"touch-success-5\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43375,
+      "offset": 43499,
       "length": 17,
       "value": "\"touch-success-6\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43530,
+      "offset": 43654,
       "length": 17,
       "value": "\"touch-success-7\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43685,
+      "offset": 43809,
       "length": 17,
       "value": "\"touch-success-8\""
     },
     {
       "filePath": "\/Users\/robertm\/Library\/Developer\/Xcode\/DerivedData\/PortmoneSDKEcom-cghmdczjnqliexdcydtcdrbbuijt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PortmoneSDKEcom-Universal\/IntermediateBuildFilesPath\/PortmoneSDKEcom.build\/Release-iphoneos\/PortmoneSDKEcom.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 43840,
+      "offset": 43964,
       "length": 17,
       "value": "\"touch-success-9\""
     }
