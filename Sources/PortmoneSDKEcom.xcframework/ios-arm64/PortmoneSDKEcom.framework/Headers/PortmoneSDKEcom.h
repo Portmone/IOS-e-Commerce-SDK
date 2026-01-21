@@ -25,6 +25,8 @@ FOUNDATION_EXPORT const unsigned char PortmoneSDKEcomVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <PortmoneSDKEcom/PublicHeader.h>
 
+#if !TARGET_OS_SIMULATOR
+#if __has_include(<PortmoneSDKEcom/CardIO.h>)
 #import <PortmoneSDKEcom/CardIO.h>
 #import <PortmoneSDKEcom/CardIOCreditCardInfo.h>
 #import <PortmoneSDKEcom/CardIODetectionMode.h>
@@ -33,3 +35,5 @@ FOUNDATION_EXPORT const unsigned char PortmoneSDKEcomVersionString[];
 #import <PortmoneSDKEcom/CardIOPaymentViewController.h>
 #import <PortmoneSDKEcom/CardIOPaymentViewControllerDelegate.h>
 #import <PortmoneSDKEcom/CardIOUtilities.h>
+#endif
+#endif
