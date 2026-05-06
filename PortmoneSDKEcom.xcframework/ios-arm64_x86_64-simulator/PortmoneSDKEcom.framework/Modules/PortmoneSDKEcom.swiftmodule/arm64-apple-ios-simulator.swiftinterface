@@ -25,6 +25,25 @@ import _SwiftConcurrencyShims
   public func validate() -> (any Swift.Error)?
   @objc deinit
 }
+@objc public class BankPayPaymentParams : ObjectiveC.NSObject {
+  final public let desc: Swift.String
+  final public let attribute1: Swift.String
+  final public let attribute2: Swift.String
+  final public let attribute3: Swift.String
+  final public let attribute4: Swift.String
+  final public let attribute5: Swift.String
+  final public let billNumber: Swift.String
+  public var contractNumber: Swift.String
+  public var billCurrency: PortmoneSDKEcom.PMCurrency
+  public var billAmount: Swift.Double
+  final public let payeeId: Swift.String
+  final public let type: PortmoneSDKEcom.PaymentType
+  final public let emailAddress: Swift.String
+  public var shopBillId: Swift.String
+  @objc public init(description: Swift.String = "", attribute1: Swift.String = "", attribute2: Swift.String = "", attribute3: Swift.String = "", attribute4: Swift.String = "", attribute5: Swift.String = "", billNumber: Swift.String = "", contractNumber: Swift.String = "", billCurrency: PortmoneSDKEcom.PMCurrency = .uah, billAmount: Swift.Double, payeeId: Swift.String, type: PortmoneSDKEcom.PaymentType = .payment, emailAddress: Swift.String = "", shopBillId: Swift.String = "")
+  public func validate() -> (any Swift.Error)?
+  @objc deinit
+}
 @objc public class PreauthParams : ObjectiveC.NSObject {
   final public let payeeId: Swift.String
   final public let accountId: Swift.String
@@ -130,6 +149,7 @@ import _SwiftConcurrencyShims
   @objc func privatPayButtonTitleColor() -> UIKit.UIColor
   @objc func publicOfferButtonTitleColor() -> UIKit.UIColor
   @objc func publicOfferButtonColor() -> UIKit.UIColor
+  @objc func bankPayViewsBackgroundColor() -> UIKit.UIColor
   @objc func successImage() -> UIKit.UIImage?
   @objc func failureImage() -> UIKit.UIImage?
 }
@@ -160,6 +180,7 @@ extension PortmoneSDKEcom.StyleSource {
   public func privatPayButtonTitleColor() -> UIKit.UIColor
   public func publicOfferButtonTitleColor() -> UIKit.UIColor
   public func publicOfferButtonColor() -> UIKit.UIColor
+  public func bankPayViewsBackgroundColor() -> UIKit.UIColor
 }
 @objc public protocol PaymentPresenterDelegate {
   @objc func didFinishPayment(bill: PortmoneSDKEcom.Bill?, error: (any Swift.Error)?)
@@ -168,6 +189,7 @@ extension PortmoneSDKEcom.StyleSource {
   @objc optional func didCancelPayment()
   @objc optional func dismissedSDK()
   @objc optional func canceledSDK()
+  @objc optional func toHomeScreen()
 }
 @objc public class PaymentPresenter : ObjectiveC.NSObject {
   @objc public init(delegate: any PortmoneSDKEcom.PaymentPresenterDelegate, styleSource: (any PortmoneSDKEcom.StyleSource)? = nil, language: PortmoneSDKEcom.Language, biometricAuth: Swift.Bool = false, customUid: Swift.String? = nil)
@@ -179,6 +201,7 @@ extension PortmoneSDKEcom.StyleSource {
   @objc public func presentPaymentByToken(on controller: UIKit.UIViewController, payParams: PortmoneSDKEcom.PaymentParams, tokenParams: PortmoneSDKEcom.TokenPaymentParams, showReceiptScreen: Swift.Bool = true)
   @objc public func presentPaymentBillsByToken(on controller: UIKit.UIViewController, payParams: PortmoneSDKEcom.BillsPaymentParams, tokenParams: PortmoneSDKEcom.TokenPaymentParams)
   @objc public func presentTransferByToken(on controller: UIKit.UIViewController, transferParams: PortmoneSDKEcom.TransferParams, tokenParams: PortmoneSDKEcom.TokenPaymentParams, showReceiptScreen: Swift.Bool = true)
+  @objc public func presentPaymentByBankPay(on controller: UIKit.UIViewController, params: PortmoneSDKEcom.BankPayPaymentParams)
   @objc public func setReturnToDetails(disabled: Swift.Bool)
   @objc deinit
 }
@@ -280,6 +303,7 @@ extension PortmoneSDKEcom.StyleSource {
   @objc open func privatPayButtonTitleColor() -> UIKit.UIColor
   @objc open func publicOfferButtonTitleColor() -> UIKit.UIColor
   @objc open func publicOfferButtonColor() -> UIKit.UIColor
+  @objc open func bankPayViewsBackgroundColor() -> UIKit.UIColor
   @objc open func successImage() -> UIKit.UIImage?
   @objc open func failureImage() -> UIKit.UIImage?
   @objc override dynamic public init()

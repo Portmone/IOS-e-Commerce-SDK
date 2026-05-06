@@ -12,3 +12,7 @@
 ## [1.7.27] - 2026-03-17
 ### Added
 - Added the ability to open the full order description.
+
+## [1.7.28] - 2026-05-06
+### Added
+- Added the BankPay flow.

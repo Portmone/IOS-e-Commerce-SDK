@@ -305,6 +305,19 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+enum PMCurrency : NSInteger;
+enum PaymentType : NSInteger;
+
+/// Bank Pay Payment parameters model
+SWIFT_CLASS("_TtC15PortmoneSDKEcom20BankPayPaymentParams")
+@interface BankPayPaymentParams : NSObject
+/// Init
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description attribute1:(NSString * _Nonnull)attribute1 attribute2:(NSString * _Nonnull)attribute2 attribute3:(NSString * _Nonnull)attribute3 attribute4:(NSString * _Nonnull)attribute4 attribute5:(NSString * _Nonnull)attribute5 billNumber:(NSString * _Nonnull)billNumber contractNumber:(NSString * _Nonnull)contractNumber billCurrency:(enum PMCurrency)billCurrency billAmount:(double)billAmount payeeId:(NSString * _Nonnull)payeeId type:(enum PaymentType)type emailAddress:(NSString * _Nonnull)emailAddress shopBillId:(NSString * _Nonnull)shopBillId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 /// Bill model
 SWIFT_CLASS("_TtC15PortmoneSDKEcom4Bill")
@@ -313,9 +326,7 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom4Bill")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 @class PaymentBill;
-enum PMCurrency : NSInteger;
 enum PaymentFlowType : NSInteger;
 
 /// Payment bills
@@ -385,7 +396,6 @@ typedef SWIFT_ENUM(NSInteger, PaymentFlowType, open) {
   PaymentFlowTypeByPrivatAppleCardPays = 4,
 };
 
-enum PaymentType : NSInteger;
 @class TransferParams;
 
 /// Payment by card parameters model
@@ -427,6 +437,8 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom16PaymentPresenter")
 - (void)presentPaymentBillsByTokenOn:(UIViewController * _Nonnull)controller payParams:(BillsPaymentParams * _Nonnull)payParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams;
 /// Method to present transfer by token screen
 - (void)presentTransferByTokenOn:(UIViewController * _Nonnull)controller transferParams:(TransferParams * _Nonnull)transferParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams showReceiptScreen:(BOOL)showReceiptScreen;
+/// Method to present payment By Bank Pay
+- (void)presentPaymentByBankPayOn:(UIViewController * _Nonnull)controller params:(BankPayPaymentParams * _Nonnull)params;
 /// If set to true, the SDK will be closed, otherwise the user will be returned to the previous screen.
 /// Default value is false
 - (void)setReturnToDetailsWithDisabled:(BOOL)disabled;
@@ -460,6 +472,9 @@ SWIFT_PROTOCOL("_TtP15PortmoneSDKEcom24PaymentPresenterDelegate_")
 /// Optional method.
 /// Method triggered when the client closed the PortmoneSDK.
 - (void)canceledSDK;
+/// Optional method.
+/// Method triggered when SDK had already dismissed and need to return to the main screen of the application.
+- (void)toHomeScreen;
 @end
 
 /// Supported payment flows
@@ -551,6 +566,8 @@ SWIFT_PROTOCOL("_TtP15PortmoneSDKEcom11StyleSource_")
 - (UIColor * _Nonnull)publicOfferButtonTitleColor SWIFT_WARN_UNUSED_RESULT;
 /// Public offer button background color
 - (UIColor * _Nonnull)publicOfferButtonColor SWIFT_WARN_UNUSED_RESULT;
+/// Public Bank Pay views background color
+- (UIColor * _Nonnull)bankPayViewsBackgroundColor SWIFT_WARN_UNUSED_RESULT;
 /// Image for success result
 - (UIImage * _Nullable)successImage SWIFT_WARN_UNUSED_RESULT;
 /// Image for failure result
@@ -619,6 +636,8 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom16StyleSourceModel")
 - (UIColor * _Nonnull)publicOfferButtonTitleColor SWIFT_WARN_UNUSED_RESULT;
 /// Bottom public offer background color
 - (UIColor * _Nonnull)publicOfferButtonColor SWIFT_WARN_UNUSED_RESULT;
+/// Bank Pay views background color
+- (UIColor * _Nonnull)bankPayViewsBackgroundColor SWIFT_WARN_UNUSED_RESULT;
 /// Image for success result
 - (UIImage * _Nullable)successImage SWIFT_WARN_UNUSED_RESULT;
 /// Image for failure result
@@ -653,6 +672,7 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom5UBill")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
@@ -979,6 +999,19 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+enum PMCurrency : NSInteger;
+enum PaymentType : NSInteger;
+
+/// Bank Pay Payment parameters model
+SWIFT_CLASS("_TtC15PortmoneSDKEcom20BankPayPaymentParams")
+@interface BankPayPaymentParams : NSObject
+/// Init
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description attribute1:(NSString * _Nonnull)attribute1 attribute2:(NSString * _Nonnull)attribute2 attribute3:(NSString * _Nonnull)attribute3 attribute4:(NSString * _Nonnull)attribute4 attribute5:(NSString * _Nonnull)attribute5 billNumber:(NSString * _Nonnull)billNumber contractNumber:(NSString * _Nonnull)contractNumber billCurrency:(enum PMCurrency)billCurrency billAmount:(double)billAmount payeeId:(NSString * _Nonnull)payeeId type:(enum PaymentType)type emailAddress:(NSString * _Nonnull)emailAddress shopBillId:(NSString * _Nonnull)shopBillId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 /// Bill model
 SWIFT_CLASS("_TtC15PortmoneSDKEcom4Bill")
@@ -987,9 +1020,7 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom4Bill")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 @class PaymentBill;
-enum PMCurrency : NSInteger;
 enum PaymentFlowType : NSInteger;
 
 /// Payment bills
@@ -1059,7 +1090,6 @@ typedef SWIFT_ENUM(NSInteger, PaymentFlowType, open) {
   PaymentFlowTypeByPrivatAppleCardPays = 4,
 };
 
-enum PaymentType : NSInteger;
 @class TransferParams;
 
 /// Payment by card parameters model
@@ -1101,6 +1131,8 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom16PaymentPresenter")
 - (void)presentPaymentBillsByTokenOn:(UIViewController * _Nonnull)controller payParams:(BillsPaymentParams * _Nonnull)payParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams;
 /// Method to present transfer by token screen
 - (void)presentTransferByTokenOn:(UIViewController * _Nonnull)controller transferParams:(TransferParams * _Nonnull)transferParams tokenParams:(TokenPaymentParams * _Nonnull)tokenParams showReceiptScreen:(BOOL)showReceiptScreen;
+/// Method to present payment By Bank Pay
+- (void)presentPaymentByBankPayOn:(UIViewController * _Nonnull)controller params:(BankPayPaymentParams * _Nonnull)params;
 /// If set to true, the SDK will be closed, otherwise the user will be returned to the previous screen.
 /// Default value is false
 - (void)setReturnToDetailsWithDisabled:(BOOL)disabled;
@@ -1134,6 +1166,9 @@ SWIFT_PROTOCOL("_TtP15PortmoneSDKEcom24PaymentPresenterDelegate_")
 /// Optional method.
 /// Method triggered when the client closed the PortmoneSDK.
 - (void)canceledSDK;
+/// Optional method.
+/// Method triggered when SDK had already dismissed and need to return to the main screen of the application.
+- (void)toHomeScreen;
 @end
 
 /// Supported payment flows
@@ -1225,6 +1260,8 @@ SWIFT_PROTOCOL("_TtP15PortmoneSDKEcom11StyleSource_")
 - (UIColor * _Nonnull)publicOfferButtonTitleColor SWIFT_WARN_UNUSED_RESULT;
 /// Public offer button background color
 - (UIColor * _Nonnull)publicOfferButtonColor SWIFT_WARN_UNUSED_RESULT;
+/// Public Bank Pay views background color
+- (UIColor * _Nonnull)bankPayViewsBackgroundColor SWIFT_WARN_UNUSED_RESULT;
 /// Image for success result
 - (UIImage * _Nullable)successImage SWIFT_WARN_UNUSED_RESULT;
 /// Image for failure result
@@ -1293,6 +1330,8 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom16StyleSourceModel")
 - (UIColor * _Nonnull)publicOfferButtonTitleColor SWIFT_WARN_UNUSED_RESULT;
 /// Bottom public offer background color
 - (UIColor * _Nonnull)publicOfferButtonColor SWIFT_WARN_UNUSED_RESULT;
+/// Bank Pay views background color
+- (UIColor * _Nonnull)bankPayViewsBackgroundColor SWIFT_WARN_UNUSED_RESULT;
 /// Image for success result
 - (UIImage * _Nullable)successImage SWIFT_WARN_UNUSED_RESULT;
 /// Image for failure result
@@ -1327,6 +1366,7 @@ SWIFT_CLASS("_TtC15PortmoneSDKEcom5UBill")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
