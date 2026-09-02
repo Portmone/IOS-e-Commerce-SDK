@@ -7,5 +7,4 @@ framework module PortmoneSDKEcom {
 
 module PortmoneSDKEcom.Swift {
   header "PortmoneSDKEcom-Swift.h"
-  requires objc
 }

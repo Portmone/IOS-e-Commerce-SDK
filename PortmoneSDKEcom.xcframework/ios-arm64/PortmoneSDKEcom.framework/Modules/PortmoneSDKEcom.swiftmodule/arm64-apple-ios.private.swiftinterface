@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PortmoneSDKEcom
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PortmoneSDKEcom
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import DeveloperToolsSupport
 import Foundation
 import LocalAuthentication
@@ -20,8 +20,9 @@ import _SwiftConcurrencyShims
   public var paymentBills: [PortmoneSDKEcom.PaymentBill]
   public var billCurrency: PortmoneSDKEcom.PMCurrency
   public var paymentFlowType: PortmoneSDKEcom.PaymentFlowType
+  public var merchantName: Swift.String?
   public var merchantIdentifier: Swift.String?
-  @objc public init(contractNumber: Swift.String = "", paymentBills: [PortmoneSDKEcom.PaymentBill] = [], billCurrency: PortmoneSDKEcom.PMCurrency = .uah, paymentFlowType: PortmoneSDKEcom.PaymentFlowType = .byCard, merchantIdentifier: Swift.String = "")
+  @objc public init(contractNumber: Swift.String = "", paymentBills: [PortmoneSDKEcom.PaymentBill] = [], billCurrency: PortmoneSDKEcom.PMCurrency = .uah, paymentFlowType: PortmoneSDKEcom.PaymentFlowType = .byCard, merchantName: Swift.String = "", merchantIdentifier: Swift.String = "")
   public func validate() -> (any Swift.Error)?
   @objc deinit
 }
@@ -112,10 +113,12 @@ import _SwiftConcurrencyShims
   final public let payeeId: Swift.String
   final public let type: PortmoneSDKEcom.PaymentType
   public var paymentFlowType: PortmoneSDKEcom.PaymentFlowType
+  public var merchantName: Swift.String?
   public var merchantIdentifier: Swift.String?
   final public let emailAddress: Swift.String
   public var shopBillId: Swift.String
-  @objc public init(description: Swift.String = "", attribute1: Swift.String = "", attribute2: Swift.String = "", attribute3: Swift.String = "", attribute4: Swift.String = "", attribute5: Swift.String = "", billNumber: Swift.String = "", contractNumber: Swift.String = "", preauthFlag: Swift.Bool = false, billCurrency: PortmoneSDKEcom.PMCurrency = .uah, billAmount: Swift.Double, billAmountWcvv: Swift.Double = 0, payeeId: Swift.String, type: PortmoneSDKEcom.PaymentType = .payment, merchantIdentifier: Swift.String = "", paymentFlowType: PortmoneSDKEcom.PaymentFlowType = .byCard, emailAddress: Swift.String = "", shopBillId: Swift.String = "")
+  public var subscriptionInitPayment: Swift.String
+  @objc public init(description: Swift.String = "", attribute1: Swift.String = "", attribute2: Swift.String = "", attribute3: Swift.String = "", attribute4: Swift.String = "", attribute5: Swift.String = "", billNumber: Swift.String = "", contractNumber: Swift.String = "", preauthFlag: Swift.Bool = false, billCurrency: PortmoneSDKEcom.PMCurrency = .uah, billAmount: Swift.Double, billAmountWcvv: Swift.Double = 0, payeeId: Swift.String, type: PortmoneSDKEcom.PaymentType = .payment, merchantName: Swift.String = "", merchantIdentifier: Swift.String = "", paymentFlowType: PortmoneSDKEcom.PaymentFlowType = .byCard, emailAddress: Swift.String = "", shopBillId: Swift.String = "", subscriptionInitPayment: Swift.String = "")
   @objc public init(_ transferParams: PortmoneSDKEcom.TransferParams)
   public func validate() -> (any Swift.Error)?
   @objc deinit
