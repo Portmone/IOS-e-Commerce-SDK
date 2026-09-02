@@ -16,3 +16,9 @@
 ## [1.7.28] - 2026-05-06
 ### Added
 - Added the BankPay flow.
+
+## [1.7.29] - 2026-09-02
+### Added
+- Increased the minimum supported iOS version to iOS 15.
+- Added the subscriptionInitPayment parameter to indicate subscription payments.
+- Added a separate merchant name field for display in the Apple Pay Payment Sheet.

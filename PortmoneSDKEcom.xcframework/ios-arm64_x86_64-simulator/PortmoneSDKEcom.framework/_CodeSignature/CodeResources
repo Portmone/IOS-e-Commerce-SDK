@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		qz+w4NIf/q7ERJprTG4bAokgfso=
+		G4yEFbvzSysSaXL79u1R3baJpns=
 		</data>
 		<key>Headers/PortmoneSDKEcom-Swift.h</key>
 		<data>
-		mznHsz7Sx8QslIxgqHPh0W7FcHU=
+		SLTr/Lsnh4C0rOsDfbeSpZm+9G0=
 		</data>
 		<key>Headers/PortmoneSDKEcom.h</key>
 		<data>
@@ -18,51 +18,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pc8HSj1QAcniBO7MfwUEteobmQ0=
+		VAIEXvKXdYhUCO/fE9MZoDHbYbQ=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		7eweZPHxcguBjNMcDVSgesCQxz0=
+		MWn6GMwPYYagjLDhOtelc4LOXrM=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		CLWDIr7g5XBd+pqPTV43UCI2VNM=
+		vfpvH6UFVTXoZobly9hd0ux9VtA=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		YrxM73OW01boMBF1lUbWGes3gTY=
+		atFDDKq2UyAXOl8mDNNqMA304zg=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		CLWDIr7g5XBd+pqPTV43UCI2VNM=
+		vfpvH6UFVTXoZobly9hd0ux9VtA=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6OubpGDFwJDTWfqKzE2JXT52RLE=
+		7Ko6lDEYM4lBr080G9MB0dzBiYI=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		7eweZPHxcguBjNMcDVSgesCQxz0=
+		MWn6GMwPYYagjLDhOtelc4LOXrM=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Sc+8VWN6KTFT5PAVoeoVaLyYwgo=
+		FJpWaJ0lhY6eCUtO6LAWNXaPRCk=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		khiyPO8ZvVLGjuDX/oxFH8bJhE4=
+		FTRe+VGeFCe+gfa2ynZ16R83vTQ=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Sc+8VWN6KTFT5PAVoeoVaLyYwgo=
+		FJpWaJ0lhY6eCUtO6LAWNXaPRCk=
 		</data>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gXwTi1YBekKxLwpBEEfdmgWa3og=
+		sLWb39vc/WxYn+DI8gk/dizrTkc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		MhPsy5D27GOJH27+gIjdIduxjc4=
+		iTKcNUFtUdhyNPUEa5t0eLrLMwc=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -114,14 +114,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9xhiY7dfJHcgmUrM+TRv3+pi5/lBT2o+gqWaEf6fbKc=
+			hu7pum9B7aLKB71DM6asb+feJtrr1GsyIHZDZPlxoNs=
 			</data>
 		</dict>
 		<key>Headers/PortmoneSDKEcom-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1qKnqhgQkiS/HfbIp0fgJw1D7cTeR5y1GWFKUxNMEaY=
+			nmIdfSIkOF/3IwlDqTPo5YfZNb/j0IBAcTbSQb1lRT8=
 			</data>
 		</dict>
 		<key>Headers/PortmoneSDKEcom.h</key>
@@ -135,77 +135,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GAkjiN2JfAAoCh3nQ9h9uJHtuCbkD5AUb82paUGPysw=
+			kfgV6okrqllG2amkF0cvw1od0CSWQFWihdfjZDvK/tY=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			51R4Y5tekyNnq/14xSl6JhbPaFrfCwaTAA1or+gteEk=
+			U6gZYmN3713RjrN738pY5UP9LDBQ9gIF2zq+0mHeOdA=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ncn6Um4AWqgzLrBAE+abrCuvLYjeB1Y81e+YvYNQEs4=
+			IBZu0Au/HEGWNxjq489bWgWwmpfSwl7O8bCYwoGC5q4=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			51R4Y5tekyNnq/14xSl6JhbPaFrfCwaTAA1or+gteEk=
+			U6gZYmN3713RjrN738pY5UP9LDBQ9gIF2zq+0mHeOdA=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uUzz0+Ct7moMdBfQP/Z+zt9CxOwx62KAtcrTVXtCPlQ=
+			GWlr2L+1QzkCJL2irhXRKk3sk73wJib3zo/3LjL3640=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GAkjiN2JfAAoCh3nQ9h9uJHtuCbkD5AUb82paUGPysw=
+			kfgV6okrqllG2amkF0cvw1od0CSWQFWihdfjZDvK/tY=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5bKf/5EqX4siD7KuN56DKVh+oAPIm+YK5+q1pM2YW48=
+			fucYwNg6+109OTGbj+Db1q93TeQf8a8YvNZcYHtUPLU=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zz5eMf4HYpdbzkZERiWNrW3Hn0Qpp+VWCrXUQugtwYA=
+			eM2bp1b1jHFvNHIfFac6v/+snPGQcA992dGdnqiFZtI=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5bKf/5EqX4siD7KuN56DKVh+oAPIm+YK5+q1pM2YW48=
+			fucYwNg6+109OTGbj+Db1q93TeQf8a8YvNZcYHtUPLU=
 			</data>
 		</dict>
 		<key>Modules/PortmoneSDKEcom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aZ/dBGYhbdRlXh3/C5QteoaTJZZ9WxgGjTg7Cxi3N2s=
+			uO6IxQMtn4ly8/DGiHR7oaNKt7iu997z6OcKF9lSt7E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KZGJ8RPqCDGnvSg16aDBNTDNSnXlfb/e7RvHWs2qTYQ=
+			XYqXQduL1ZnsCkLXAE0m1mdlpXDPCw2WJUiy7yXjhXo=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
